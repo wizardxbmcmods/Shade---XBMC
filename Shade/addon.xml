@@ -6,6 +6,8 @@
   provider-name="igotdvds">
   <requires>
     <import addon="xbmc.gui" version="2.11"/>
+	<import addon="script.recentlyadded" version="1.0.4"/>
+	<import addon="script.logo-downloader" version="1.3"/>
   </requires>
   <extension
     point="xbmc.gui.skin"
@@ -15,8 +17,8 @@
     effectslowdown="1.0"
     debugging="false"/>
   <extension point="xbmc.addon.metadata">
-    <summary>The newest skin for XBMC!  Tons of views and lots of options!</summary>
-    <description>Shade - A sleek skin with a multitude of options and customizations!</description>
+    <summary>A skin for XBMC designed by DJeglin and igotdvds.  Tons of views with a simple sleek design.</summary>
+    <description>Shade - A sleek skin with a multitude of options and customizations!  Informative views with great layouts make this skin truly unique!</description>
     <platform>all</platform>
   </extension>
 </addon>
