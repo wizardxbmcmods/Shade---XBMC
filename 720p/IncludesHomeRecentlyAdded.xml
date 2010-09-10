@@ -1304,18 +1304,18 @@
 						<posy>55</posy>
 						<width>350</width>
 						<height>30</height>
-						<font>Shade_18_Bold</font>
+						<font>Shade_24_Bold</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Window.Property(LatestMovie.8.Title)] ($INFO[Window.Property(LatestMovie.8.Year)])</label>
+						<label>$INFO[Window.Property(LatestMovie.8.Title)]</label>
 						<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
 					</control>
 					<control type="fadelabel">
 						<posx>5</posx>
 						<posy>85</posy>
-						<width>98</width>
+						<width>120</width>
 						<height>30</height>
 						<font>Shade_18_Bold</font>
 						<textcolor>grey2</textcolor>
@@ -1323,7 +1323,7 @@
 						<align>left</align>
 						<scrollspeed>0</scrollspeed>
 						<aligny>center</aligny>
-						<label>$INFO[Window.Property(LatestMovie.8.RunningTime)]</label>
+						<label>($INFO[Window.Property(LatestMovie.8.Year)]),$INFO[Window.Property(LatestMovie.8.RunningTime)]</label>
 						<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
 					</control>					
 				</control>
@@ -2386,11 +2386,11 @@
 					<control type="image">
 						<description>Main Icon</description>
 						<posx>5</posx>
-						<posy>155</posy>
-						<width>400</width>
-						<height>200</height>
+						<posy>110</posy>
+						<width>260</width>
+						<height>110</height>
 						<aspectratio align="left">keep</aspectratio>
-						<texture background="true" diffuse="shade/episodematteNF.png">$INFO[Window.Property(LatestEpisode.8.thumb)]</texture>
+						<texture background="true" diffuse="shade/episodematteNF.png">$INFO[Window.Property(LatestEpisode.7.thumb)]</texture>
 						<bordertexture border="2">Shade/folder-focus-white.png</bordertexture>
 						<bordersize>2</bordersize>
 					</control>
@@ -2399,8 +2399,46 @@
 						<posy>55</posy>
 						<width>250</width>
 						<height>30</height>
+						<font>Shade_24</font>
+						<textcolor>white</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[Window.Property(LatestEpisode.7.ShowTitle)]</label>
+						<visible>[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]</visible>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>80</posy>
+						<width>300</width>
+						<height>30</height>
 						<font>Shade_18_Bold</font>
 						<textcolor>grey2</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>[B]$INFO[Window.Property(LatestEpisode.7.EpisodeTitle)][/B]</label>
+						<wrapmultiline>true</wrapmultiline>
+						<visible>[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]</visible>
+					</control>
+					<control type="image">
+						<description>Main Icon</description>
+						<posx>5</posx>
+						<posy>285</posy>
+						<width>260</width>
+						<height>110</height>
+						<aspectratio align="left">keep</aspectratio>
+						<texture background="true" diffuse="shade/episodematteNF.png">$INFO[Window.Property(LatestEpisode.8.thumb)]</texture>
+						<bordertexture border="2">Shade/folder-focus-white.png</bordertexture>
+						<bordersize>2</bordersize>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>230</posy>
+						<width>250</width>
+						<height>30</height>
+						<font>Shade_24</font>
+						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -2409,7 +2447,7 @@
 					</control>
 					<control type="label">
 						<posx>5</posx>
-						<posy>85</posy>
+						<posy>255</posy>
 						<width>300</width>
 						<height>30</height>
 						<font>Shade_18_Bold</font>
@@ -2417,21 +2455,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Window.Property(LatestEpisode.8.EpisodeTitle)]</label>
-						<wrapmultiline>true</wrapmultiline>
-						<visible>[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]</visible>
-					</control>
-					<control type="label">
-						<posx>5</posx>
-						<posy>115</posy>
-						<width>300</width>
-						<height>30</height>
-						<font>Shade_18_Bold</font>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[Window.Property(LatestEpisode.8.EpisodeNo]</label>
+						<label>[B]$INFO[Window.Property(LatestEpisode.8.EpisodeTitle)][/B]</label>
 						<wrapmultiline>true</wrapmultiline>
 						<visible>[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]</visible>
 					</control>
