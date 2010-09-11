@@ -3361,8 +3361,6 @@
 				</control>
 				<!-- Panel 8 -->
 				<control type="group">
-					<include>Poster-view-panel8</include>
-
 					<visible>Control.IsVIsible(520)</visible>
 
 					<posx>1078</posx>
@@ -3430,8 +3428,6 @@
 				</control>
 				<!-- Panel 7 -->
 				<control type="group">
-					<include>Poster-view-panel7</include>
-
 					<visible>Control.IsVIsible(520)</visible>
 
 					<posx>992</posx>
@@ -3499,8 +3495,6 @@
 				</control>
 				<!-- Panel 6 -->
 				<control type="group">
-					<include>Poster-view-panel6</include>
-
 					<visible>Control.IsVIsible(520)</visible>
 
 					<posx>890</posx>
@@ -3568,8 +3562,6 @@
 				</control>
 				<!-- Panel 5 -->
 				<control type="group">
-					<include>Poster-view-panel5</include>
-
 					<visible>Control.IsVIsible(520)</visible>
 
 					<posx>768</posx>
@@ -3637,8 +3629,6 @@
 				</control>
 				<!-- Panel 4 -->
 				<control type="group">
-					<include>Poster-view-panel4</include>
-
 					<visible>Control.IsVIsible(520)</visible>
 
 					<posx>622</posx>
@@ -3706,8 +3696,6 @@
 				</control>
 				<!-- Panel 3 -->
 				<control type="group">
-					<include>Poster-view-panel3</include>
-
 					<visible>Control.IsVIsible(520)</visible>
 
 					<posx>446</posx>

@@ -42,22 +42,9 @@
 			<include>Window_OpenClose_Animation</include>		
 			<include>CommonRootView</include>
 			<!-- view id = 50 -->
-			<include>FullWidthList</include>
-			<!-- view id = 51 -->
 			<include>ThumbnailView</include>
 			<!-- view id = 500 -->
-			<include>PosterWrapView</include>
-			<!-- view id = 501 -->
-			<include>PosterWrapView2_Fanart</include>
-			<!-- view id = 508 -->
-			<include>WideIconView</include>
-			<!-- view id = 505 -->
-			<include>Fanart Redux</include>
-			<!--view id = 509 -->
-			<include>3d_CoverView</include>
-			<!-- view id = 555 -->
 		</control>
-		<include>CommonPageCount</include>
 		<include>BehindDialogFadeOut</include>
 		<include>ScrollOffsetLabel</include>
 		<control type="group">

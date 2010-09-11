@@ -102,42 +102,22 @@
 			<include>ThumbnailViewMovieGenres</include>
 			<!-- view id = 53 -->
 			<include>ThumbnailView</include>
-			<!-- view id = 500 -->
-			<include>LargeListView</include>
-			<!-- view id = 501 -->
-			<include>Fanart</include>
-			<!-- view id = 508 -->
-			<include>TrailerListView</include>
 			<!-- view id = 503 -->
 			<include>Shade_Panel</include>
-			<!-- view id = 504 -->
-			<include>WideIconView</include>
 			<!-- view id = 505 -->
 			<include>MusicVideoInfoListView</include>
 			<!-- view id = 511 -->
 			<include>ArtistMediaListView</include>
-			<!-- view id = 512 -->	
-			<include>WallStreamView</include>
-			<!-- view id = 513 -->
-			<include>TVWideBanner</include>
-			<!-- view id = 516 -->
-			<include>TVWideBannerSwap</include>
-			<!-- view id = 517 -->
-			<include>SeasonWrap</include>
 			<!-- view id = 518 -->			
 			<include>LargePanelView</include>
 			<!-- view id = 520 -->
 			<include>TVShowsView</include>
-			<!-- view id = 522 -->
-			<include>ClearartView</include>
 			<!-- view id = 523 -->
 			<include>TVListView</include>
 			<!-- view id = 524 -->
 			<include>EpisodeView</include>
 			<!-- view id = 525 -->
 			<include>WallStreamOriginalView</include>
-			<!-- view id = 528 -->
-			<include>CollectionView</include>
 			<!-- view id = 529 -->
 			<include>TVPosterView</include>
 			<!-- view id = 530 -->
@@ -172,23 +152,13 @@
 			<include>Episode_Panel</include>
 			<!-- view id = 545 -->	
 			<include>Episode_Panel_Large</include>
-			<!-- view id = 546 -->	
-			<include>AeonView</include>
-			<!-- view id = 547 -->	
-			<include>TestView3</include>
 			<!-- view id = 548 -->	
 			<include>IMDBView</include>
 			<!-- view id = 549 -->	
 			<include>ListInfoView</include>
 			<!-- view id = 550 -->
 			<include>LowListView</include>
-			<!-- view id = 551 -->		
-			<include>CollectionView</include>
-			<!-- view id = 552 -->		
-			<include>3d_CoverView</include>
-			<!-- view id = 555 -->
 		</control>
-		<include>CommonPageCount</include>
 		<include>BehindDialogFadeOut</include>
 		<include>ScrollOffsetLabel</include>
 		<control type="group">

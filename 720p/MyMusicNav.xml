@@ -105,8 +105,6 @@
 			<!-- view id = 500 -->
 			<include>ThumbnailViewAlbum</include>
 			<!-- view id = 52 -->
-			<include>MusicInfoListView</include>
-			<!-- view id = 506 -->
 			<include>AlbumWrapView2_Fanart</include>
 			<!-- view id = 509 -->
 			<include>MusicVideoInfoListView</include>
@@ -116,7 +114,6 @@
 			<include>AlbumInfoListView</include>
 			<!-- view id = 513 -->
 		</control>
-		<include>CommonPageCount</include>
 		<include>BehindDialogFadeOut</include>
 		<include>ScrollOffsetLabel</include>
 		<control type="group">

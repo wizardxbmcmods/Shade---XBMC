@@ -296,7 +296,6 @@
 				<texture background="true" flipx="true">Left_Arrow.png</texture> 
 				<visible>Container(511).HasNext</visible>
 			</control>					
-			<include>Panel</include>
 			<control type="panel" id="511">
 				<posx>110</posx>
 				<posy>183</posy>

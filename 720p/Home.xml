@@ -1197,13 +1197,11 @@
 			<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)] | [Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)] | [Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]</visible>
 			<posx>850</posx>
 			<posy>110</posy>
-			<include>CommonNowPlaying</include>
 		</control>
 		<control type="group">
 			<visible>Container(9000).Hasfocus(5)</visible>
 			<posx>850</posx>
 			<posy>110</posy>
-			<include>CommonNowPlayingHome</include>
 		</control>
 
 		<!--Weather-->

@@ -60,8 +60,6 @@
 			<include>Window_OpenClose_Animation</include>		
 			<include>CommonRootView</include>
 			<!-- view id = 50 -->
-			<include>FullWidthList</include>
-			<!-- view id = 51 -->
 			<include>ThumbnailView</include>
 			<!-- view id = 500 -->
 			<include>PictureWrapView</include>
@@ -69,7 +67,6 @@
 			<include>PictureThumbView</include>
 			<!-- view id = 511 -->
 		</control>
-		<include>CommonPageCount</include>
 		<include>BehindDialogFadeOut</include>
 		<include>ScrollOffsetLabel</include>
 		<control type="group">
