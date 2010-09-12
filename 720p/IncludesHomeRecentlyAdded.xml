@@ -2356,7 +2356,56 @@
 								<font>Shade_16_bold</font>
 								<textcolor>grey2</textcolor>
 							</control>
+				<!--<control type="grouplist" id="90997">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>200</height>
+					<onleft>90997</onleft>
+					<onright>90997</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<itemgap>1</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="radiobutton" id="14">
+						<description>Watched Toggle</description>
+						<include>ButtonMediaSubCommonValues</include>
+						<label>20367</label>
+					</control>
+					<control type="button" id="8">
+						<description>Search</description>
+						<include>ButtonMediaSubCommonValues</include>
+						<onclick>SendClick(8)</onclick>
+						<label>137</label>
+					</control>
+					<control type="radiobutton" id="19">
+						<description>Filter</description>
+						<include>ButtonMediaSubCommonValues</include>
+						<label>587</label>
+					</control>
+					<control type="radiobutton" id="17">
+						<description>Flatten</description>
+						<include>ButtonMediaSubCommonValues</include>
+						<label>20411</label>
+					</control>
+					<control type="radiobutton" id="11">
+						<description>Unlock Shares</description>
+						<include>ButtonMediaSubCommonValues</include>
+						<label>20336</label>
+						<onclick>xbmc.mastermode</onclick>
+						<selected>system.ismaster</selected>
+						<visible>system.haslocks</visible>
+					</control>
 						</control>
+					<control type="image" id="200">
+						<width>2</width>
+						<height>45</height>
+						<texture>Shade/separatorwhite.png</texture>
+						<align>center</align>
+						<aligny>center</aligny>
+						<visible>Control.IsVisible(201) | Control.IsVisible(202) | Control.IsVisible(203) | Control.IsVisible(204) | Control.IsVisible(205) | Control.IsVisible(206) | Control.IsVisible(207) | Control.IsVisible(208) | Control.IsVisible(209) | Control.IsVisible(210) | Control.IsVisible(211) | Control.IsVisible(212) | Control.IsVisible(213) | Control.IsVisible(214)</visible>
+					</control>-->
+				</control>
 					</control>
 				</control>
 

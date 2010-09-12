@@ -469,10 +469,34 @@
 					<control type="radiobutton" id="230">
 						<description>Toggle Info</description>
 						<include>ButtonMediaSubCommonValues</include>
-						<label>Disable Stars</label>
+						<label>Use Watched Icon</label>
 						<onclick>Skin.ToggleSetting(DisableStars)</onclick>
 						<selected>Skin.HasSetting(DisableStars)</selected>
-						<visible>Control.IsVisible(525) | Control.IsVisible(532)</visible>
+						<visible>Control.IsVisible(532)</visible>
+					</control>
+					<control type="radiobutton" id="231">
+						<description>Toggle Info</description>
+						<include>ButtonMediaSubCommonValues</include>
+						<label>Use Watched Icon</label>
+						<onclick>Skin.ToggleSetting(DisableStars2)</onclick>
+						<selected>Skin.HasSetting(DisableStars2)</selected>
+						<visible>Control.IsVisible(525)</visible>
+					</control>
+					<control type="radiobutton" id="232">
+						<description>Toggle Info</description>
+						<include>ButtonMediaSubCommonValues</include>
+						<label>Use Watched Icon</label>
+						<onclick>Skin.ToggleSetting(EnableWatchedIcon)</onclick>
+						<selected>Skin.HasSetting(EnableWatchedIcon)</selected>
+						<visible>Control.IsVisible(545)</visible>
+					</control>
+					<control type="radiobutton" id="233">
+						<description>Toggle Info</description>
+						<include>ButtonMediaSubCommonValues</include>
+						<label>Use Watched Icon</label>
+						<onclick>Skin.ToggleSetting(EnableWatchedIcon2)</onclick>
+						<selected>Skin.HasSetting(EnableWatchedIcon2)</selected>
+						<visible>Control.IsVisible(546)</visible>
 					</control>
 				</control>
 			</control>

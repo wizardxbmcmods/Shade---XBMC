@@ -2247,7 +2247,19 @@
 							<onclick>Skin.ToggleSetting(Multiple_TV_Fanart)</onclick>
 							<selected>Skin.HasSetting(Multiple_TV_Fanart)</selected>
 						</control>
-						<control type="label" id="511">
+						<control type="radiobutton" id="511">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<label>Enable Watched Icon for Movie Views</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+							<onclick>Skin.ToggleSetting(EnableWatchedIconMovies)</onclick>
+							<selected>Skin.HasSetting(EnableWatchedIconMovies)</selected>
+						</control>
+						<control type="label" id="512">
 							<width>750</width>
 							<height>45</height>
 							<font>Shade_18_Bold</font>
@@ -2257,7 +2269,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="512">
+						<control type="button" id="513">
 							<width>180</width>
 							<height>40</height>
 							<align>center</align>
