@@ -69,15 +69,6 @@
 			</control>
 			<control type="image">
 				<posx>0</posx>
-				<posy>128r</posy>
-				<width>1280</width>
-				<height>128</height>
-				<texture>FloorREMOVE</texture>
-				<include>VisibleFadeEffect</include>
-				<visible>Control.IsVisible(50) | Control.IsVisible(508)</visible>
-			</control>
-			<control type="image">
-				<posx>0</posx>
 				<posy>220</posy>
 				<width>1280</width>
 				<height>500</height>
@@ -497,6 +488,14 @@
 						<onclick>Skin.ToggleSetting(EnableWatchedIcon2)</onclick>
 						<selected>Skin.HasSetting(EnableWatchedIcon2)</selected>
 						<visible>Control.IsVisible(546)</visible>
+					</control>
+					<control type="radiobutton" id="234">
+						<description>Toggle Info</description>
+						<include>ButtonMediaSubCommonValues</include>
+						<label>Use Watched Icon</label>
+						<onclick>Skin.ToggleSetting(DisableStars3)</onclick>
+						<selected>Skin.HasSetting(DisableStars3)</selected>
+						<visible>Control.IsVisible(535)</visible>
 					</control>
 				</control>
 			</control>

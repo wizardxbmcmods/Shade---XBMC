@@ -9,15 +9,6 @@
 				<posx>0</posx>
 				<posy>-440</posy>
 				<width>1280</width>
-				<height>720</height>
-				<aspectratio>stretch</aspectratio>
-				<fadetime>IconCrossfadeTime</fadetime>
-				<texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>-440</posy>
-				<width>1280</width>
 				<height>700</height>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>IconCrossfadeTime</fadetime>
@@ -31,7 +22,7 @@
 					<posx>20</posx>
 					<posy>120</posy>
 					<height>20</height>
-					<width>300</width>
+					<width>330</width>
 					<label>Music Albums</label>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -42,7 +33,7 @@
 				<control type="label">
 					<description>Title label</description>
 					<animation effect="slide" end="40,0" time="0" reversible="false" condition="Container.Content(Albums)">Conditional</animation>
-					<posx>300</posx>
+					<posx>330</posx>
 					<posy>130</posy>
 					<height>20</height>
 					<width>275</width>
@@ -420,7 +411,7 @@
 				<posx>20</posx>
 				<posy>120</posy>
 				<height>20</height>
-				<width>275</width>
+				<width>310</width>
 				<label>Music Videos</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -429,7 +420,7 @@
 			</control>	
 			<control type="label">
 				<description>Title label</description>
-				<posx>340</posx>
+				<posx>350</posx>
 				<posy>130</posy>
 				<height>20</height>
 				<width>275</width>
@@ -446,7 +437,7 @@
 				<height>200</height>
 				<onleft>511</onleft>
 				<onright>511</onright>
-				<onup>4</onup>
+				<onup>2</onup>
 				<ondown>527</ondown>
 				<viewtype label="Wide Panel">list</viewtype>
 				<orientation>Horizontal</orientation>
@@ -697,7 +688,7 @@
 				<posx>20</posx>
 				<posy>120</posy>
 				<height>20</height>
-				<width>275</width>
+				<width>305</width>
 				<label>Music Videos</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -723,6 +714,7 @@
 				<animation effect="slide" end="40,0" time="0" reversible="false" condition="Container.Content(Albums)">Conditional</animation>
 				<animation effect="slide" end="40,0" time="0" reversible="false" condition="Container.Content(MusicVideos)">Conditional</animation>
 				<animation effect="slide" end="-120,0" time="0" reversible="false" condition="Container.Content(Songs)">Conditional</animation>
+				<animation effect="slide" end="20,0" time="0" reversible="false" condition="Container.Content(Artists)">Conditional</animation>
 				<posx>300</posx>
 				<posy>130</posy>
 				<height>20</height>
@@ -766,7 +758,7 @@
 						<aligny>center</aligny>
 						<font>Shade_24</font>
 						<textcolor>grey2</textcolor>
-						<scroll>true</scroll>
+						<scroll>false</scroll>
 						<visible>container.content(Artists)</visible>
 					</control>
 					<control type="label">
@@ -781,7 +773,7 @@
 						<font>Shade_24</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>grey2</selectedcolor>
-						<scroll>true</scroll>
+						<scroll>false</scroll>
 						<visible>container.content(Songs)</visible>
 					</control>
 					<control type="label">
@@ -796,7 +788,7 @@
 						<font>Shade_24</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>grey2</selectedcolor>
-						<scroll>true</scroll>
+						<scroll>false</scroll>
 						<visible>container.content(MusicVideos)</visible>
 					</control>
 				</itemlayout>
@@ -1055,7 +1047,7 @@
 				<posx>20</posx>
 				<posy>120</posy>
 				<height>20</height>
-				<width>295</width>
+				<width>315</width>
 				<label>Music Albums</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -1066,7 +1058,7 @@
 			<control type="label">
 				<description>Title label</description>
 				<animation effect="slide" end="40,0" time="0" reversible="false" condition="Container.Content(Albums)">Conditional</animation>
-				<posx>300</posx>
+				<posx>320</posx>
 				<posy>130</posy>
 				<height>20</height>
 				<width>275</width>
@@ -1109,7 +1101,7 @@
 						<aligny>center</aligny>
 						<font>Shade_24</font>
 						<textcolor>grey2</textcolor>
-						<scroll>true</scroll>
+						<scroll>false</scroll>
 						<visible>container.content(Albums)</visible>
 					</control>
 				</itemlayout>

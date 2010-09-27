@@ -15,81 +15,10 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath background="true" fallback="special://skin/backgrounds/pictures.jpg">$INFO[Container(9000).ListItem.Icon]</imagepath>
+			<imagepath background="true" fallback="special://skin/backgrounds/pictures.jpg">$INFO[Container(9000).ListItem.Thumb]</imagepath>
 			<timeperimage>8000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
-			<visible>!Skin.HasSetting(homepageHideRecentlyAdded)</visible>
-		</control>
-		<control type="largeimage">
-			<description>Main Icon</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true" fallback="special://skin/backgrounds/pictures.jpg">$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</texture>
-			<include>VisibleFadeEffectHome</include>
-			<visible>Container(9000).Hasfocus(6) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
-		</control>
-		<control type="largeimage">
-			<description>Main Icon</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true" fallback="special://skin/backgrounds/videos.jpg">$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</texture>
-			<include>VisibleFadeEffectHome</include>
-			<visible>Container(9000).Hasfocus(3) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
-		</control>
-		<control type="largeimage">
-			<description>Main Icon</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true" fallback="special://skin/backgrounds/home.jpg">$INFO[Skin.String(Home_Custom_Back_Home_Folder)]</texture>
-			<include>VisibleFadeEffectHome</include>
-			<visible>Container(9000).Hasfocus(5) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
-		</control>
-		<control type="largeimage">
-			<description>Main Icon</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true" fallback="special://skin/backgrounds/programs.jpg">$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</texture>
-			<include>VisibleFadeEffectHome</include>
-			<visible>Container(9000).Hasfocus(8) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
-		</control>
-		<control type="largeimage">
-			<description>Main Icon</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true" fallback="special://skin/backgrounds/addons.jpg">$INFO[Skin.String(Home_Custom_Back_Addons_Folder)]</texture>
-			<include>VisibleFadeEffectHome</include>
-			<visible>Container(9000).Hasfocus(9) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
-		</control>
-		<control type="largeimage">
-			<description>Main Icon</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true" fallback="special://skin/backgrounds/settings.jpg">$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</texture>
-			<include>VisibleFadeEffectHome</include>
-			<visible>Container(9000).Hasfocus(10) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
-		</control>
-		<control type="largeimage">
-			<description>Main Icon</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true" fallback="special://skin/backgrounds/shutdown.jpg">$INFO[Skin.String(Home_Custom_Back_Shutdown_Folder)]</texture>
-			<include>VisibleFadeEffectHome</include>
-			<visible>Container(9000).Hasfocus(11) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
@@ -99,27 +28,7 @@
 			<height>720</height>
 			<texture background="true">black.png</texture>
 			<include>VisibleFadeEffectHome</include>
-			<visible>Container(9000).Hasfocus(1) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
-		</control>
-		<control type="image">
-			<description>Main Icon</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">black.png</texture>
-			<include>VisibleFadeEffectHome</include>
-			<visible>Container(9000).Hasfocus(2) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
-		</control>
-		<control type="image">
-			<description>Main Icon</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">black.png</texture>
-			<include>VisibleFadeEffectHome</include>
-			<visible>Container(9000).Hasfocus(4) + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+			<visible>Container(9000).Hasfocus() + Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 		</control>
 		<control type="image">
 			<description>Main Icon</description>
@@ -833,7 +742,7 @@
 					<visible>!Skin.HasSetting(AlternateHome2)</visible>
 					<posx>50</posx>
 					<posy>100</posy>
-					<width>110</width>
+					<width>130</width>
 					<align>center</align>
 					<font>Shade_24</font>
 					<label>$INFO[ListItem.Label]</label>
@@ -866,6 +775,9 @@
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8006)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8007)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8008)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(23)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(25)">Conditional</animation>
@@ -886,6 +798,9 @@
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8006)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8007)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8008)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(23)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(25)">Conditional</animation>
@@ -911,6 +826,9 @@
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8006)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8007)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8008)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(23)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(25)">Conditional</animation>
@@ -920,7 +838,7 @@
 					<visible>!Skin.HasSetting(AlternateHome2)</visible>
 					<posx>50</posx>
 					<posy>100</posy>
-					<width>110</width>
+					<width>120</width>
 					<font>Shade_24</font>
 					<align>center</align>
 					<label>$INFO[ListItem.Label]</label>
@@ -934,6 +852,9 @@
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8006)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8007)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8008)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
+					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(23)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(24)">Conditional</animation>
 					<animation effect="fade" start="100" end="50" time="0" condition="Control.HasFocus(25)">Conditional</animation>
@@ -978,7 +899,7 @@
 					<label>Home</label>
 					<icon>homeicons/home-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Home_Folder)]</thumb>
-					<onclick>-</onclick>
+					<onclick>XBMC.ActivateWindow(1112)</onclick>
 				</item>					
 				<item id="6">
 					<description>Pictures</description>
@@ -1018,6 +939,7 @@
 					<icon>homeicons/setting-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
 					<onclick>ActivateWindow(4)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoSettingsButton)</visible>
 				</item>
 				<item id="11">
 					<description>Shutdown</description>
@@ -1025,6 +947,7 @@
 					<icon>homeicons/shutdown-full.png</icon>
 					<thumb>special://skin/backgrounds/shutdown.jpg</thumb>
 					<onclick>ActivateWindow(ShutdownMenu)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoShutdownButton)</visible>
 				</item>
 				<!--<item id="11">
 					<description>Play Disc</description>
@@ -1173,7 +1096,7 @@
 			<height>1</height>
 			<label>-</label>
 			<font>-</font>
-			<onfocus>XBMC.RunScript(special://skin/scripts/RecentlyAdded.py,limit=8&amp;totals=True&amp;albums=True&amp;unplayed=True)</onfocus>
+			<onfocus>XBMC.RunScript(script.recentlyadded,limit=10&amp;totals=True&amp;albums=True&amp;unplayed=True)</onfocus>
 			<onfocus>SetFocus(9000)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
@@ -1197,11 +1120,13 @@
 			<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)] | [Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)] | [Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]</visible>
 			<posx>850</posx>
 			<posy>110</posy>
+				<include>CommonNowPlaying</include>
 		</control>
 		<control type="group">
 			<visible>Container(9000).Hasfocus(5)</visible>
 			<posx>850</posx>
 			<posy>110</posy>
+				<include>CommonNowPlayingHome</include>
 		</control>
 
 		<!--Weather-->
@@ -1276,12 +1201,38 @@
 			<width>1280</width>
 			<height>500</height>
 			<texture>shade/homefade.png</texture>
-			<visible>Skin.HasSetting(homepageHideRecentlyAdded) + [ControlGroup(9001).HasFocus + [Container(9000).Hasfocus(1) | Container(9000).Hasfocus(2) | Container(9000).Hasfocus(4) | Container(9000).Hasfocus(5)]]</visible>	
-			<animation effect="fade" end="100" time="200" condition="ControlGroup(9001).HasFocus">Conditional</animation>
-			<animation effect="fade" end="0" time="200" condition="ControlGroup(9000).HasFocus">Conditional</animation>
+			<visible>Skin.HasSetting(homepageHideRecentlyAdded) + [ControlGroup(9001).HasFocus + [Container(9000).Hasfocus(1) | Container(9000).Hasfocus(2) | Container(9000).Hasfocus(3) | Container(9000).Hasfocus(4) | Container(9000).Hasfocus(10) | Container(9000).Hasfocus(9) | Container(9000).Hasfocus(5)]]</visible>	
+			<animation effect="fade" end="100" time="0" condition="ControlGroup(9001).HasFocus">Conditional</animation>
+			<animation effect="fade" end="0" time="0" condition="ControlGroup(9000).HasFocus">Conditional</animation>
 		</control>
 
 		<!--Settings-->
+
+		<control type="group">
+			<posx>0</posx>
+			<posy>450r</posy>
+				<animation type="WindowOpen" reversible="false">
+					<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+					<effect type="fade" start="0" end="100" time="300" />
+				</animation>
+				<animation type="WindowClose" reversible="false">
+					<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+					<effect type="fade" start="100" end="0" time="300" />
+				</animation>	
+			<control type="rss">
+				<description>RSS feed</description>
+				<posx>0</posx>
+				<posy>6</posy>
+				<height>35</height>
+				<width>1280</width>
+				<font>Shade_18_Bold</font>
+				<urlset>1</urlset>
+				<textcolor>grey2</textcolor>
+				<titlecolor>white</titlecolor>
+				<headlinecolor>grey2</headlinecolor>
+				<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
+			</control>
+		</control>
 
 
 		<include>Clock</include>
@@ -1290,3 +1241,4 @@
 	</controls>
 
 </window>
+

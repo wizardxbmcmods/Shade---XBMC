@@ -250,10 +250,10 @@
 				<width>240</width>
 				<height>20</height>
 				<font>Shade_16_Bold</font>
-				<textcolor>white</textcolor>
+				<textcolor>black</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>elapsed</label>
+				<label>elapsed:</label>
 			</control>
 			<control type="label">
 				<description>Popup Info</description>
@@ -274,10 +274,10 @@
 				<width>240</width>
 				<height>20</height>
 				<font>Shade_16_Bold</font>
-				<textcolor>white</textcolor>
+				<textcolor>black</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>remaining</label>
+				<label>remaining:</label>
 			</control>
 			<control type="label">
 				<description>Popup Info</description>
@@ -298,10 +298,10 @@
 				<width>240</width>
 				<height>20</height>
 				<font>Shade_16_Bold</font>
-				<textcolor>white</textcolor>
+				<textcolor>black</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>finish</label>
+				<label>finish:</label>
 			</control>
 			<control type="label">
 				<description>Popup Info</description>

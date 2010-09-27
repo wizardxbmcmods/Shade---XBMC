@@ -1,5 +1,6 @@
 <window type="dialog" id="120">
 	<defaultcontrol always="true">603</defaultcontrol>
+	<zorder>2</zorder>
 	<controls>
 		<control type="group">
 			<animation effect="slide" start="0,-135" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>

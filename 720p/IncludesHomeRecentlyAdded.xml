@@ -1290,12 +1290,12 @@
 					<control type="image">
 						<description>Main Icon</description>
 						<posx>5</posx>
-						<posy>125</posy>
-						<width>190</width>
-						<height>270</height>
+						<posy>95</posy>
+						<width>210</width>
+						<height>300</height>
 						<aspectratio align="left">stretch</aspectratio>
 						<fadetime>200</fadetime>
-						<texture background="true" diffuse="shade/posterdiffuse.png">$INFO[Window.Property(LatestMovie.8.Thumb)]</texture>
+						<texture background="true" diffuse="shade/posterdiffuse.png">$INFO[Window.Property(RandomMovie.1.Thumb)]</texture>
 						<bordertexture border="2">Shade/folder-focus-white.png</bordertexture>
 						<bordersize>2</bordersize>
 					</control>
@@ -1304,15 +1304,15 @@
 						<posy>55</posy>
 						<width>350</width>
 						<height>30</height>
-						<font>Shade_24_Bold</font>
-						<textcolor>grey2</textcolor>
+						<font>Shade_24</font>
+						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Window.Property(LatestMovie.8.Title)]</label>
+						<label>$INFO[Window.Property(RandomMovie.1.Title)] ($INFO[Window.Property(RandomMovie.1.Year)])</label>
 						<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
 					</control>
-					<control type="fadelabel">
+					<!--<control type="fadelabel">
 						<posx>5</posx>
 						<posy>85</posy>
 						<width>120</width>
@@ -1323,9 +1323,9 @@
 						<align>left</align>
 						<scrollspeed>0</scrollspeed>
 						<aligny>center</aligny>
-						<label>($INFO[Window.Property(LatestMovie.8.Year)]),$INFO[Window.Property(LatestMovie.8.RunningTime)]</label>
+						<label>($INFO[Window.Property(RandomMovie.1.Year)]),$INFO[Window.Property(RandomMovie.1.RunningTime)]</label>
 						<visible>[Container(9000).Hasfocus(1) + !Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
-					</control>					
+					</control>-->					
 				</control>
 
 				<control type="group">
@@ -2439,7 +2439,7 @@
 						<width>260</width>
 						<height>110</height>
 						<aspectratio align="left">keep</aspectratio>
-						<texture background="true" diffuse="shade/episodematteNF.png">$INFO[Window.Property(LatestEpisode.7.thumb)]</texture>
+						<texture background="true" diffuse="shade/episodematteNF.png">$INFO[Window.Property(RandomEpisode.2.thumb)]</texture>
 						<bordertexture border="2">Shade/folder-focus-white.png</bordertexture>
 						<bordersize>2</bordersize>
 					</control>
@@ -2453,7 +2453,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Window.Property(LatestEpisode.7.ShowTitle)]</label>
+						<label>$INFO[Window.Property(RandomEpisode.2.ShowTitle)]</label>
 						<visible>[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]</visible>
 					</control>
 					<control type="label">
@@ -2461,12 +2461,12 @@
 						<posy>80</posy>
 						<width>300</width>
 						<height>30</height>
-						<font>Shade_18_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>[B]$INFO[Window.Property(LatestEpisode.7.EpisodeTitle)][/B]</label>
+						<label>[B]$INFO[Window.Property(RandomEpisode.2.EpisodeTitle)][/B]</label>
 						<wrapmultiline>true</wrapmultiline>
 						<visible>[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]</visible>
 					</control>
@@ -2477,7 +2477,7 @@
 						<width>260</width>
 						<height>110</height>
 						<aspectratio align="left">keep</aspectratio>
-						<texture background="true" diffuse="shade/episodematteNF.png">$INFO[Window.Property(LatestEpisode.8.thumb)]</texture>
+						<texture background="true" diffuse="shade/episodematteNF.png">$INFO[Window.Property(RandomEpisode.1.thumb)]</texture>
 						<bordertexture border="2">Shade/folder-focus-white.png</bordertexture>
 						<bordersize>2</bordersize>
 					</control>
@@ -2491,7 +2491,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Window.Property(LatestEpisode.8.ShowTitle)]</label>
+						<label>$INFO[Window.Property(RandomEpisode.1.ShowTitle)]</label>
 						<visible>[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]</visible>
 					</control>
 					<control type="label">
@@ -2499,12 +2499,12 @@
 						<posy>255</posy>
 						<width>300</width>
 						<height>30</height>
-						<font>Shade_18_Bold</font>
+						<font>Shade_16_Bold</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>[B]$INFO[Window.Property(LatestEpisode.8.EpisodeTitle)][/B]</label>
+						<label>[B]$INFO[Window.Property(RandomEpisode.1.EpisodeTitle)][/B]</label>
 						<wrapmultiline>true</wrapmultiline>
 						<visible>[Container(9000).Hasfocus(2) + !Skin.HasSetting(HomeMenuNoTVShowsButton)]</visible>
 					</control>
@@ -3052,7 +3052,7 @@
 						<aspectratio align="left">keep</aspectratio>
 						<bordertexture border="2">Shade/folder-focus-white.png</bordertexture>
 						<bordersize>2</bordersize>
-						<texture background="true" diffuse="shade/episodematteNF.png">$INFO[Window.Property(LatestSong.8.Thumb)]</texture>
+						<texture background="true" diffuse="shade/episodematteNF.png">$INFO[Window.Property(RandomSong.1.Thumb)]</texture>
 					</control>
 					<control type="image">
 						<posx>470</posx>
@@ -3073,7 +3073,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Window.Property(LatestSong.8.Artist)]</label>
+						<label>$INFO[Window.Property(RandomSong.1.Artist)]</label>
 						<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
 					</control>
 					<control type="label">
@@ -3086,7 +3086,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Window.Property(LatestSong.8.Album)]</label>
+						<label>$INFO[Window.Property(RandomSong.1.Album)]</label>
 						<wrapmultiline>true</wrapmultiline>
 						<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
 					</control>
@@ -3100,7 +3100,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>Released:  $INFO[Window.Property(LatestSong.8.Year)]</label>
+						<label>Released:  $INFO[Window.Property(RandomSong.1.Year)]</label>
 						<visible>[Container(9000).Hasfocus(4) + !Skin.HasSetting(HomeMenuNoMusicButton)]</visible>
 					</control>
 				</control>
@@ -3546,207 +3546,571 @@
 				<posy>310</posy>
 				<visible>Container(9000).Hasfocus(8)</visible>
 				<include>VisibleFadeEffect</include>
-
-				<control type="label">
-					<description>Title label</description>
-					<posx>100</posx>
-					<posy>5</posy>
-					<height>20</height>
-					<width>180</width>
-					<label>Get CD Art</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>Shade_35_UltraThin</font>
-					<textcolor>white</textcolor>
-				</control>	
-				<control type="label">
-					<description>Title label</description>
-					<posx>520</posx>
-					<posy>5</posy>
-					<height>20</height>
-					<width>180</width>
-					<label>Get Nzbs</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>Shade_35_UltraThin</font>
-					<textcolor>white</textcolor>
-				</control>	
-				<control type="label">
-					<description>Title label</description>
-					<posx>940</posx>
-					<posy>5</posy>
-					<height>20</height>
-					<width>180</width>
-					<label>Get Mail</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>Shade_35_UltraThin</font>
-					<textcolor>white</textcolor>
-				</control>	
-				<control type="group" id="11">
-					<control type="button" id="23">
-						<description>Power push button</description>
-						<posx>100</posx>
-						<posy>70</posy>
-						<width>180</width>
-						<height>180</height>
-						<label>31003</label>
-						<font>-</font>
-						<aligny>-</aligny>
-						<onclick>RunScript(script.cdartmanager)</onclick>
-						<texturefocus>Shade/cd_art_full.png</texturefocus>
-						<texturenofocus>Shade/cd_art_half.png</texturenofocus>
-						<onleft>25</onleft>
-						<onright>24</onright>
-						<onup>9000</onup>
-						<ondown>9000</ondown>
-					</control>
-					<control type="button" id="24">
-						<description>Power push button</description>
-						<posx>525</posx>
-						<posy>70</posy>
-						<width>180</width>
-						<height>180</height>
-						<label>31003</label>
-						<font>-</font>
-						<aligny>-</aligny>
-						<onclick>ActivateWindow(10001,plugin://plugin.program.SABnzbd/)</onclick>
-						<texturefocus>Shade/sabnzb_full.png</texturefocus>
-						<texturenofocus>Shade/sabnzb_half.png</texturenofocus>
-						<onleft>23</onleft>
-						<onright>25</onright>
-						<onup>9000</onup>
-						<ondown>9000</ondown>
-					</control>
-					<control type="button" id="25">
-						<description>Power push button</description>
-						<posx>945</posx>
-						<posy>70</posy>
-						<width>180</width>
-						<height>180</height>
-						<label>31003</label>
-						<font>-</font>
-						<aligny>-</aligny>
-						<onclick>RunScript(script.gmail.checker)</onclick>
-						<texturefocus>Shade/gmail_full.png</texturefocus>
-						<texturenofocus>Shade/gmail_half.png</texturenofocus>
-						<onleft>24</onleft>
-						<onright>23</onright>
-						<onup>9000</onup>
-						<ondown>9000</ondown>
-					</control>
+				<control type="list" id="8009">
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>1400</width>
+					<height>500</height>
+					<onleft>8009</onleft>
+					<onright>8009</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<orientation>horizontal</orientation>
+					<viewtype label="535">list</viewtype>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>0</scrolltime>
+					<visible>Skin.HasSetting(HomeScriptButton1) | Skin.HasSetting(HomeScriptButton2) | Skin.HasSetting(HomeScriptButton3)</visible>
+					<itemlayout height="150" width="465">
+								<control type="label">
+									<posx>150</posx>
+									<posy>-10</posy>
+									<width>200</width>
+									<height>40</height>
+									<font>Shade_24</font>
+									<textcolor>white</textcolor>
+									<selectedcolor>selected</selectedcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.label]</label>
+									<wrapmultiline>true</wrapmultiline>
+								</control>	
+								<control type="image">
+									<posx>50</posx>
+									<posy>30</posy>
+									<width>200</width>
+									<height>200</height>
+									<aspect>scale</aspect>
+									<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Thumb]</texture>
+									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
+									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
+								</control>
+					</itemlayout>
+					<focusedlayout height="150" width="465">
+						<control type="label">
+								<posx>150</posx>
+								<posy>-10</posy>
+								<width>200</width>
+								<height>40</height>
+								<font>Shade_24</font>
+								<textcolor>white</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.label]</label>
+								<wrapmultiline>true</wrapmultiline>
+							</control>
+								<control type="image">
+									<posx>50</posx>
+									<posy>30</posy>
+									<width>200</width>
+									<height>200</height>
+									<aspect>scale</aspect>
+									<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Thumb]</texture>
+									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
+									<animation effect="zoom" start="100" end="110" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+								</control>
+						</focusedlayout>
+					<content>
+						<item id="1">
+							<label>$INFO[Skin.String(HomeScriptButton1_label)]</label>
+							<label2>-</label2>
+							<onclick>XBMC.RunScript($INFO[Skin.String(HomeScriptButton1_Path)])</onclick>
+							<icon>-</icon>
+							<thumb>$INFO[Skin.String(HomeScriptButton1_Image)]</thumb>
+							<visible>Skin.HasSetting(HomeScriptButton1)</visible>
+						</item>
+						<item id="2">
+							<label>$INFO[Skin.String(HomeScriptButton2_label)]</label>
+							<label2>-</label2>
+							<onclick>XBMC.RunScript($INFO[Skin.String(HomeScriptButton2_Path)])</onclick>
+							<icon>-</icon>
+							<thumb>$INFO[Skin.String(HomeScriptButton2_Image)]</thumb>
+							<visible>Skin.HasSetting(HomeScriptButton2)</visible>
+						</item>
+						<item id="3">
+							<label>$INFO[Skin.String(HomeScriptButton3_label)]</label>
+							<label2>-</label2>
+							<onclick>XBMC.RunScript($INFO[Skin.String(HomeScriptButton3_Path)])</onclick>
+							<icon>-</icon>
+							<thumb>$INFO[Skin.String(HomeScriptButton3_Image)]</thumb>
+							<visible>Skin.HasSetting(HomeScriptButton3)</visible>
+						</item>
+					</content>
 				</control>
+		</control>
 
-			</control>
-
-			<control type="group">
+		<control type="group">
 				<posx>10</posx>
 				<posy>310</posy>
 				<visible>Container(9000).Hasfocus(9)</visible>
 				<include>VisibleFadeEffect</include>
-
-				<control type="label">
-					<description>Title label</description>
-					<posx>520</posx>
-					<posy>5</posy>
-					<height>20</height>
-					<width>180</width>
-					<label>Pandora</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>Shade_35_UltraThin</font>
-					<textcolor>white</textcolor>
-				</control>	
-
-				<control type="grouplist" id="9066">
+				<control type="list" id="8010">
 					<posx>10</posx>
 					<posy>0</posy>
-					<width>240</width>
-					<height>240</height>
-					<align>center</align>
-					<onleft>8000</onleft>
-					<onright>11</onright>
-					<onup>9000</onup>
-					<ondown>Control.SetFocus(10,0)</ondown>
-					<itemgap>0</itemgap>
-				</control>	
-				<!--<control type="group" id="10">
-				<posx>15</posx>
-				<posy>55r</posy>
-				<control type="button" id="20">
-					<description>Power push button</description>
-					<posx>90</posx>
-					<posy>0</posy>
-					<width>43</width>
-					<height>43</height>
-					<label>31003</label>
-					<font>-</font>
-					<aligny>-</aligny>
-					<onclick>ActivateWindow(ShutdownMenu)</onclick>
-					<texturefocus>home-power-FO.png</texturefocus>
-					<texturenofocus>home-power.png</texturenofocus>
-					<onleft>21</onleft>
-					<onright>9000</onright>
+					<width>1400</width>
+					<height>500</height>
+					<onleft>8010</onleft>
+					<onright>8010</onright>
 					<onup>9000</onup>
 					<ondown>9000</ondown>
+					<orientation>horizontal</orientation>
+					<viewtype label="535">list</viewtype>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>0</scrolltime>
+					<visible>Skin.HasSetting(HomeAddonButton1) | Skin.HasSetting(HomeAddonButton2) | Skin.HasSetting(HomeAddonButton3)</visible>
+					<itemlayout height="150" width="465">
+								<control type="label">
+									<posx>150</posx>
+									<posy>-10</posy>
+									<width>200</width>
+									<height>40</height>
+									<font>Shade_24</font>
+									<textcolor>white</textcolor>
+									<selectedcolor>selected</selectedcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.label]</label>
+									<wrapmultiline>true</wrapmultiline>
+								</control>	
+								<control type="image">
+									<posx>50</posx>
+									<posy>30</posy>
+									<width>200</width>
+									<height>200</height>
+									<aspect>scale</aspect>
+									<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Thumb]</texture>
+									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
+									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
+								</control>
+					</itemlayout>
+					<focusedlayout height="150" width="465">
+						<control type="label">
+								<posx>150</posx>
+								<posy>-10</posy>
+								<width>200</width>
+								<height>40</height>
+								<font>Shade_24</font>
+								<textcolor>white</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.label]</label>
+								<wrapmultiline>true</wrapmultiline>
+							</control>
+								<control type="image">
+									<posx>50</posx>
+									<posy>30</posy>
+									<width>200</width>
+									<height>200</height>
+									<aspect>scale</aspect>
+									<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Thumb]</texture>
+									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
+									<animation effect="zoom" start="100" end="110" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+								</control>
+						</focusedlayout>
+					<content>
+						<item id="1">
+							<label>$INFO[Skin.String(HomeAddonButton1_label)]</label>
+							<label2>-</label2>
+							<onclick>XBMC.RunScript($INFO[Skin.String(HomeAddonButton1_Path)])</onclick>
+							<icon>-</icon>
+							<thumb>$INFO[Skin.String(HomeAddonButton1_Image)]</thumb>
+							<visible>Skin.HasSetting(HomeAddonButton1)</visible>
+						</item>
+						<item id="2">
+							<label>$INFO[Skin.String(HomeAddonButton2_label)]</label>
+							<label2>-</label2>
+							<onclick>XBMC.RunScript($INFO[Skin.String(HomeAddonButton2_Path)])</onclick>
+							<icon>-</icon>
+							<thumb>$INFO[Skin.String(HomeAddonButton2_Image)]</thumb>
+							<visible>Skin.HasSetting(HomeAddonButton2)</visible>
+						</item>
+						<item id="3">
+							<label>$INFO[Skin.String(HomeAddonButton3_label)]</label>
+							<label2>-</label2>
+							<onclick>XBMC.RunScript($INFO[Skin.String(HomeAddonButton3_Path)])</onclick>
+							<icon>-</icon>
+							<thumb>$INFO[Skin.String(HomeAddonButton3_Image)]</thumb>
+							<visible>Skin.HasSetting(HomeAddonButton3)</visible>
+						</item>
+					</content>
 				</control>
-				<control type="button" id="21">
-					<description>Favourites push button</description>
-					<posx>45</posx>
-					<posy>0</posy>
-					<width>43</width>
-					<height>43</height>
-					<label>1036</label>
-					<font>-</font>
-					<aligny>-</aligny>
-					<onclick>ActivateWindow(Favourites)</onclick>
-					<texturefocus>home-favourites-FO.png</texturefocus>
-					<texturenofocus>home-favourites.png</texturenofocus>
-					<onleft>22</onleft>
-					<onright>20</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-				</control>
-				<control type="button" id="22">
-					<description>Play Disc Media push button</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>43</width>
-					<height>43</height>
-					<label>16004</label>
-					<font>-</font>
-					<aligny>-</aligny>
-					<onclick>ActivateWindow(1113)</onclick>
-					<texturefocus>home-playmedia-FO.png</texturefocus>
-					<texturenofocus>home-playmedia.png</texturenofocus>
-					<onleft>9000</onleft>
-					<onright>21</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-				</control>
-			</control>-->
+		</control>
 
-				<control type="group" id="11">
-					<control type="button" id="23">
-						<description>Power push button</description>
-						<posx>525</posx>
-						<posy>70</posy>
-						<width>180</width>
-						<height>180</height>
-						<label>31003</label>
-						<font>-</font>
-						<aligny>-</aligny>
-						<onclick>RunScript(script.xbmc.pandora)</onclick>
-						<texturefocus>Shade/Pandora_F.png</texturefocus>
-						<texturenofocus>Shade/Pandora_NF.png</texturenofocus>
-						<onleft>8000</onleft>
-						<onright>8001</onright>
-						<onup>9000</onup>
-						<ondown>9000</ondown>
-					</control>
+		<control type="group">
+			<visible>Skin.HasSetting(HomeGenreButton)</visible>
+				<posx>10</posx>
+				<posy>310</posy>
+				<visible>Container(9000).Hasfocus(3)</visible>
+				<include>VisibleFadeEffect</include>
+				<control type="list" id="8011">
+					<posx>-20</posx>
+					<posy>0</posy>
+					<width>1400</width>
+					<height>500</height>
+					<onleft>8011</onleft>
+					<onright>8011</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<orientation>horizontal</orientation>
+					<viewtype label="535">list</viewtype>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<itemlayout height="400" width="465">
+								<control type="image">
+									<posx>80</posx>
+									<posy>20</posy>
+									<width>210</width>
+									<height>300</height>
+									<aspect>scale</aspect>
+									<texture diffuse="Shade/posterdiffuse.png">$INFO[ListItem.Thumb]</texture>
+									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
+									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
+									<bordertexture border="8">ThumbShadow.png</bordertexture>
+									<bordersize>8</bordersize>
+								</control>
+					</itemlayout>
+					<focusedlayout height="400" width="465">
+								<control type="image">
+									<posx>80</posx>
+									<posy>20</posy>
+									<width>210</width>
+									<height>300</height>
+									<aspect>scale</aspect>
+									<texture diffuse="Shade/posterdiffuse.png">$INFO[ListItem.Thumb]</texture>
+									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
+									<animation effect="zoom" start="100" end="110" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+									<bordertexture border="8">ThumbShadow.png</bordertexture>
+									<bordersize>8</bordersize>
+								</control>
+						</focusedlayout>
+					<content>
+						<item id="1">
+							<label>Action</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAction.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/action.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButtonAction)</visible>
+						</item>
+						<item id="2">
+							<label>Adult</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAdult.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/adult.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton2)</visible>
+						</item>
+						<item id="3">
+							<label>Adventure</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAdventure.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/adventure.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton3)</visible>
+						</item>
+						<item id="4">
+							<label>Animation</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAnimation.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/animation.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton4)</visible>
+						</item>
+						<item id="5">
+							<label>Anime</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreAnime.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/anime.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton5)</visible>
+						</item>
+						<item id="6">
+							<label>Biography</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreBiography.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/biography.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton6)</visible>
+						</item>
+						<item id="8">
+							<label>Bollywood</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreBollywood.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/bollywood.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton8)</visible>
+						</item>
+						<item id="9">
+							<label>Children</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreChildren.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/children.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton9)</visible>
+						</item>
+						<item id="10">
+							<label>Christmas</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreChristmas.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/christmas.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton10)</visible>
+						</item>
+						<item id="11">
+							<label>Comedy</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreComedy.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/comedy.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton11)</visible>
+						</item>
+						<item id="12">
+							<label>Concert</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreConcert.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/concert.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton12)</visible>
+						</item>
+						<item id="13">
+							<label>Crime</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreCrime.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/crime.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton13)</visible>
+						</item>
+						<item id="14">
+							<label>Disaster</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreDisaster.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/disaster.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton14)</visible>
+						</item>
+						<item id="15">
+							<label>Documentary</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreDocumentary.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/documentary.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton15)</visible>
+						</item>
+						<item id="16">
+							<label>Drama</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreDrama.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/drama.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton16)</visible>
+						</item>
+						<item id="17">
+							<label>Family</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreFamily.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/family.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton17)</visible>
+						</item>
+						<item id="18">
+							<label>Fantasy</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreFantasy.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/fantasy.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton18)</visible>
+						</item>
+						<item id="19">
+							<label>Halloween</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHalloween.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/halloween.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton19)</visible>
+						</item>
+						<item id="20">
+							<label>Hentai</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHentai.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/hentai.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton20)</visible>
+						</item>
+						<item id="21">
+							<label>History</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHistory.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/history.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton21)</visible>
+						</item>
+						<item id="22">
+							<label>Horror</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreHorror.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/horror.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton22)</visible>
+						</item>
+						<item id="23">
+							<label>independent</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreIndependent.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/independent.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton23)</visible>
+						</item>
+						<item id="24">
+							<label>monster</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMonster.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/monster.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton24)</visible>
+						</item>
+						<item id="25">
+							<label>music</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMusic.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/music.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton25)</visible>
+						</item>
+						<item id="26">
+							<label>musical</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMusical.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/musical.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton26)</visible>
+						</item>
+						<item id="27">
+							<label>mystery</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreMystery.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/mystery.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton27)</visible>
+						</item>
+						<item id="28">
+							<label>nature</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreNature.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/nature.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton28)</visible>
+						</item>
+						<item id="29">
+							<label>religion</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreReligion.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/religion.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton29)</visible>
+						</item>
+						<item id="30">
+							<label>romance</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreRomance.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/romance.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton30)</visible>
+						</item>
+						<item id="31">
+							<label>sci-fi</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSciFi.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/sci-fi.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton31)</visible>
+						</item>
+						<item id="32">
+							<label>short</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreShort.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/short.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton32)</visible>
+						</item>
+						<item id="33">
+							<label>sport</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSports.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/sport.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton33)</visible>
+						</item>
+						<item id="34">
+							<label>superhero</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSuperhero.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/superhero.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton34)</visible>
+						</item>
+						<item id="35">
+							<label>supernatural</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreSupernatural.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/supernatural.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton35)</visible>
+						</item>
+						<item id="36">
+							<label>Thriller</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreThriller.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/thriller.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton36)</visible>
+						</item>
+						<item id="37">
+							<label>war</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreWar.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/war.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton37)</visible>
+						</item>
+						<item id="38">
+							<label>western</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreWestern.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/western.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton38)</visible>
+						</item>
+						<item id="39">
+							<label>wrestling</label>
+							<label2>-</label2>
+							<onclick>ActivateWindow(MyVideoLibrary,special://skin/extras/playlists/GenreWrestling.xsp)</onclick> 
+							<icon>-</icon>
+							<thumb>special://skin/media/Shade/genres/wrestling.jpg</thumb>
+							<visible>Skin.HasSetting(HomeGenreButton39)</visible>
+						</item>
+					</content>
 				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>150</posy>
+					<width>35</width>
+					<height>35</height>
+					<texture background="true">Shade/Left_Arrow.png</texture> 
+									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
+					<visible>Skin.HasSetting(HomeGenreButton) + Container(8011).HasPrevious</visible>
+				</control>
+				<control type="image">
+					<posx>1210</posx>
+					<posy>150</posy>
+					<width>35</width>
+					<height>35</height>
+					<texture background="true" flipx="true">Shade/Left_Arrow.png</texture> 
+									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
+					<visible>Skin.HasSetting(HomeGenreButton) + Container(8011).HasNext</visible>
+				</control>		
+		</control>
 
-			</control>
 		</control>
 	</control>
 </include>

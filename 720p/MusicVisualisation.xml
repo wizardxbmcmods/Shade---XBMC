@@ -1,6 +1,7 @@
 <window id="2006">
 	<defaultcontrol>-</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<zorder>3</zorder>
 	<controls>
 
 		<control type="visualisation" id="2">
@@ -324,7 +325,7 @@
 			<control type="label">
 				<posx>0</posx>
 				<posy>-5</posy>
-				<width>750</width>
+				<width>690</width>
 				<height>25</height>
 				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]</label>
 				<align>left</align>
@@ -371,7 +372,7 @@
 			<control type="label">
 				<posx>818</posx>
 				<posy>55</posy>
-				<width>700</width>
+				<width>600</width>
 				<height>20</height>
 				<label>[COLOR=white]$LOCALIZE[209] :[/COLOR] $INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Title]</label>
 				<align>right</align>
@@ -459,8 +460,8 @@
 </control>
 <control type="group">
 	<visible>Player.ShowInfo</visible>
-	<animation effect="slide" start="0,0" end="160,0" delay="0" time="300" condition="!Window.IsVisible(MusicOSD)">hidden</animation>
-	<animation effect="slide" start="160,0" end="0,0" delay="0" time="300" condition="!Window.IsVisible(MusicOSD)">visible</animation>
+	<animation effect="slide" start="0,0" end="-160,0" delay="0" time="300" condition="!Window.IsVisible(MusicOSD)">hidden</animation>
+	<animation effect="slide" start="-160,0" end="0,0" delay="0" time="300" condition="!Window.IsVisible(MusicOSD)">visible</animation>
 	<include>Clock</include>
 </control>
 <control type="group" id="0">
@@ -568,8 +569,10 @@
 
 <!-- Mod- group animation -->
 
-
-
+<control type="group">
+	<visible>Player.ShowInfo</visible>
+	<animation effect="slide" start="0,0" end="-500,0" delay="0" time="300">hidden</animation>
+	<animation effect="slide" start="-500,0" end="0,0" delay="0" time="300">visible</animation>
 <control type="image">
 	<description>Cd overlay</description>
 	<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
@@ -587,6 +590,26 @@
 	<!-- -143 -->
 	<texture fallback="cd/default.png">$INFO[Player.FolderPath]/cdart.png</texture>
 	<aspectratio align="bottom">keep</aspectratio>
+	<visible>!Skin.HasSetting(PandoraVis)</visible>
+</control>
+<control type="image">
+	<description>Cd overlay</description>
+	<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+	<animation type="WindowClose">
+		<effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0"/>
+		<effect type="fade" start="100" end="0" time="1300"/>
+		<condition type="!Player.Playing"/>
+	</animation>
+	<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+	<width>275</width>
+	<height>260</height>
+	<posx>165</posx>
+	<!-- 112 -->
+	<posy>412</posy>
+	<!-- -143 -->
+	<texture fallback="cd/default_pandora.png">$INFO[Player.FolderPath]/cdart.png</texture>
+	<aspectratio align="bottom">keep</aspectratio>
+	<visible>Skin.HasSetting(PandoraVis)</visible>
 </control>
 <control type="image">
 	<description>cover image</description>
@@ -618,6 +641,6 @@
 			<aspectratio align="bottom">stretch</aspectratio>
 			<animation effect="slide" start="-118" end="0" time="300" tween="cubic" easing="out" delay="500">WindowOpen</animation>
 		</control>-->
-
+</control>
 </controls>
 </window>
