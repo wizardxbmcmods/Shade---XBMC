@@ -404,6 +404,12 @@
 			</control>					
 		</control>
 
+		<control type="group">
+			<include>CommonNowPlayingLibrary</include>
+			<visible>!Control.isVisible(50)</visible>
+			<posx>800</posx>
+			<posy>-200</posy>
+		</control>
 		<include>Clock</include>
 	</controls>
 </window>

@@ -926,6 +926,69 @@
 			</control>
 		</control>
 	</include>
+
+<include name="CommonNowPlayingLibrary">
+		<animation effect="slide" start="0,0" end="500,0" delay="0" time="300">WindowClose</animation>
+		<animation effect="slide" start="500,0" end="0,0" delay="0" time="300">WindowOpen</animation>
+		<control type="group">
+			<posx>250</posx>
+			<posy>200</posy>
+			<visible>Player.HasAudio</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="button" id="608">
+				<posx>38</posx>
+				<posy>0</posy>
+				<width>164</width>
+				<height>164</height>
+				<label>-</label>
+				<texturefocus border="5">folder-focus.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>603</onup>
+				<ondown>611</ondown>
+				<onclick>fullscreen</onclick>
+			</control>
+			<control type="image">
+				<posx>40</posx>
+				<posy>2</posy>
+				<width>160</width>
+				<height>160</height>
+				<texture>$INFO[MusicPlayer.Cover]</texture>
+				<bordertexture border="3">black-back2.png</bordertexture>
+				<bordersize>5</bordersize>
+				<aspectratio align="center">keep</aspectratio>
+			</control>
+			<control type="fadelabel">
+				<posx>-345</posx>
+				<posy>15</posy>
+				<width>370</width>
+				<height>20</height>
+				<label>$INFO[MusicPlayer.Title]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>Shade_18</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<scrollout>false</scrollout>
+				<pauseatend>2000</pauseatend>
+			</control>
+			<control type="fadelabel">
+				<posx>-345</posx>
+				<posy>35</posy>
+				<width>370</width>
+				<height>20</height>
+				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, | ]</label>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>Shade_16</font>
+				<textcolor>grey2</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<scrollout>false</scrollout>
+				<pauseatend>2000</pauseatend>
+			</control>
+		</control>
+</include>
 	<include name="ScrollOffsetLabel">
 		<control type="group">
 			<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556])]</visible>
