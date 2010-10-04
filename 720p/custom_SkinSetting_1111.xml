@@ -2557,12 +2557,13 @@
 							<height>40</height>
 							<font>Shade_20</font>
 							<label> - $LOCALIZE[31133]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton1_Path)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(VideoButtonPathScript_1)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
 							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
-							<onclick>Skin.SetAddon(HomeAddonButton1_Path,xbmc.python.pluginsource)</onclick>
+							<onclick>Skin.SetAddon(VideoButtonPathScript_1,xbmc.python.pluginsource)</onclick>
+							<onclick>Skin.SetString(VideoButtonPath_1,ActivateWindow(videofiles,plugin://$INFO[Skin.String(VideoButtonPathScript_1)]))</onclick>
 							<visible>Skin.HasSetting(HomeAddonButton1)</visible>
 						</control>
 						<control type="button" id="704">
@@ -2608,12 +2609,13 @@
 							<height>40</height>
 							<font>Shade_20</font>
 							<label> - $LOCALIZE[31133]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton2_Path)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(VideoButtonPathScript_2)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
 							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
-							<onclick>Skin.SetAddon(HomeAddonButton2_Path,xbmc.python.pluginsource)</onclick>
+							<onclick>Skin.SetAddon(VideoButtonPathScript_2,xbmc.python.pluginsource)</onclick>
+							<onclick>Skin.SetString(VideoButtonPath_2,ActivateWindow(videofiles,plugin://$INFO[Skin.String(VideoButtonPathScript_2)]))</onclick>
 							<visible>Skin.HasSetting(HomeAddonButton2)</visible>
 						</control>
 						<control type="button" id="708">
@@ -2659,12 +2661,13 @@
 							<height>40</height>
 							<font>Shade_20</font>
 							<label> - $LOCALIZE[31133]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonButton3_Path)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(VideoButtonPathScript_3)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
 							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
-							<onclick>Skin.SetAddon(HomeAddonButton3_Path,xbmc.python.pluginsource)</onclick>
+							<onclick>Skin.SetAddon(VideoButtonPathScript_3,xbmc.python.pluginsource)</onclick>
+							<onclick>Skin.SetString(VideoButtonPath_3,ActivateWindow(videofiles,plugin://$INFO[Skin.String(VideoButtonPathScript_3)]))</onclick>
 							<visible>Skin.HasSetting(HomeAddonButton3)</visible>
 						</control>
 						<control type="button" id="712">

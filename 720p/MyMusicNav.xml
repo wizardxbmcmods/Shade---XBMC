@@ -407,6 +407,8 @@
 		<control type="group">
 			<include>CommonNowPlayingLibrary</include>
 			<visible>!Control.isVisible(50)</visible>
+			<visible>![Control.isVisible(512) +Container.Content(Artists)]</visible>
+			<animation effect="slide" end="0,80" time="0" reversible="false" condition="Control.isVisible(509)">Conditional</animation>
 			<posx>800</posx>
 			<posy>-200</posy>
 		</control>

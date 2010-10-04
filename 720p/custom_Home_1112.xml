@@ -873,7 +873,7 @@
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>-->
 								</control>
-				<control type="list" id="9003">
+			<!--<control type="list" id="9003">
 					<posx>10</posx>
 					<posy>0</posy>
 					<width>1400</width>
@@ -901,7 +901,7 @@
 									<label>$INFO[ListItem.label]</label>
 									<wrapmultiline>true</wrapmultiline>
 								</control>-->	
-								<control type="image">
+								<!--<control type="image">
 									<posx>50</posx>
 									<posy>30</posy>
 									<width>200</width>
@@ -910,7 +910,7 @@
 									<texture>$INFO[ListItem.Thumb]</texture>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8010)">Conditional</animation>!-->
-									<bordertexture border="8">ThumbShadow.png</bordertexture>
+									<!--<bordertexture border="8">ThumbShadow.png</bordertexture>
 									<bordersize>8</bordersize>
 								</control>
 								<control type="image">
@@ -923,7 +923,7 @@
 									<visible>Control.HasFocus(9000) | Control.HasFocus(9002) | Control.HasFocus(9001) | Control.HasFocus(9004)</visible>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8010)">Conditional</animation>!-->
-									<bordertexture border="8">ThumbShadow.png</bordertexture>
+									<!--<bordertexture border="8">ThumbShadow.png</bordertexture>
 									<bordersize>8</bordersize>
 								</control>
 								<control type="image">
@@ -935,7 +935,7 @@
 									<texture diffuse="custom_home_program_diffuse.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>-->
-									<bordertexture border="8"></bordertexture>
+								<!--	<bordertexture border="8"></bordertexture>
 									<bordersize>8</bordersize>
 								</control>
 								<control type="image">
@@ -948,7 +948,7 @@
 									<texture diffuse="custom_home_program_diffuse.png" flipy="true">black-back.png</texture>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>-->
-									<bordertexture border="8"></bordertexture>
+								<!--	<bordertexture border="8"></bordertexture>
 									<bordersize>8</bordersize>
 								</control>
 					</itemlayout>
@@ -966,7 +966,7 @@
 								<label>$INFO[ListItem.label]</label>
 								<wrapmultiline>true</wrapmultiline>
 							</control>-->
-								<control type="image">
+								<!--<control type="image">
 									<posx>50</posx>
 									<posy>207</posy>
 									<width>200</width>
@@ -975,7 +975,7 @@
 									<texture diffuse="custom_home_program_diffuse.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>-->
-									<bordertexture border="8"></bordertexture>
+									<!--<bordertexture border="8"></bordertexture>
 									<bordersize>8</bordersize>
 								</control>
 								<control type="image">
@@ -988,7 +988,7 @@
 									<texture diffuse="custom_home_program_diffuse.png" flipy="true">black-back.png</texture>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>-->
-									<bordertexture border="8"></bordertexture>
+									<!--<bordertexture border="8"></bordertexture>
 									<bordersize>8</bordersize>
 								</control>
 								<control type="image">
@@ -999,7 +999,7 @@
 									<aspect>scale</aspect>
 									<texture>$INFO[ListItem.Thumb]</texture>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>-->
-									<animation effect="zoom" start="100" end="110" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+									<!--<animation effect="zoom" start="100" end="110" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
 									<bordertexture border="8">Thumbfocus.png</bordertexture>
 									<bordersize>8</bordersize>
 								</control>
@@ -1013,7 +1013,7 @@
 									<visible>Control.HasFocus(9000) | Control.HasFocus(9002) | Control.HasFocus(9001) | Control.HasFocus(9004)</visible>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8010)">Conditional</animation>!-->
-									<bordertexture border="8">ThumbShadow.png</bordertexture>
+									<!--<bordertexture border="8">ThumbShadow.png</bordertexture>
 									<bordersize>8</bordersize>
 								</control>
 						</focusedlayout>
@@ -1061,7 +1061,7 @@
 									<visible>Control.HasFocus(9004)</visible> 
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>-->
-								</control>
+							<!--	</control>
 								<control type="image">
 									<posx>-22</posx>
 									<posy>200</posy>
@@ -1073,7 +1073,7 @@
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9001)">Conditional</animation>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>-->
-								</control>
+								<!--</control>
 								<control type="image">
 									<posx>-22</posx>
 									<posy>200</posy>
@@ -1087,7 +1087,7 @@
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>-->
-								</control>
+								<!--</control>
 				<include>VisibleFadeEffect</include>
 				<control type="list" id="9004">
 					<posx>10</posx>
@@ -1117,7 +1117,7 @@
 									<label>$INFO[ListItem.label]</label>
 									<wrapmultiline>true</wrapmultiline>
 								</control>-->	
-								<control type="image">
+								<!--<control type="image">
 									<posx>50</posx>
 									<posy>30</posy>
 									<width>200</width>
@@ -1125,7 +1125,7 @@
 									<aspect>scale</aspect>
 									<texture>$INFO[ListItem.Thumb]</texture>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>-->
-									<bordertexture border="8">ThumbShadow.png</bordertexture>
+								<!--	<bordertexture border="8">ThumbShadow.png</bordertexture>
 									<bordersize>8</bordersize>
 								</control>
 								<control type="image">
@@ -1138,7 +1138,7 @@
 									<visible>Control.HasFocus(9000) | Control.HasFocus(9002) | Control.HasFocus(9001) | Control.HasFocus(9003)</visible>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8010)">Conditional</animation>!-->
-									<bordertexture border="8">ThumbShadow.png</bordertexture>
+								<!--	<bordertexture border="8">ThumbShadow.png</bordertexture>
 									<bordersize>8</bordersize>
 								</control>
 								<control type="image">
@@ -1152,7 +1152,7 @@
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>-->
 									<bordertexture border="8"></bordertexture>
 									<bordersize>8</bordersize>
-								</control>
+							<!--	</control>
 								<control type="image">
 									<posx>50</posx>
 									<posy>207</posy>
@@ -1163,7 +1163,7 @@
 									<texture diffuse="custom_home_program_diffuse.png" flipy="true">black-back.png</texture>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>-->
-									<bordertexture border="8"></bordertexture>
+								<!--	<bordertexture border="8"></bordertexture>
 									<bordersize>8</bordersize>
 								</control>
 					</itemlayout>
@@ -1181,7 +1181,7 @@
 								<label>$INFO[ListItem.label]</label>
 								<wrapmultiline>true</wrapmultiline>
 							</control>-->
-								<control type="image">
+								<!--<control type="image">
 									<posx>50</posx>
 									<posy>207</posy>
 									<width>200</width>
@@ -1190,7 +1190,7 @@
 									<texture diffuse="custom_home_program_diffuse.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>-->
-									<bordertexture border="8"></bordertexture>
+									<!--<bordertexture border="8"></bordertexture>
 									<bordersize>8</bordersize>
 								</control>
 								<control type="image">
@@ -1203,7 +1203,7 @@
 									<texture diffuse="custom_home_program_diffuse.png" flipy="true">black-back.png</texture>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>-->
-									<bordertexture border="8"></bordertexture>
+									<!--<bordertexture border="8"></bordertexture>
 									<bordersize>8</bordersize>
 								</control>
 								<control type="image">
@@ -1214,7 +1214,7 @@
 									<aspectratio>stretch</aspectratio>
 									<texture>$INFO[ListItem.Thumb]</texture>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>-->
-									<animation effect="zoom" start="100" end="110" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+									<!--<animation effect="zoom" start="100" end="110" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
 									<bordertexture border="8">Thumbfocus.png</bordertexture>
 									<bordersize>8</bordersize>
 								</control>
@@ -1229,7 +1229,7 @@
 									<animation effect="zoom" start="100" end="110" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
 									<!--<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8010)">Conditional</animation>!-->
-									<bordertexture border="8">Thumbshadow.png</bordertexture>
+									<!--<bordertexture border="8">Thumbshadow.png</bordertexture>
 									<bordersize>8</bordersize>
 								</control>
 						</focusedlayout>
@@ -1259,7 +1259,7 @@
 							<visible>Skin.HasSetting(HomeScriptButton3)</visible>
 						</item>
 					</content>
-				</control>
+				</control>-->
 		</control>
 			
 

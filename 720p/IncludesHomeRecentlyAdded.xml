@@ -3548,7 +3548,7 @@
 				<include>VisibleFadeEffect</include>
 				<control type="list" id="8009">
 					<posx>10</posx>
-					<posy>0</posy>
+					<posy>10</posy>
 					<width>1400</width>
 					<height>500</height>
 					<onleft>8009</onleft>
@@ -3579,10 +3579,16 @@
 									<posy>30</posy>
 									<width>200</width>
 									<height>200</height>
-									<aspect>scale</aspect>
+									<aspectratio>stretch</aspectratio>
 									<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Thumb]</texture>
-									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
-									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8009)">Conditional</animation>
+								</control>
+								<control type="image">
+									<posx>50</posx>
+									<posy>30</posy>
+									<width>200</width>
+									<height>200</height>
+									<aspectratio>stretch</aspectratio>
+									<texture diffuse="custom_script_diffuse.png">black-back.png</texture>
 								</control>
 					</itemlayout>
 					<focusedlayout height="150" width="465">
@@ -3604,10 +3610,18 @@
 									<posy>30</posy>
 									<width>200</width>
 									<height>200</height>
-									<aspect>scale</aspect>
+									<aspectratio>stretch</aspectratio>
 									<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Thumb]</texture>
-									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
-									<animation effect="zoom" start="100" end="110" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+									<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+								</control>
+								<control type="image">
+									<posx>50</posx>
+									<posy>30</posy>
+									<width>200</width>
+									<height>200</height>
+									<aspectratio>stretch</aspectratio>
+									<texture diffuse="custom_script_diffuse.png">black-back.png</texture>
+									<visible>Control.HasFocus(9000)</visible>
 								</control>
 						</focusedlayout>
 					<content>
@@ -3646,7 +3660,7 @@
 				<include>VisibleFadeEffect</include>
 				<control type="list" id="8010">
 					<posx>10</posx>
-					<posy>0</posy>
+					<posy>10</posy>
 					<width>1400</width>
 					<height>500</height>
 					<onleft>8010</onleft>
@@ -3677,10 +3691,16 @@
 									<posy>30</posy>
 									<width>200</width>
 									<height>200</height>
-									<aspect>scale</aspect>
+									<aspectratio>stretch</aspectratio>
 									<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Thumb]</texture>
-									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
-									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8010)">Conditional</animation>
+								</control>
+								<control type="image">
+									<posx>50</posx>
+									<posy>30</posy>
+									<width>200</width>
+									<height>200</height>
+									<aspectratio>stretch</aspectratio>
+									<texture diffuse="custom_script_diffuse.png">black-back.png</texture>
 								</control>
 					</itemlayout>
 					<focusedlayout height="150" width="465">
@@ -3702,17 +3722,25 @@
 									<posy>30</posy>
 									<width>200</width>
 									<height>200</height>
-									<aspect>scale</aspect>
+									<aspectratio>stretch</aspectratio>
 									<texture diffuse="custom_script_diffuse.png">$INFO[ListItem.Thumb]</texture>
-									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
-									<animation effect="zoom" start="100" end="110" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+									<animation effect="zoom" start="100" end="105" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
+								</control>
+								<control type="image">
+									<posx>50</posx>
+									<posy>30</posy>
+									<width>200</width>
+									<height>200</height>
+									<aspectratio>stretch</aspectratio>
+									<texture diffuse="custom_script_diffuse.png">black-back.png</texture>
+									<visible>Control.HasFocus(9000)</visible>
 								</control>
 						</focusedlayout>
 					<content>
 						<item id="1">
 							<label>$INFO[Skin.String(HomeAddonButton1_label)]</label>
 							<label2>-</label2>
-							<onclick>XBMC.RunScript($INFO[Skin.String(HomeAddonButton1_Path)])</onclick>
+							<onclick>$INFO[Skin.String(VideoButtonPath_1)]</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Skin.String(HomeAddonButton1_Image)]</thumb>
 							<visible>Skin.HasSetting(HomeAddonButton1)</visible>
@@ -3720,7 +3748,7 @@
 						<item id="2">
 							<label>$INFO[Skin.String(HomeAddonButton2_label)]</label>
 							<label2>-</label2>
-							<onclick>XBMC.RunScript($INFO[Skin.String(HomeAddonButton2_Path)])</onclick>
+							<onclick>$INFO[Skin.String(VideoButtonPath_2)]</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Skin.String(HomeAddonButton2_Image)]</thumb>
 							<visible>Skin.HasSetting(HomeAddonButton2)</visible>
@@ -3728,7 +3756,7 @@
 						<item id="3">
 							<label>$INFO[Skin.String(HomeAddonButton3_label)]</label>
 							<label2>-</label2>
-							<onclick>XBMC.RunScript($INFO[Skin.String(HomeAddonButton3_Path)])</onclick>
+							<onclick>$INFO[Skin.String(VideoButtonPath_3)]</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Skin.String(HomeAddonButton3_Image)]</thumb>
 							<visible>Skin.HasSetting(HomeAddonButton3)</visible>
@@ -3762,10 +3790,18 @@
 									<posy>20</posy>
 									<width>210</width>
 									<height>300</height>
-									<aspect>scale</aspect>
-									<texture diffuse="Shade/posterdiffuse.png">$INFO[ListItem.Thumb]</texture>
-									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
-									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>
+									<aspectratio>stretch</aspectratio>
+									<texture>$INFO[ListItem.Thumb]</texture>
+									<bordertexture border="8">ThumbShadow.png</bordertexture>
+									<bordersize>8</bordersize>
+								</control>
+								<control type="image">
+									<posx>80</posx>
+									<posy>20</posy>
+									<width>210</width>
+									<height>300</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>black-back.png</texture>
 									<bordertexture border="8">ThumbShadow.png</bordertexture>
 									<bordersize>8</bordersize>
 								</control>
@@ -3776,12 +3812,22 @@
 									<posy>20</posy>
 									<width>210</width>
 									<height>300</height>
-									<aspect>scale</aspect>
-									<texture diffuse="Shade/posterdiffuse.png">$INFO[ListItem.Thumb]</texture>
-									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(9000)">Conditional</animation>
+									<aspectratio>stretch</aspectratio>
+									<texture>$INFO[ListItem.Thumb]</texture>
 									<animation effect="zoom" start="100" end="110" center="auto" time="200" tween="back" easing="out" reversible="false">Focus</animation>
 									<bordertexture border="8">ThumbShadow.png</bordertexture>
 									<bordersize>8</bordersize>
+								</control>
+								<control type="image">
+									<posx>80</posx>
+									<posy>20</posy>
+									<width>210</width>
+									<height>300</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>black-back.png</texture>
+									<bordertexture border="8">ThumbShadow.png</bordertexture>
+									<bordersize>8</bordersize>
+									<visible>Control.HasFocus(9000)</visible>
 								</control>
 						</focusedlayout>
 					<content>

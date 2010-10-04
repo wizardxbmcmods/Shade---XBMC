@@ -149,6 +149,7 @@
 			<include>ListInfoView</include>
 			<!-- view id = 550 -->
 			<include>LowListView</include>
+
 		</control>
 		<include>BehindDialogFadeOut</include>
 		<include>ScrollOffsetLabel</include>

@@ -224,6 +224,7 @@
 						<onup>803</onup>
 						<ondown>803</ondown>
 						<onclick>XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+						<onclick>close</onclick>
 						<visible>Skin.HasSetting(LyricScript_Enable) + !IsEmpty(Skin.String(LyricScript_Path))</visible>
 					</control>
 				</control>

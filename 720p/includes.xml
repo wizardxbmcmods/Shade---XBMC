@@ -961,13 +961,13 @@
 			</control>
 			<control type="fadelabel">
 				<posx>-345</posx>
-				<posy>15</posy>
+				<posy>25</posy>
 				<width>370</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Title]</label>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_18</font>
+				<font>Shade_20_Bold</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
@@ -975,13 +975,13 @@
 			</control>
 			<control type="fadelabel">
 				<posx>-345</posx>
-				<posy>35</posy>
+				<posy>55</posy>
 				<width>370</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, | ]</label>
 				<align>right</align>
 				<aligny>center</aligny>
-				<font>Shade_16</font>
+				<font>Shade_18_Bold</font>
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scrollout>false</scrollout>
