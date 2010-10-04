@@ -857,6 +857,13 @@
 						<label>20410</label>
 						<visible>!IsEmpty(ListItem.Trailer)</visible>
 					</control>
+					<control type="button" id="13">
+						<description>Get Logo</description>
+						<include>ButtonInfoDialogsCommonValues</include>
+						<onclick>XBMC.RunScript(script.logo-downloader,mode=solo,logo=True,clearart=True,showthumb=True,showname=$INFO[ListItem.TVShowTitle])</onclick>
+						<label>Get Logo</label>
+						<visible>!Container.Content(Movies)</visible>
+					</control>
 				</control>
 			</control>
 		</control>
