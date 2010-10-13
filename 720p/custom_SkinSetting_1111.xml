@@ -275,6 +275,20 @@
 						<onclick>Skin.ToggleSetting(BolderPlot)</onclick>
 						<selected>Skin.HasSetting(BolderPlot)</selected>
 					</control>
+				<!--	<control type="radiobutton" id="133">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>900</width>
+						<height>40</height>
+						<font>Shade_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+						<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+						<label>Use DVD/Blu-Ray Cases</label>
+						<onclick>Skin.ToggleSetting(UseCases)</onclick>
+						<selected>Skin.HasSetting(UseCases)</selected>
+					</control>-->
 					<!--<control type="radiobutton" id="112">
 						<posx>0</posx>
 						<posy>0</posy>

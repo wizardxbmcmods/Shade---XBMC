@@ -275,7 +275,7 @@
 <!--Show Studio Logos-->
 
 	<control type="group">
-		<posy>3</posy>
+		<posy>7</posy>
 		<control type="image">
 			 	<posx>750</posx>
 				<posy>137</posy>
@@ -338,7 +338,7 @@
 				<width>500</width>
 				<height>80</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.1.ep_img)]</texture>
+				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.1.Showpath),,folder.jpg]</texture>
 		</control>
 	    <control type="image">
 			 	<posx>20</posx>
@@ -346,7 +346,7 @@
 				<width>500</width>
 				<height>80</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.2.ep_img)]</texture>
+				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.2.Showpath),,folder.jpg]</texture>
 		</control>
 	    <control type="image">
 			 	<posx>20</posx>
@@ -354,7 +354,7 @@
 				<width>500</width>
 				<height>80</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.3.ep_img)]</texture>
+				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.3.Showpath),,folder.jpg]</texture>
 		</control>
 	    <control type="image">
 			 	<posx>20</posx>
@@ -362,7 +362,7 @@
 				<width>500</width>
 				<height>80</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.4.ep_img)]</texture>
+				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.4.Showpath),,folder.jpg]</texture>
 		</control>
 	    <control type="image">
 			 	<posx>20</posx>
@@ -370,7 +370,7 @@
 				<width>500</width>
 				<height>80</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.5.ep_img)]</texture>
+				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.5.Showpath),,folder.jpg]</texture>
 		</control>
 	</control>
 
