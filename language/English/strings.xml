@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 <strings>
   <!-- Misc labels -->
+  <string id="20342">Monday</string>
   <string id="20343">TV Shows</string>
   <string id="31000">Change Your</string>
   <string id="31001">Love</string>
@@ -82,6 +83,7 @@
   <string id="31131">BUTTON IMAGE</string>
   <string id="31132">Enable Custom Script Button</string>
   <string id="31133">PATH TO SCRIPT</string>
+  <string id="31134">Enable Custom Menu Item</string>
 
   <!-- Script labels -->
   <string id="31200">Shortcuts</string>

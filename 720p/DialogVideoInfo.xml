@@ -62,6 +62,21 @@
 					<shadowcolor>black</shadowcolor>
 					<visible>!Container.Content(MusicVideos)</visible>
 				</control>
+				<control type="label">
+					<description>header label</description>
+					<posx>375</posx>
+					<posy>130</posy>
+					<width>650</width>
+					<height>30</height>
+					<font>Shade_20</font>
+					<label>[B]"$INFO[Listitem.Tagline]"[/B]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>Container.Content(Movies)</visible>
+					<wrapmultiline>true</wrapmultiline>
+				</control>
 				<control type="grouplist">
 					<description>Studio Codec Flagging Images</description>
 					<posx>1100</posx>

@@ -342,6 +342,201 @@
 			</control>
 		</control>
 	</include>
+<include name="TrailerView">
+		<control type="group">
+			<visible>Control.IsVisible(54)</visible>
+			<include>VisibleFadeEffect</include>
+			<posx>0</posx>
+			<posy>0</posy>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1290</width>
+				<height>720</height>
+				<texture>Shade/vignette2.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture>Shade/solid.png</texture>
+			</control>
+			<include>UpOptions</include>
+			<control type="group">
+				<include>TopSlide</include>
+				<control type="label">
+					<description>Title label</description>
+					<posx>20</posx>
+					<posy>120</posy>
+					<height>20</height>
+					<width>275</width>
+					<label>Trailers</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Shade_50_UltraThin</font>
+					<textcolor>white</textcolor>
+				</control>	
+				<control type="label">
+					<description>Title label</description>
+					<posx>200</posx>
+					<posy>130</posy>
+					<height>20</height>
+					<width>275</width>
+					<label>$INFO[Container(54).NumItems] items</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Shade_24_UltraThin</font>
+					<textcolor>white</textcolor>
+				</control>	
+			</control>	
+			<control type="fixedlist" id="54">
+				<include>Zoom</include>
+				<posx>-30</posx>
+				<posy>174</posy>
+				<width>1310</width>
+				<height>700</height>
+				<onleft>54</onleft>
+				<onright>54</onright>
+				<onup>2</onup>
+				<ondown>-</ondown>
+				<viewtype label="Trailers">list</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>300</scrolltime>
+				<focusposition>3</focusposition>
+				<preloaditems>200</preloaditems>
+				<orientation>horizontal</orientation>
+				<visible>![Window.IsVisible(VideoLibrary) + Container.Content(TVShows) | Window.IsVisible(VideoLibrary) + Container.Content(Episodes)]</visible>
+				<itemlayout height="400" width="190">
+					<control type="group">
+						<posx>0</posx>
+						<posy>100</posy>					
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>160</width>
+							<height>216	</height>
+							<bordersize>8</bordersize>
+							<aspectratio scalediffuse="false">stretch</aspectratio>
+							<fadetime>200</fadetime>
+							<texture background="true" diffuse="Shade/posterdiffuse.png">$INFO[Listitem.Icon]</texture>
+						</control>	
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>160</width>
+							<height>216</height>
+							<aspectratio scalediffuse="false">stretch</aspectratio>
+							<bordersize>8</bordersize>
+							<fadetime>200</fadetime>
+							<texture diffuse="Shade/posterdiffuse.png">black-back.png</texture>
+							<colordiffuse>AAFFFFFF</colordiffuse>
+						</control>	
+					</control>	
+				</itemlayout>
+				<focusedlayout height="323" width="225">
+					<control type="group">	
+						<posx>0</posx>
+						<posy>100</posy>
+						<control type="group">	
+							<posx>0</posx>
+							<posy>0</posy>
+							<animation reversible="false" effect="zoom"  end="-10,-33,300,425" time="100">focus</animation>
+							<animation reversible="false" effect="zoom" start="-10,-33,300,425" time="100">unfocus</animation>
+							<animation effect="slide" end="0,0" time="0" reversible="true" condition="Container.row(0)">conditional</animation>
+							<animation effect="slide" end="0,0" time="0" reversible="true" condition="Container.column(0)">conditional</animation>
+							<animation effect="slide" end="-14,0" time="0" reversible="true" condition="Container.column(7)">conditional</animation>			
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>160</width>
+								<height>216</height>
+								<fadetime>200</fadetime>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+								<texture background="true" diffuse="Shade/posterdiffuse.png">glow_white.png</texture>
+								<description>focus glow</description>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>160</width>
+								<height>216</height>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+								<bordersize>8</bordersize>
+								<texture diffuse="Shade/posterdiffuse.png">Shade/posterdiffuse.png</texture>
+								<colordiffuse>FF000000</colordiffuse>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>160</width>
+								<height>216</height>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+								<fadetime>200</fadetime>
+								<bordersize>8</bordersize>
+								<texture background="true" diffuse="Shade/posterdiffuse.png">$INFO[Listitem.Icon]</texture>
+							</control>
+						</control>			
+					</control>
+				</focusedlayout>		
+			</control>
+			<control type="group">
+				<include>TopSlide</include>
+				<control type="label">
+					<posx>1250</posx>
+					<posy>120</posy>
+					<width>700</width>
+					<height>25</height>
+					<font>Shade_50_UltraThin</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<align>right</align>
+					<aligny>center</aligny>
+					<fadetime>200</fadetime>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<posx>1250</posx>
+					<posy>160</posy>
+					<width>160</width>
+					<height>25</height>
+					<font>Shade_13_Bold</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>Running Time: $INFO[ListItem.Duration]</label>
+					<visible>!Container.Content(TVShows)</visible>
+				</control>
+				<control type="grouplist">
+					<description>Studio Codec Flagging Images</description>
+					<posx>1150</posx>
+					<posy>15</posy>
+					<width>105</width>
+					<align>right</align>
+					<itemgap>0</itemgap>
+					<orientation>horizontal</orientation>
+					<include>StudioFlaggingConditions</include>
+				</control>
+			</control>
+			<control type="textbox">
+				<description>Description Value The Movie</description>
+				<posx>338</posx>
+				<posy>520</posy>
+				<width>600</width>
+				<height>99</height>
+				<font>Shade_16</font>
+				<align>justify</align>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>[B]$INFO[ListItem.PlotOutline][/B]</label>
+				<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
+				<include>Zoom</include>
+			</control>
+		</control>
+	</include>
 	<include name="ThumbnailViewAlbum">
 		<control type="group">
 			<visible>Control.IsVisible(52)</visible>

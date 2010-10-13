@@ -1,3 +1,14 @@
+[B]1.1.1[/B]
+
+[B]-------**BIG UPDATE**-------[/B]
+
+-Added Horizontal Home Screen option
+-Added new dialog to "HOME" button that gives new options
+-Added Upcoming TV Show page
+-Added "New Media" page
+-Horizontal Home has customizable Home items
+-Much more, I cant remember. :)
+
 [B]1.1.0[/B]
 
 - Made the Featured section grab a random item for each section

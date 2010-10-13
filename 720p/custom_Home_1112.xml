@@ -64,6 +64,30 @@
 					<pagecontrol>-</pagecontrol>
 					<scrolltime>300</scrolltime>
 					<itemlayout height="400" width="245">
+								<control type="label">
+									<posx>150</posx>
+									<posy>217</posy>
+									<width>190</width>
+									<height>30</height>
+									<font>Shade_18_Bold</font>
+									<textcolor>grey3</textcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Label]</label>
+									<visible>!Control.HasFocus(9000)</visible>
+								</control>
+								<control type="label">
+									<posx>150</posx>
+									<posy>217</posy>
+									<width>190</width>
+									<height>30</height>
+									<font>Shade_18_Bold</font>
+									<textcolor>grey2</textcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Label]</label>
+									<visible>Control.HasFocus(9000)</visible>
+								</control>
 								<control type="image">
 									<posx>80</posx>
 									<posy>20</posy>
@@ -116,6 +140,30 @@
 								</control>
 					</itemlayout>
 					<focusedlayout height="400" width="245">
+								<control type="label">
+									<posx>150</posx>
+									<posy>217</posy>
+									<width>190</width>
+									<height>30</height>
+									<font>Shade_18_Bold</font>
+									<textcolor>white</textcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<visible>Control.HasFocus(9000)</visible>
+									<label>$INFO[ListItem.Label]</label>
+								</control>
+								<control type="label">
+									<posx>150</posx>
+									<posy>217</posy>
+									<width>190</width>
+									<height>30</height>
+									<font>Shade_18_Bold</font>
+									<textcolor>grey3</textcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<visible>!Control.HasFocus(9000)</visible>
+									<label>$INFO[ListItem.Label]</label>
+								</control>
 								<control type="image">
 									<posx>80</posx>
 									<posy>197</posy>
@@ -166,6 +214,15 @@
 									<bordersize>8</bordersize>
 								</control>
 								<control type="image">
+									<posx>121</posx>
+									<posy>80</posy>
+									<width>60</width>
+									<height>60</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>osdplay.png</texture>
+									<visible>Control.HasFocus(9000)</visible>
+								</control>
+								<control type="image">
 									<posx>73</posx>
 									<posy>0</posy>
 									<width>150</width>
@@ -188,14 +245,14 @@
 							<thumb>$INFO[Window(Home).Property(LatestMovie.1.Thumb)]</thumb>
 						</item>
 						<item id="2">
-							<label>$INFO[Window.Property(LatestMovie.2.Title)]</label>
+							<label>$INFO[Window(Home).Property(LatestMovie.2.Title)]</label>
 							<label2>$INFO[Window.Property(LatestMovie.2.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.2.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestMovie.2.Thumb)]</thumb>
 						</item>
 						<item id="3">
-							<label>$INFO[Window.Property(LatestMovie.3.Title)]</label>
+							<label>$INFO[Window(Home).Property(LatestMovie.3.Title)]</label>
 							<label2>$INFO[Window.Property(LatestMovie.3.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.3.Path)])</onclick>
 							<icon>-</icon>
@@ -209,42 +266,42 @@
 							<thumb>$INFO[Window(Home).Property(LatestMovie.4.Thumb)]</thumb>
 						</item>
 						<item id="5">
-							<label>$INFO[Window.Property(LatestMovie.5.Title)]</label>
+							<label>$INFO[Window(Home).Property(LatestMovie.5.Title)]</label>
 							<label2>$INFO[Window.Property(LatestMovie.5.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.5.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestMovie.5.Thumb)]</thumb>
 						</item>
 						<item id="6">
-							<label>$INFO[Window.Property(LatestMovie.6.Title)]</label>
+							<label>$INFO[Window(Home).Property(LatestMovie.6.Title)]</label>
 							<label2>$INFO[Window.Property(LatestMovie.6.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.6.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestMovie.6.Thumb)]</thumb>
 						</item>
 						<item id="7">
-							<label>$INFO[Window.Property(LatestMovie.6.Title)]</label>
+							<label>$INFO[Window(Home).Property(LatestMovie.7.Title)]</label>
 							<label2>$INFO[Window.Property(LatestMovie.6.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.7.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestMovie.7.Thumb)]</thumb>
 						</item>
 						<item id="8">
-							<label>$INFO[Window.Property(LatestMovie.6.Title)]</label>
+							<label>$INFO[Window(Home).Property(LatestMovie.8.Title)]</label>
 							<label2>$INFO[Window.Property(LatestMovie.6.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.8.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestMovie.8.Thumb)]</thumb>
 						</item>
 						<item id="9">
-							<label>$INFO[Window.Property(LatestMovie.6.Title)]</label>
+							<label>$INFO[Window(Home).Property(LatestMovie.9.Title)]</label>
 							<label2>$INFO[Window.Property(LatestMovie.6.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.9.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestMovie.9.Thumb)]</thumb>
 						</item>
 						<item id="10">
-							<label>$INFO[Window.Property(LatestMovie.6.Title)]</label>
+							<label>$INFO[Window(Home).Property(LatestMovie.10.Title)]</label>
 							<label2>$INFO[Window.Property(LatestMovie.6.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestMovie.10.Path)])</onclick>
 							<icon>-</icon>
@@ -331,18 +388,30 @@
 					<pagecontrol>-</pagecontrol>
 					<scrolltime>300</scrolltime>
 					<itemlayout height="400" width="405">
-						<control type="label">
-								<posx>240</posx>
-							<posy>236</posy>
-							<width>350</width>
-							<height>30</height>
-							<font>Shade_18_Bold</font>
-							<textcolor>grey2</textcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-									<animation effect="fade" start="100" end="80" time="0" condition="Control.HasFocus(9002) | Control.HasFocus(9000) | Control.HasFocus(9003) | Control.HasFocus(9004)">Conditional</animation>
-							<label>$INFO[ListItem.Label2]</label>
-						</control>
+								<control type="label">
+									<posx>245</posx>
+									<posy>236</posy>
+									<width>190</width>
+									<height>30</height>
+									<font>Shade_18_Bold</font>
+									<textcolor>grey3</textcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Label2]</label>
+									<visible>!Control.HasFocus(9001)</visible>
+								</control>
+								<control type="label">
+									<posx>245</posx>
+									<posy>236</posy>
+									<width>190</width>
+									<height>30</height>
+									<font>Shade_18_Bold</font>
+									<textcolor>grey2</textcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Label2]</label>
+									<visible>Control.HasFocus(9001)</visible>
+								</control>
 								<control type="image">
 									<posx>100</posx>
 									<posy>80</posy>
@@ -395,18 +464,30 @@
 								</control>
 					</itemlayout>
 					<focusedlayout height="400" width="405">
-						<control type="label">
-									<posx>240</posx>
-							<posy>236</posy>
-							<width>350</width>
-							<height>30</height>
-							<font>Shade_18_Bold</font>
-							<textcolor>white</textcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-									<animation effect="fade" start="100" end="80" time="0" condition="Control.HasFocus(9002) | Control.HasFocus(9000) | Control.HasFocus(9003) | Control.HasFocus(9004)">Conditional</animation>
-							<label>$INFO[ListItem.Label2]</label>
-						</control>
+								<control type="label">
+									<posx>245</posx>
+									<posy>236</posy>
+									<width>190</width>
+									<height>30</height>
+									<font>Shade_18_Bold</font>
+									<textcolor>grey3</textcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Label2]</label>
+									<visible>!Control.HasFocus(9001)</visible>
+								</control>
+								<control type="label">
+									<posx>245</posx>
+									<posy>236</posy>
+									<width>190</width>
+									<height>30</height>
+									<font>Shade_18_Bold</font>
+									<textcolor>white</textcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Label2]</label>
+									<visible>Control.HasFocus(9001)</visible>
+								</control>
 								<control type="image">
 									<posx>100</posx>
 									<posy>215</posy>
@@ -457,6 +538,15 @@
 									<animation effect="fade" start="100" end="30" time="0" condition="Control.HasFocus(8011)">Conditional</animation>-->
 									<bordertexture border="8">ThumbShadow.png</bordertexture>
 									<bordersize>8</bordersize>
+								</control>
+								<control type="image">
+									<posx>215</posx>
+									<posy>122</posy>
+									<width>60</width>
+									<height>60</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>osdplay.png</texture>
+									<visible>Control.HasFocus(9001)</visible>
 								</control>
 								<control type="image">
 									<posx>145</posx>
@@ -620,6 +710,30 @@
 					<pagecontrol>-</pagecontrol>
 					<scrolltime>300</scrolltime>
 					<itemlayout height="400" width="236">
+								<control type="label">
+									<posx>173</posx>
+									<posy>195</posy>
+									<width>190</width>
+									<height>30</height>
+									<font>Shade_18_Bold</font>
+									<textcolor>grey3</textcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Label]</label>
+									<visible>!Control.HasFocus(9002)</visible>
+								</control>
+								<control type="label">
+									<posx>173</posx>
+									<posy>195</posy>
+									<width>190</width>
+									<height>30</height>
+									<font>Shade_18_Bold</font>
+									<textcolor>grey2</textcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Label]</label>
+									<visible>Control.HasFocus(9002)</visible>
+								</control>
 								<control type="image">
 									<posx>100</posx>
 									<posy>40</posy>
@@ -672,6 +786,30 @@
 								</control>
 					</itemlayout>
 					<focusedlayout height="400" width="236">
+								<control type="label">
+									<posx>173</posx>
+									<posy>195</posy>
+									<width>190</width>
+									<height>30</height>
+									<font>Shade_18_Bold</font>
+									<textcolor>grey3</textcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Label]</label>
+									<visible>!Control.HasFocus(9002)</visible>
+								</control>
+								<control type="label">
+									<posx>173</posx>
+									<posy>195</posy>
+									<width>190</width>
+									<height>30</height>
+									<font>Shade_18_Bold</font>
+									<textcolor>white</textcolor>
+									<align>center</align>
+									<aligny>center</aligny>
+									<label>$INFO[ListItem.Label]</label>
+									<visible>Control.HasFocus(9002)</visible>
+								</control>
 								<control type="image">
 									<posx>100</posx>
 									<posy>176</posy>
@@ -724,6 +862,15 @@
 									<bordersize>8</bordersize>
 								</control>
 								<control type="image">
+									<posx>147</posx>
+									<posy>84</posy>
+									<width>60</width>
+									<height>60</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>osdplay.png</texture>
+									<visible>Control.HasFocus(9002)</visible>
+								</control>
+								<control type="image">
 									<posx>101</posx>
 									<posy>-30</posy>
 									<width>145</width>
@@ -739,71 +886,71 @@
 						</focusedlayout>
 					<content>
 						<item id="1">
-							<label>$INFO[Window(Home).Property(LatestMovie.1.Title)]</label>
-							<label2>$INFO[Window(Home).Property(LatestMovie.1.Year)]</label2>
+							<label>$INFO[Window(Home).Property(LatestSong.1.Artist)]</label>
+							<label2>$INFO[Window(Home).Property(LatestSong.1.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.1.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestSong.1.Thumb)]</thumb>
 						</item>
 						<item id="2">
-							<label>$INFO[Window.Property(LatestMovie.2.Title)]</label>
-							<label2>$INFO[Window.Property(LatestMovie.2.Year)]</label2>
+							<label>$INFO[Window(Home).Property(LatestSong.2.Artist)]</label>
+							<label2>$INFO[Window.Property(LatestSong.2.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.2.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestSong.2.Thumb)]</thumb>
 						</item>
 						<item id="3">
-							<label>$INFO[Window.Property(LatestMovie.3.Title)]</label>
-							<label2>$INFO[Window.Property(LatestMovie.3.Year)]</label2>
+							<label>$INFO[Window(Home).Property(LatestSong.3.Artist)]</label>
+							<label2>$INFO[Window.Property(LatestSong.3.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.3.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestSong.3.Thumb)]</thumb>
 						</item>
 						<item id="4">
-							<label>$INFO[Window(Home).Property(LatestMovie.4.Title)]</label>
-							<label2>$INFO[Window(Home).Property(LatestMovie.4.Year)]</label2>
+							<label>$INFO[Window(Home).Property(LatestSong.4.Artist)]</label>
+							<label2>$INFO[Window(Home).Property(LatestSong.4.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.4.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestSong.4.Thumb)]</thumb>
 						</item>
 						<item id="5">
-							<label>$INFO[Window.Property(LatestMovie.5.Title)]</label>
-							<label2>$INFO[Window.Property(LatestMovie.5.Year)]</label2>
+							<label>$INFO[Window(Home).Property(LatestSong.5.Artist)]</label>
+							<label2>$INFO[Window.Property(LatestSong.5.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.5.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestSong.5.Thumb)]</thumb>
 						</item>
 						<item id="6">
-							<label>$INFO[Window.Property(LatestMovie.6.Title)]</label>
-							<label2>$INFO[Window.Property(LatestMovie.6.Year)]</label2>
+							<label>$INFO[Window(Home).Property(LatestSong.6.Artist)]</label>
+							<label2>$INFO[Window.Property(LatestSong.6.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.6.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestSong.6.Thumb)]</thumb>
 						</item>
 						<item id="7">
-							<label>$INFO[Window.Property(LatestMovie.7.Title)]</label>
-							<label2>$INFO[Window.Property(LatestMovie.7.Year)]</label2>
+							<label>$INFO[Window(Home).Property(LatestSong.7.Artist)]</label>
+							<label2>$INFO[Window.Property(LatestSong.7.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.7.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestSong.7.Thumb)]</thumb>
 						</item>
 						<item id="8">
-							<label>$INFO[Window(Home).Property(LatestMovie.8.Title)]</label>
-							<label2>$INFO[Window(Home).Property(LatestMovie.8.Year)]</label2>
+							<label>$INFO[Window(Home).Property(LatestSong.8.Artist)]</label>
+							<label2>$INFO[Window(Home).Property(LatestSong.8.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.8.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestSong.8.Thumb)]</thumb>
 						</item>
 						<item id="9">
-							<label>$INFO[Window.Property(LatestMovie.9.Title)]</label>
-							<label2>$INFO[Window.Property(LatestMovie.9.Year)]</label2>
+							<label>$INFO[Window(Home).Property(LatestSong.9.Artist)]</label>
+							<label2>$INFO[Window.Property(LatestSong.9.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.9.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestSong.9.Thumb)]</thumb>
 						</item>
 						<item id="10">
-							<label>$INFO[Window.Property(LatestMovie.10.Title)]</label>
-							<label2>$INFO[Window.Property(LatestMovie.10.Year)]</label2>
+							<label>$INFO[Window(Home).Property(LatestSong.10.Artist)]</label>
+							<label2>$INFO[Window.Property(LatestSong.10.Year)]</label2>
 							<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.10.Path)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window(Home).Property(LatestSong.10.Thumb)]</thumb>
@@ -1265,3 +1412,4 @@
 
 </controls>
 </window>
+

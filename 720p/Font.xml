@@ -495,6 +495,21 @@
 			<size>50</size>
 		</font>
 		<font>
+			<name>Shade_60</name>
+			<filename>Walkway_SemiBold.ttf</filename>
+			<size>60</size>
+		</font>
+		<font>
+			<name>Shade_70</name>
+			<filename>Walkway_SemiBold.ttf</filename>
+			<size>70</size>
+		</font>
+		<font>
+			<name>Shade_80</name>
+			<filename>Walkway_SemiBold.ttf</filename>
+			<size>80</size>
+		</font>
+		<font>
 			<name>Shade_12_Bold</name>
 			<filename>Walkway_UltraBold.ttf</filename>
 			<size>12</size>

@@ -1284,7 +1284,7 @@
 				<width>160</width>
 				<height>25</height>
 				<font>Shade_13_Bold</font>
-				<textcolor>FF32a4e5</textcolor>
+				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scroll>false</scroll>
 				<align>center</align>
@@ -8921,6 +8921,19 @@
 					<align>left</align>
 					<label>$INFO[ListItem.Writer]</label>
 					<visible>Container.Content(Movies)</visible> 
+				</control>			
+				<control type="label">
+					<posx>200</posx>
+					<posy>90</posy>
+					<width>160</width>
+					<height>25</height>
+					<font>Shade_13_Bold</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<align>left</align>
+					<label>$INFO[Window(Home).Property(NextAired.1.NextDate)]</label>
+					<visible>Container.Content(TVShows)</visible> 
 				</control>			
 			</control>
 		</control>	
