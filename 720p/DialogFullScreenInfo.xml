@@ -240,79 +240,79 @@
 					<visible>VideoPlayer.Content(Movies)</visible>
 					<posx>320</posx>
 					<posy>200</posy>
-						<control type="label">
+					<control type="label">
 						<description>Popup Info</description>
 						<posx>422</posx>
-				<posy>-5</posy>
-				<width>250</width>
-				<height>20</height>
-				<font>Shade_16_Bold</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>Elapsed:</label>
-			</control>
-			<control type="label">
-				<description>Popup Info</description>
-				<posx>492</posx>
-				<posy>-5</posy>
-				<width>240</width>
-				<height>20</height>
-				<font>Shade_16_Bold</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[Player.Time]</label>
-			</control>
-			<control type="label">
-				<description>Popup Info</description>
-				<posx>568</posx>
-				<posy>-5</posy>
-				<width>240</width>
-				<height>20</height>
-				<font>Shade_16_Bold</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>Remaining:</label>
-			</control>
-			<control type="label">
-				<description>Popup Info</description>
-				<posx>655</posx>
-				<posy>-5</posy>
-				<width>240</width>
-				<height>20</height>
-				<font>Shade_16_Bold</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[Player.TimeRemaining]</label>
-			</control>
-			<control type="label">
-				<description>Popup Info</description>
-				<posx>734</posx>
-				<posy>-5</posy>
-				<width>240</width>
-				<height>20</height>
-				<font>Shade_16_Bold</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>Finish:</label>
-			</control>
-			<control type="label">
-				<description>Popup Info</description>
-				<posx>783</posx>
-				<posy>-5</posy>
-				<width>240</width>
-				<height>20</height>
-				<font>Shade_16_Bold</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[Player.FinishTime]</label>
-			</control>
-		</control>
+						<posy>-5</posy>
+						<width>250</width>
+						<height>20</height>
+						<font>Shade_16_Bold</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Elapsed:</label>
+					</control>
+					<control type="label">
+						<description>Popup Info</description>
+						<posx>492</posx>
+						<posy>-5</posy>
+						<width>240</width>
+						<height>20</height>
+						<font>Shade_16_Bold</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[Player.Time]</label>
+					</control>
+					<control type="label">
+						<description>Popup Info</description>
+						<posx>568</posx>
+						<posy>-5</posy>
+						<width>240</width>
+						<height>20</height>
+						<font>Shade_16_Bold</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Remaining:</label>
+					</control>
+					<control type="label">
+						<description>Popup Info</description>
+						<posx>655</posx>
+						<posy>-5</posy>
+						<width>240</width>
+						<height>20</height>
+						<font>Shade_16_Bold</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[Player.TimeRemaining]</label>
+					</control>
+					<control type="label">
+						<description>Popup Info</description>
+						<posx>734</posx>
+						<posy>-5</posy>
+						<width>240</width>
+						<height>20</height>
+						<font>Shade_16_Bold</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Finish:</label>
+					</control>
+					<control type="label">
+						<description>Popup Info</description>
+						<posx>783</posx>
+						<posy>-5</posy>
+						<width>240</width>
+						<height>20</height>
+						<font>Shade_16_Bold</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[Player.FinishTime]</label>
+					</control>
+				</control>
 
 
 				<control type="label">
@@ -550,7 +550,7 @@
 			<!--Music Videos-->
 
 
-		<control type="group">
+			<control type="group">
 				<visible>VideoPlayer.Content(MusicVideos)</visible>
 				<posx>0</posx>
 				<posy>0</posy>
@@ -568,7 +568,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 
-			<control type="group">
+				<control type="group">
 					<posx>-20</posx>
 					<posy>50</posy>
 					<control type="label">
@@ -837,83 +837,83 @@
 					<label>[B]$INFO[VideoPlayer.Plot][/B]</label>
 					<autoscroll time="2000" delay="3000" repeat="5270">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
-<control type="group">
+				<control type="group">
 					<visible>VideoPlayer.Content(Episodes)</visible>
 					<posx>190</posx>
 					<posy>200</posy>
-						<control type="label">
+					<control type="label">
 						<description>Popup Info</description>
 						<posx>422</posx>
-				<posy>-5</posy>
-				<width>250</width>
-				<height>20</height>
-				<font>Shade_16_Bold</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>Elapsed:</label>
-			</control>
-			<control type="label">
-				<description>Popup Info</description>
-				<posx>492</posx>
-				<posy>-5</posy>
-				<width>240</width>
-				<height>20</height>
-				<font>Shade_16_Bold</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[Player.Time]</label>
-			</control>
-			<control type="label">
-				<description>Popup Info</description>
-				<posx>568</posx>
-				<posy>-5</posy>
-				<width>240</width>
-				<height>20</height>
-				<font>Shade_16_Bold</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>Remaining:</label>
-			</control>
-			<control type="label">
-				<description>Popup Info</description>
-				<posx>655</posx>
-				<posy>-5</posy>
-				<width>240</width>
-				<height>20</height>
-				<font>Shade_16_Bold</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[Player.TimeRemaining]</label>
-			</control>
-			<control type="label">
-				<description>Popup Info</description>
-				<posx>734</posx>
-				<posy>-5</posy>
-				<width>240</width>
-				<height>20</height>
-				<font>Shade_16_Bold</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>Finish:</label>
-			</control>
-			<control type="label">
-				<description>Popup Info</description>
-				<posx>783</posx>
-				<posy>-5</posy>
-				<width>240</width>
-				<height>20</height>
-				<font>Shade_16_Bold</font>
-				<textcolor>white</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[Player.FinishTime]</label>
-			</control>
-		</control>
+						<posy>-5</posy>
+						<width>250</width>
+						<height>20</height>
+						<font>Shade_16_Bold</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Elapsed:</label>
+					</control>
+					<control type="label">
+						<description>Popup Info</description>
+						<posx>492</posx>
+						<posy>-5</posy>
+						<width>240</width>
+						<height>20</height>
+						<font>Shade_16_Bold</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[Player.Time]</label>
+					</control>
+					<control type="label">
+						<description>Popup Info</description>
+						<posx>568</posx>
+						<posy>-5</posy>
+						<width>240</width>
+						<height>20</height>
+						<font>Shade_16_Bold</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Remaining:</label>
+					</control>
+					<control type="label">
+						<description>Popup Info</description>
+						<posx>655</posx>
+						<posy>-5</posy>
+						<width>240</width>
+						<height>20</height>
+						<font>Shade_16_Bold</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[Player.TimeRemaining]</label>
+					</control>
+					<control type="label">
+						<description>Popup Info</description>
+						<posx>734</posx>
+						<posy>-5</posy>
+						<width>240</width>
+						<height>20</height>
+						<font>Shade_16_Bold</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>Finish:</label>
+					</control>
+					<control type="label">
+						<description>Popup Info</description>
+						<posx>783</posx>
+						<posy>-5</posy>
+						<width>240</width>
+						<height>20</height>
+						<font>Shade_16_Bold</font>
+						<textcolor>white</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[Player.FinishTime]</label>
+					</control>
+				</control>
 				<control type="label">
 					<posx>210</posx>
 					<posy>110</posy>

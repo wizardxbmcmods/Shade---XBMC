@@ -1,3 +1,9 @@
+[B]1.1.2[/B]
+
+-Edited Upcoming Tv Show Screen
+-Named all images lowercase 
+
+
 [B]1.1.1[/B]
 
 [B]-------**BIG UPDATE**-------[/B]

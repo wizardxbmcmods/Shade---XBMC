@@ -187,66 +187,66 @@
 			<include>CommonWeatherBackground</include>
 		</control>
 
-<control type="group">
-		<visible>!Skin.HasSetting(HomeAlternate)</visible>	
-	<control type="image">
-			<posx>0</posx>
-			<posy>290</posy>
-			<width>1280</width>
-			<height>10</height>
-			<texture>shade/Home_Liner.png</texture>
-			<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
-			<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
-			<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
+		<control type="group">
+			<visible>!Skin.HasSetting(HomeAlternate)</visible>	
+			<control type="image">
+				<posx>0</posx>
+				<posy>290</posy>
+				<width>1280</width>
+				<height>10</height>
+				<texture>shade/Home_Liner.png</texture>
+				<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+				<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
+				<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>180</height>
+				<texture>shade/solid_menu.png</texture>
+				<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation>
+				<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation>
+				<visible>Skin.HasSetting(AlternateHome2) + !Skin.HasSetting(TurnOffHomeImages)</visible>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>210</height>
+				<texture>shade/solid_menu.png</texture>
+				<visible>!Skin.HasSetting(AlternateHome2) + !Skin.HasSetting(TurnOffHomeImages)</visible>
+				<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation>
+				<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>300</posy>
+				<width>1280</width>
+				<height>420</height>
+				<texture>shade/Home_Bottom.png</texture>
+				<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
+				<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
+				<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
+			</control>
 		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>180</height>
-			<texture>shade/solid_menu.png</texture>
-			<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation>
-			<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation>
-			<visible>Skin.HasSetting(AlternateHome2) + !Skin.HasSetting(TurnOffHomeImages)</visible>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>210</height>
-			<texture>shade/solid_menu.png</texture>
-			<visible>!Skin.HasSetting(AlternateHome2) + !Skin.HasSetting(TurnOffHomeImages)</visible>
-			<animation effect="slide" start="0,0" end="0,-300" delay="0" time="300">WindowClose</animation>
-			<animation effect="slide" start="0,-300" end="0,0" delay="0" time="300">WindowOpen</animation>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>300</posy>
-			<width>1280</width>
-			<height>420</height>
-			<texture>shade/Home_Bottom.png</texture>
-			<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
-			<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
-			<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
-		</control>
-</control>
 
-<!-- New Home List Images-->
+		<!-- New Home List Images-->
 
-<control type="group">
-		<visible>Skin.HasSetting(HomeAlternate)</visible>	
-		<control type="image">
-			<posx>450</posx>
-			<posy>252</posy>
-			<width>360</width>
-			<height>52</height>
-			<texture>hometab.png</texture>
-			<animation effect="slide" start="0,0" end="0,10" time="400" delay="800">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,45" time="400" delay="800" condition="Container(9000).HasFocus(5)">Conditional</animation>
-			<animation effect="fade" start="0" end="100" time="400" delay="700">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
-		</control>
-		<control type="label">
+		<control type="group">
+			<visible>Skin.HasSetting(HomeAlternate)</visible>	
+			<control type="image">
+				<posx>450</posx>
+				<posy>252</posy>
+				<width>360</width>
+				<height>52</height>
+				<texture>hometab.png</texture>
+				<animation effect="slide" start="0,0" end="0,10" time="400" delay="800">WindowOpen</animation>
+				<animation effect="slide" start="0,0" end="0,45" time="400" delay="800" condition="Container(9000).HasFocus(5)">Conditional</animation>
+				<animation effect="fade" start="0" end="100" time="400" delay="700">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
+			</control>
+			<control type="label">
 				<description>Title label</description>
 				<posx>-10</posx>
 				<posy>254</posy>
@@ -261,19 +261,19 @@
 				<animation effect="slide" start="0,0" end="0,56" time="400" delay="800" condition="Container(9000).HasFocus(5)">Conditional</animation>
 				<animation effect="fade" start="0" end="100" time="400" delay="700">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
-				</control>	
-		<control type="image">
-			<posx>0</posx>
-			<posy>250</posy>
-			<width>1280</width>
-			<height>70</height>
-			<texture>homebar2.png</texture>
-			<animation effect="zoom" start="100" end="0" center="640,360" easing="out" tween="back" time="400" >WindowClose</animation>
-			<animation effect="zoom" start="0" end="100" center="640,360" easing="out" tween="back" time="400" >WindowOpen</animation>
+			</control>	
+			<control type="image">
+				<posx>0</posx>
+				<posy>250</posy>
+				<width>1280</width>
+				<height>70</height>
+				<texture>homebar2.png</texture>
+				<animation effect="zoom" start="100" end="0" center="640,360" easing="out" tween="back" time="400" >WindowClose</animation>
+				<animation effect="zoom" start="0" end="100" center="640,360" easing="out" tween="back" time="400" >WindowOpen</animation>
+			</control>
 		</control>
-</control>
 
-<!-- END New Home List Images-->
+		<!-- END New Home List Images-->
 
 		<control type="image">
 			<posx>0</posx>
@@ -1008,9 +1008,9 @@
 		</control>
 
 
-<!--NEW HOME LIST-->
+		<!--NEW HOME LIST-->
 
-	<control type="wraplist" id="9000">
+		<control type="wraplist" id="9000">
 			<visible>Skin.HasSetting(HomeAlternate)</visible>
 			<animation effect="zoom" start="100" end="0" center="640,360" easing="out" tween="back" time="400" >WindowClose</animation>
 			<animation effect="zoom" start="0" end="100" center="640,360" easing="out" tween="back" time="400" >WindowOpen</animation>
@@ -1032,7 +1032,7 @@
 				<control type="label">
 					<posx>0</posx>
 					<posy>102</posy>
-  					<width min="300" max="400">auto</width>
+					<width min="300" max="400">auto</width>
 					<align>center</align>
 					<font>Shade_60</font>
 					<label>$INFO[ListItem.Label]</label>
@@ -1043,7 +1043,7 @@
 				<control type="label">
 					<posx>0</posx>
 					<posy>102</posy>
-  					<width min="300" max="400">auto</width>
+					<width min="300" max="400">auto</width>
 					<align>center</align>
 					<font>Shade_60</font>
 					<label>$INFO[ListItem.Label]</label>
@@ -1209,7 +1209,7 @@
 			</content>
 		</control>
 
-<!--END NEW HOME LIST-->
+		<!--END NEW HOME LIST-->
 
 
 		<control type="group">	
@@ -1375,19 +1375,19 @@
 			<visible>!Skin.HasSetting(HomeAlternate)</visible>		
 			<posx>850</posx>
 			<posy>110</posy>
-				<include>CommonNowPlaying</include>
+			<include>CommonNowPlaying</include>
 		</control>
 		<control type="group">
 			<visible>Container(9000).Hasfocus(5)</visible>
 			<posx>850</posx>
 			<posy>110</posy>
-				<include>CommonNowPlayingHome</include>
+			<include>CommonNowPlayingHome</include>
 		</control>
 		<control type="group">
 			<visible>Skin.HasSetting(HomeAlternate)</visible>
 			<posx>-25</posx>
 			<posy>-290</posy>
-				<include>CommonNowPlayingAlternate</include>
+			<include>CommonNowPlayingAlternate</include>
 		</control>
 
 		<!--Weather-->
@@ -1513,30 +1513,67 @@
 			<animation effect="fade" end="0" time="0" condition="ControlGroup(9000).HasFocus">Conditional</animation>
 		</control>
 
+		<control type="group">
+			<animation effect="slide" end="0,400" time="0" condition="Skin.HasSetting(HomeAlternate)">Conditional</animation>
+			<posy>450r</posy>
+			<animation type="WindowOpen" reversible="false">
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+				<effect type="fade" start="0" end="100" time="300" />
+			</animation>
+			<animation type="WindowClose" reversible="false">
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+				<effect type="fade" start="100" end="0" time="300" />
+			</animation>	
+			<control type="image">
+				<posx>0</posx>
+				<posy>5</posy>
+				<width>1280</width>
+				<height>70</height>
+				<texture>Shade/homefade.png</texture>
+				<animation effect="slide" start="0,0" end="0,300" delay="0" time="300">WindowClose</animation>
+				<animation effect="slide" start="0,300" end="0,0" delay="0" time="300">WindowOpen</animation>
+				<visible>Skin.HasSetting(HomeAlternate) + !system.getbool(lookandfeel.enablerssfeeds)</visible>
+			</control>
+			<control type="label">
+				<description>RSS feed</description>
+				<posx>0</posx>
+				<posy>16</posy>
+				<height>35</height>
+				<width>2500</width>
+				<font>Shade_18_Bold</font>
+				<label>[B]TV ALERT[/B] -- $INFO[Window(Home).Property(NextAired.1.ShowTitle)], $INFO[Window(Home).Property(NextAired.1.airday)] at $INFO[Window(Home).Property(NextAired.1.shortime)] on $INFO[Window(Home).Property(NextAired.1.network)] -- [B]TV ALERT[/B] -- $INFO[Window(Home).Property(NextAired.2.ShowTitle)], $INFO[Window(Home).Property(NextAired.2.airday)] at $INFO[Window(Home).Property(NextAired.2.shortime)] on $INFO[Window(Home).Property(NextAired.2.network)] -- [B]TV ALERT[/B] -- $INFO[Window(Home).Property(NextAired.3.ShowTitle)], $INFO[Window(Home).Property(NextAired.3.airday)] at $INFO[Window(Home).Property(NextAired.3.shortime)] on $INFO[Window(Home).Property(NextAired.3.network)]</label>
+				<fontcolor>grey2</fontcolor>
+				<titlecolor>white</titlecolor>
+				<headlinecolor>grey2</headlinecolor>
+				<animation effect="slide" start="1300,0" end="-2500,0" delay="0" time="60000" loop="true" condition="Skin.HasSetting(UseTVShowRSSFeed)">conditional</animation>
+				<visible>Skin.HasSetting(HomeAlternate) + !system.getbool(lookandfeel.enablerssfeeds)</visible>
+			</control>
+		</control>
+
 		<!--Settings-->
 
 		<control type="group">
-		<animation effect="slide" end="0,400" time="0" condition="Skin.HasSetting(HomeAlternate)">Conditional</animation>
+			<animation effect="slide" end="0,400" time="0" condition="Skin.HasSetting(HomeAlternate)">Conditional</animation>
 			<posx>0</posx>
 			<posy>450r</posy>
-				<animation type="WindowOpen" reversible="false">
-					<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-					<effect type="fade" start="0" end="100" time="300" />
-				</animation>
-				<animation type="WindowClose" reversible="false">
-					<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-					<effect type="fade" start="100" end="0" time="300" />
-				</animation>	
-		<control type="image">
-			<posx>0</posx>
-			<posy>5</posy>
-			<width>1280</width>
-			<height>70</height>
-			<texture>Shade/homefade.png</texture>
-			<animation effect="slide" start="0,0" end="0,300" delay="0" time="300">WindowClose</animation>
-			<animation effect="slide" start="0,300" end="0,0" delay="0" time="300">WindowOpen</animation>
-			<visible>Skin.HasSetting(HomeAlternate) + system.getbool(lookandfeel.enablerssfeeds)</visible>
-		</control>
+			<animation type="WindowOpen" reversible="false">
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+				<effect type="fade" start="0" end="100" time="300" />
+			</animation>
+			<animation type="WindowClose" reversible="false">
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+				<effect type="fade" start="100" end="0" time="300" />
+			</animation>	
+			<control type="image">
+				<posx>0</posx>
+				<posy>5</posy>
+				<width>1280</width>
+				<height>70</height>
+				<texture>Shade/homefade.png</texture>
+				<animation effect="slide" start="0,0" end="0,300" delay="0" time="300">WindowClose</animation>
+				<animation effect="slide" start="0,300" end="0,0" delay="0" time="300">WindowOpen</animation>
+				<visible>Skin.HasSetting(HomeAlternate) + system.getbool(lookandfeel.enablerssfeeds)</visible>
+			</control>
 			<control type="rss">
 				<description>RSS feed</description>
 				<posx>0</posx>

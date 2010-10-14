@@ -130,24 +130,24 @@
 						<info>ListItem.Label</info>
 					</control>
 				</focusedlayout>
-					<content>
-							<item id="1">
-								<label>WHAT'S ON TV TONIGHT</label>
-								<label2>-</label2>
-								<onclick>XBMC.ActivateWindow(1116)</onclick>
-								<onclick>Dialog.Close(1115)</onclick>
-								<icon>-</icon>
-								<thumb>-</thumb>
-							</item>
-							<item id="2">
-								<label>SHOW ME NEW ITEMS</label>
-								<label2>-]</label2>
-								<onclick>XBMC.ActivateWindow(1112)</onclick>
-								<onclick>Dialog.Close(1115)</onclick>
-								<icon>-</icon>
-								<thumb>-</thumb>
-							</item>
-							<!--<item id="3">
+				<content>
+					<item id="1">
+						<label>WHAT'S ON TV TONIGHT</label>
+						<label2>-</label2>
+						<onclick>XBMC.ActivateWindow(1116)</onclick>
+						<onclick>Dialog.Close(1115)</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+					</item>
+					<item id="2">
+						<label>SHOW ME NEW ITEMS</label>
+						<label2>-]</label2>
+						<onclick>XBMC.ActivateWindow(1112)</onclick>
+						<onclick>Dialog.Close(1115)</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+					</item>
+					<!--<item id="3">
 								<label>-</label>
 								<label2>-</label2>
 								<onclick>-</onclick>
@@ -155,7 +155,7 @@
 								<icon>-</icon>
 								<thumb>-</thumb>
 							</item>-->
-					</content>
+				</content>
 			</control>
 			<control type="label">
 				<description>Page label</description>

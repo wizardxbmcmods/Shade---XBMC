@@ -1,5 +1,6 @@
 <window type="dialog" id="2000">
 	<defaultcontrol always="true">3</defaultcontrol>
+	<zorder>3</zorder>
 	<coordinates>
 		<system>1</system>
 		<posx>335</posx>

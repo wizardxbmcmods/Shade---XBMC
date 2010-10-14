@@ -627,144 +627,144 @@
 						<bordersize>4</bordersize>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 					</control>
-				<control type="label">
-					<description>header label</description>
-					<posx>1050</posx>
-					<posy>0</posy>
-					<width>1000</width>
-					<height>30</height>
-					<font>Shade_70_UltraThin</font>
-					<label>$INFO[Listitem.Title]</label>
-					<align>right</align>
-					<aligny>center</aligny>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<visible>Container.Content(MusicVideos)</visible>
-				</control>
-				<control type="group">
-					<posy>200</posy>
-					<posx>-330</posx>
-			<control type="label">
-				<description>Artist Title</description>
-				<posx>400</posx>
-				<posy>140</posy>
-				<width>130</width>
-				<height>25</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
-				<textcolor>white</textcolor>
-				<label>$LOCALIZE[557]:</label>
-			</control>
-			<control type="fadelabel">
-				<description>Artist Value</description>
-				<posx>410</posx>
-				<posy>140</posy>
-				<width>460</width>
-				<height>25</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>Shade_24</font>
-				<textcolor>white</textcolor>
-				<label fallback="161">$INFO[ListItem.Artist]</label>
-			</control>
-			<control type="label">
-				<description>Album Title</description>
-				<posx>400</posx>
-				<posy>175</posy>
-				<width>130</width>
-				<height>25</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
-				<textcolor>white</textcolor>
-				<label>$LOCALIZE[558]:</label>
-			</control>
-			<control type="fadelabel">
-				<description>Album Value</description>
-				<posx>410</posx>
-				<posy>175</posy>
-				<width>460</width>
-				<height>25</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>Shade_24</font>
-				<textcolor>white</textcolor>
-				<label fallback="161">$INFO[ListItem.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
-			</control>
-			<control type="label">
-				<description>Genre Title</description>
-				<posx>400</posx>
-				<posy>210</posy>
-				<width>130</width>
-				<height>25</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
-				<textcolor>white</textcolor>
-				<label>$LOCALIZE[515]:</label>
-			</control>
-			<control type="fadelabel">
-				<description>Genre Value</description>
-				<posx>410</posx>
-				<posy>210</posy>
-				<width>460</width>
-				<height>25</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>Shade_24</font>
-				<textcolor>white</textcolor>
-				<label fallback="161">$INFO[ListItem.Genre]</label>
-			</control>
-			<control type="label">
-				<description>Year Title</description>
-				<posx>400</posx>
-				<posy>245</posy>
-				<width>130</width>
-				<height>25</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
-				<textcolor>white</textcolor>
-				<label>$LOCALIZE[562]:</label>
-			</control>
-			<control type="fadelabel">
-				<description>Year Value</description>
-				<posx>410</posx>
-				<posy>245</posy>
-				<width>460</width>
-				<height>25</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>Shade_24</font>
-				<textcolor>white</textcolor>
-				<label fallback="161">$INFO[ListItem.Year]</label>
-			</control>
-			<control type="label">
-				<description>Track Number Title</description>
-				<posx>400</posx>
-				<posy>280</posy>
-				<width>130</width>
-				<height>25</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>Shade_20_Bold</font>
-				<textcolor>white</textcolor>
-				<label>$LOCALIZE[554]:</label>
-			</control>
-			<control type="fadelabel">
-				<description>Track Number Value</description>
-				<posx>410</posx>
-				<posy>280</posy>
-				<width>460</width>
-				<height>25</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>Shade_24</font>
-				<textcolor>white</textcolor>
-				<label fallback="161">$INFO[ListItem.TrackNumber]</label>
-			</control>				
-		</control>			
+					<control type="label">
+						<description>header label</description>
+						<posx>1050</posx>
+						<posy>0</posy>
+						<width>1000</width>
+						<height>30</height>
+						<font>Shade_70_UltraThin</font>
+						<label>$INFO[Listitem.Title]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>Container.Content(MusicVideos)</visible>
+					</control>
+					<control type="group">
+						<posy>200</posy>
+						<posx>-330</posx>
+						<control type="label">
+							<description>Artist Title</description>
+							<posx>400</posx>
+							<posy>140</posy>
+							<width>130</width>
+							<height>25</height>
+							<align>right</align>
+							<aligny>center</aligny>
+							<font>Shade_20_Bold</font>
+							<textcolor>white</textcolor>
+							<label>$LOCALIZE[557]:</label>
+						</control>
+						<control type="fadelabel">
+							<description>Artist Value</description>
+							<posx>410</posx>
+							<posy>140</posy>
+							<width>460</width>
+							<height>25</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Shade_24</font>
+							<textcolor>white</textcolor>
+							<label fallback="161">$INFO[ListItem.Artist]</label>
+						</control>
+						<control type="label">
+							<description>Album Title</description>
+							<posx>400</posx>
+							<posy>175</posy>
+							<width>130</width>
+							<height>25</height>
+							<align>right</align>
+							<aligny>center</aligny>
+							<font>Shade_20_Bold</font>
+							<textcolor>white</textcolor>
+							<label>$LOCALIZE[558]:</label>
+						</control>
+						<control type="fadelabel">
+							<description>Album Value</description>
+							<posx>410</posx>
+							<posy>175</posy>
+							<width>460</width>
+							<height>25</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Shade_24</font>
+							<textcolor>white</textcolor>
+							<label fallback="161">$INFO[ListItem.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
+						</control>
+						<control type="label">
+							<description>Genre Title</description>
+							<posx>400</posx>
+							<posy>210</posy>
+							<width>130</width>
+							<height>25</height>
+							<align>right</align>
+							<aligny>center</aligny>
+							<font>Shade_20_Bold</font>
+							<textcolor>white</textcolor>
+							<label>$LOCALIZE[515]:</label>
+						</control>
+						<control type="fadelabel">
+							<description>Genre Value</description>
+							<posx>410</posx>
+							<posy>210</posy>
+							<width>460</width>
+							<height>25</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Shade_24</font>
+							<textcolor>white</textcolor>
+							<label fallback="161">$INFO[ListItem.Genre]</label>
+						</control>
+						<control type="label">
+							<description>Year Title</description>
+							<posx>400</posx>
+							<posy>245</posy>
+							<width>130</width>
+							<height>25</height>
+							<align>right</align>
+							<aligny>center</aligny>
+							<font>Shade_20_Bold</font>
+							<textcolor>white</textcolor>
+							<label>$LOCALIZE[562]:</label>
+						</control>
+						<control type="fadelabel">
+							<description>Year Value</description>
+							<posx>410</posx>
+							<posy>245</posy>
+							<width>460</width>
+							<height>25</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Shade_24</font>
+							<textcolor>white</textcolor>
+							<label fallback="161">$INFO[ListItem.Year]</label>
+						</control>
+						<control type="label">
+							<description>Track Number Title</description>
+							<posx>400</posx>
+							<posy>280</posy>
+							<width>130</width>
+							<height>25</height>
+							<align>right</align>
+							<aligny>center</aligny>
+							<font>Shade_20_Bold</font>
+							<textcolor>white</textcolor>
+							<label>$LOCALIZE[554]:</label>
+						</control>
+						<control type="fadelabel">
+							<description>Track Number Value</description>
+							<posx>410</posx>
+							<posy>280</posy>
+							<width>460</width>
+							<height>25</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Shade_24</font>
+							<textcolor>white</textcolor>
+							<label fallback="161">$INFO[ListItem.TrackNumber]</label>
+						</control>				
+					</control>			
 				</control>
 
 				<control type="panel" id="50">

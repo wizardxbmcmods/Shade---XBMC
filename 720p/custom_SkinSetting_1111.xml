@@ -275,7 +275,7 @@
 						<onclick>Skin.ToggleSetting(BolderPlot)</onclick>
 						<selected>Skin.HasSetting(BolderPlot)</selected>
 					</control>
-				<!--	<control type="radiobutton" id="133">
+					<!--	<control type="radiobutton" id="133">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>900</width>
@@ -472,22 +472,22 @@
 						<selected>Skin.HasSetting(EnableWeloView)</selected>
 					</control>
 				</control>
-					<control type="scrollbar" id="60">
-						<posx>1060</posx>
-						<posy>60</posy>
-						<width>15</width>
-						<height>530</height>
-						<texturesliderbackground border="12,0,12,0">Shade/scrollbar_background.png</texturesliderbackground>
-						<texturesliderbar border="12,0,12,0">Shade/scrollbar_slider_faded.png</texturesliderbar>
-						<texturesliderbarfocus border="12,0,12,0">Shade/scrollbar_slider_selected.png</texturesliderbarfocus>
-						<textureslidernib>ScrollBarNib.png</textureslidernib>
-						<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-						<onleft>9001</onleft>
-						<onright>9000</onright>
-						<showonepage>false</showonepage>
-						<orientation>vertical</orientation>
-						<visible>Container(9000).Hasfocus(1)</visible>
-					</control>
+				<control type="scrollbar" id="60">
+					<posx>1060</posx>
+					<posy>60</posy>
+					<width>15</width>
+					<height>530</height>
+					<texturesliderbackground border="12,0,12,0">Shade/scrollbar_background.png</texturesliderbackground>
+					<texturesliderbar border="12,0,12,0">Shade/scrollbar_slider_faded.png</texturesliderbar>
+					<texturesliderbarfocus border="12,0,12,0">Shade/scrollbar_slider_selected.png</texturesliderbarfocus>
+					<textureslidernib>ScrollBarNib.png</textureslidernib>
+					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+					<onleft>9001</onleft>
+					<onright>9000</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<visible>Container(9000).Hasfocus(1)</visible>
+				</control>
 				<control type="grouplist" id="9002">
 					<visible>Container(9000).Hasfocus(2)</visible>
 					<posx>100</posx>
@@ -589,19 +589,35 @@
 						<selected>Skin.HasSetting(TurnOffHomeImages)</selected>
 						<visible>!Skin.HasSetting(HomeAlternate)</visible>
 					</control>
-						<control type="radiobutton" id="225">
-							<width>900</width>
-							<height>40</height>
-							<font>Shade_20_Bold_title</font>
-							<label>Use Alternate Home Screen Layout</label>
-							<textcolor>white</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
-							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
-							<onclick>Skin.ToggleSetting(HomeAlternate)</onclick>
-							<onclick>Skin.Reset(AlternateHome2)</onclick>
-							<selected>Skin.HasSetting(HomeAlternate)</selected>
-						</control>
+					<control type="radiobutton" id="225">
+						<width>900</width>
+						<height>40</height>
+						<font>Shade_20_Bold_title</font>
+						<label>Use Alternate Home Screen Layout</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+						<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HomeAlternate)</onclick>
+						<onclick>Skin.Reset(AlternateHome2)</onclick>
+						<selected>Skin.HasSetting(HomeAlternate)</selected>
+					</control>
+					<control type="radiobutton" id="227">
+						<description>enable weather info</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>900</width>
+						<height>40</height>
+						<font>Shade_20</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+						<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+						<label>Use TV Alert Feed (Must disable RSS feed)</label>
+						<onclick>Skin.ToggleSetting(UseTVShowRSSFeed)</onclick>
+						<selected>Skin.HasSetting(UseTVShowRSSFeed)</selected>
+						<visible>Skin.HasSetting(HomeAlternate)</visible>
+					</control>
 					<control type="label" id="226">
 						<width>750</width>
 						<height>45</height>
@@ -3294,25 +3310,25 @@
 							<visible>Skin.HasSetting(HomeGenreButton)</visible>
 						</control>
 					</control>
-				<control type="scrollbar" id="60">
-					<posx>1060</posx>
-					<posy>60</posy>
-					<width>15</width>
-					<height>530</height>
-					<texturesliderbackground border="12,0,12,0">Shade/scrollbar_background.png</texturesliderbackground>
-					<texturesliderbar border="12,0,12,0">Shade/scrollbar_slider_faded.png</texturesliderbar>
-					<texturesliderbarfocus border="12,0,12,0">Shade/scrollbar_slider_selected.png</texturesliderbarfocus>
-					<textureslidernib>ScrollBarNib.png</textureslidernib>
-					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-					<onleft>9008</onleft>
-					<onright>9000</onright>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
-					<visible>Container(9000).Hasfocus(8)</visible>
-				</control>
+					<control type="scrollbar" id="60">
+						<posx>1060</posx>
+						<posy>60</posy>
+						<width>15</width>
+						<height>530</height>
+						<texturesliderbackground border="12,0,12,0">Shade/scrollbar_background.png</texturesliderbackground>
+						<texturesliderbar border="12,0,12,0">Shade/scrollbar_slider_faded.png</texturesliderbar>
+						<texturesliderbarfocus border="12,0,12,0">Shade/scrollbar_slider_selected.png</texturesliderbarfocus>
+						<textureslidernib>ScrollBarNib.png</textureslidernib>
+						<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+						<onleft>9008</onleft>
+						<onright>9000</onright>
+						<showonepage>false</showonepage>
+						<orientation>vertical</orientation>
+						<visible>Container(9000).Hasfocus(8)</visible>
+					</control>
 				</control>
 
-			<control type="group">
+				<control type="group">
 					<visible>Skin.HasSetting(HomeAlternate)</visible>
 					<control type="grouplist" id="9009">
 						<visible>Container(9000).Hasfocus(9)</visible>
@@ -3326,173 +3342,173 @@
 						<onright>-</onright>
 						<onup>9009</onup>
 						<ondown>9009</ondown>
-							<control type="radiobutton" id="913">
-								<width>900</width>
-								<height>40</height>
-								<font>Shade_20_Bold_title</font>
-								<label>$LOCALIZE[31134] [B]1[/B]</label>
-								<textcolor>white</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
-								<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+						<control type="radiobutton" id="913">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20_Bold_title</font>
+							<label>$LOCALIZE[31134] [B]1[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
 							<onfocus>Skin.SetString(MoviesCustom,2)</onfocus>
 							<onclick>Skin.ToggleSetting(Menu_Custom2)</onclick>
 							<selected>Skin.HasSetting(Menu_Custom2)</selected>
 							<enable>!Skin.HasSetting(Menu_Movies_Sub2)</enable>
-							</control>
-							<control type="button" id="914">
-								<width>900</width>
-								<height>40</height>
-								<font>Shade_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
-								<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
-								<label>- LABEL</label>
-								<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom2_Label)][/COLOR]</label2>
-								<onclick>Skin.SetString(Menu_Custom2_Label)</onclick>
-								<visible>Skin.HasSetting(Menu_Custom2)</visible>
-							</control>
-							<control type="button" id="915">
-								<width>900</width>
-								<height>40</height>
-								<font>Shade_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
-								<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
-								<label>- PATH</label>
-								<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom2_Path)][/COLOR]</label2>
- 								<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Custom2_Path)</onclick>
-								<onclick>ActivateWindow(1114)</onclick>
-								<visible>Skin.HasSetting(Menu_Custom2)</visible>
-							</control>
-							<control type="button" id="916">
-								<width>900</width>
-								<height>40</height>
-								<font>Shade_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
-								<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
-								<label>- FANART</label>
-								<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom2_Folder)][/COLOR]</label2>
- 								<onclick>Skin.SetImage(Menu_Custom2_Folder)</onclick>
-								<visible>Skin.HasSetting(Menu_Custom2)</visible>
-							</control>
+						</control>
+						<control type="button" id="914">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+							<label>- LABEL</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom2_Label)][/COLOR]</label2>
+							<onclick>Skin.SetString(Menu_Custom2_Label)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom2)</visible>
+						</control>
+						<control type="button" id="915">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+							<label>- PATH</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom2_Path)][/COLOR]</label2>
+							<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Custom2_Path)</onclick>
+							<onclick>ActivateWindow(1114)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom2)</visible>
+						</control>
+						<control type="button" id="916">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+							<label>- FANART</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom2_Folder)][/COLOR]</label2>
+							<onclick>Skin.SetImage(Menu_Custom2_Folder)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom2)</visible>
+						</control>
 
-							<control type="radiobutton" id="917">
-								<width>900</width>
-								<height>40</height>
-								<font>Shade_20_Bold_title</font>
-								<label>$LOCALIZE[31134] [B]2[/B]</label>
-								<textcolor>white</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
-								<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+						<control type="radiobutton" id="917">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20_Bold_title</font>
+							<label>$LOCALIZE[31134] [B]2[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
 							<onfocus>Skin.SetString(MoviesCustom,3)</onfocus>
 							<onclick>Skin.ToggleSetting(Menu_Custom3)</onclick>
 							<selected>Skin.HasSetting(Menu_Custom3)</selected>
 							<enable>!Skin.HasSetting(Menu_Movies_Sub3)</enable>
-							</control>
-							<control type="button" id="918">
-								<width>900</width>
-								<height>40</height>
-								<font>Shade_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
-								<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
-								<label>- LABEL</label>
-								<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom3_Label)][/COLOR]</label2>
-								<onclick>Skin.SetString(Menu_Custom3_Label)</onclick>
-								<visible>Skin.HasSetting(Menu_Custom3)</visible>
-							</control>
-							<control type="button" id="919">
-								<width>900</width>
-								<height>40</height>
-								<font>Shade_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
-								<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
-								<label>- PATH</label>
-								<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom3_Path)][/COLOR]</label2>
-								 <onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Custom3_Path)</onclick>
-								<onclick>ActivateWindow(1114)</onclick>
-								<visible>Skin.HasSetting(Menu_Custom3)</visible>
-							</control>
-							<control type="button" id="920">
-								<width>900</width>
-								<height>40</height>
-								<font>Shade_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
-								<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
-								<label>- FANART</label>
-								<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom3_Folder)][/COLOR]</label2>
- 								<onclick>Skin.SetImage(Menu_Custom3_Folder)</onclick>
-								<visible>Skin.HasSetting(Menu_Custom3)</visible>
-							</control>
+						</control>
+						<control type="button" id="918">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+							<label>- LABEL</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom3_Label)][/COLOR]</label2>
+							<onclick>Skin.SetString(Menu_Custom3_Label)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom3)</visible>
+						</control>
+						<control type="button" id="919">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+							<label>- PATH</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom3_Path)][/COLOR]</label2>
+							<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Custom3_Path)</onclick>
+							<onclick>ActivateWindow(1114)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom3)</visible>
+						</control>
+						<control type="button" id="920">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+							<label>- FANART</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom3_Folder)][/COLOR]</label2>
+							<onclick>Skin.SetImage(Menu_Custom3_Folder)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom3)</visible>
+						</control>
 
-							<control type="radiobutton" id="921">
-								<width>900</width>
-								<height>40</height>
-								<font>Shade_20_Bold_title</font>
-								<label>$LOCALIZE[31134] [B]3[/B]</label>
-								<textcolor>white</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
-								<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+						<control type="radiobutton" id="921">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20_Bold_title</font>
+							<label>$LOCALIZE[31134] [B]3[/B]</label>
+							<textcolor>white</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
 							<onfocus>Skin.SetString(MoviesCustom,4)</onfocus>
 							<onclick>Skin.ToggleSetting(Menu_Custom4)</onclick>
 							<selected>Skin.HasSetting(Menu_Custom4)</selected>
 							<enable>!Skin.HasSetting(Menu_Movies_Sub4)</enable>
-							</control>
-							<control type="button" id="922">
-								<width>900</width>
-								<height>40</height>
-								<font>Shade_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
-								<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
-								<label>- LABEL</label>
-								<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom4_Label)][/COLOR]</label2>
-								<onclick>Skin.SetString(Menu_Custom4_Label)</onclick>
-								<visible>Skin.HasSetting(Menu_Custom4)</visible>
-							</control>
-							<control type="button" id="923">
-								<width>900</width>
-								<height>40</height>
-								<font>Shade_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
-								<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
-								<label>- PATH</label>
-								<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom4_Path)][/COLOR]</label2>
-								 <onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Custom4_Path)</onclick>
-								<onclick>ActivateWindow(1114)</onclick>
-								<visible>Skin.HasSetting(Menu_Custom4)</visible>
-							</control>
-							<control type="button" id="924">
-								<width>900</width>
-								<height>40</height>
-								<font>Shade_20</font>
-								<textcolor>grey2</textcolor>
-								<focusedcolor>white</focusedcolor>
-								<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
-								<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
-								<label>- FANART</label>
-								<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom4_Folder)][/COLOR]</label2>
- 								<onclick>Skin.SetImage(Menu_Custom4_Folder)</onclick>
-								<visible>Skin.HasSetting(Menu_Custom4)</visible>
-							</control>
-			
-			</control>
-			</control>
+						</control>
+						<control type="button" id="922">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+							<label>- LABEL</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom4_Label)][/COLOR]</label2>
+							<onclick>Skin.SetString(Menu_Custom4_Label)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom4)</visible>
+						</control>
+						<control type="button" id="923">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+							<label>- PATH</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom4_Path)][/COLOR]</label2>
+							<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Custom4_Path)</onclick>
+							<onclick>ActivateWindow(1114)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom4)</visible>
+						</control>
+						<control type="button" id="924">
+							<width>900</width>
+							<height>40</height>
+							<font>Shade_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus border="0,2,0,2">Shade/menuitemFO.png</texturefocus>
+							<texturenofocus border="0,2,0,2">Shade/MenuItemNF.png</texturenofocus>
+							<label>- FANART</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom4_Folder)][/COLOR]</label2>
+							<onclick>Skin.SetImage(Menu_Custom4_Folder)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom4)</visible>
+						</control>
+
+					</control>
+				</control>
 			</control>
 		</control>
 		<include>BehindDialogFadeOut</include>

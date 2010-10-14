@@ -929,7 +929,7 @@
 		</control>
 	</include>
 
-<include name="CommonNowPlayingAlternate">
+	<include name="CommonNowPlayingAlternate">
 		<animation effect="slide" start="0,0" end="-500,0" delay="0" time="300">WindowClose</animation>
 		<animation effect="slide" start="-500,0" end="0,0" delay="0" time="300">WindowOpen</animation>
 		<control type="group">
@@ -1049,7 +1049,7 @@
 
 
 
-<include name="CommonNowPlayingLibrary">
+	<include name="CommonNowPlayingLibrary">
 		<animation effect="slide" start="0,0" end="500,0" delay="0" time="300">WindowClose</animation>
 		<animation effect="slide" start="500,0" end="0,0" delay="0" time="300">WindowOpen</animation>
 		<control type="group">
@@ -1110,7 +1110,7 @@
 				<pauseatend>2000</pauseatend>
 			</control>
 		</control>
-</include>
+	</include>
 	<include name="ScrollOffsetLabel">
 		<control type="group">
 			<visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556])]</visible>
