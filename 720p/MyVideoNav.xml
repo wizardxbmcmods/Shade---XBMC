@@ -72,7 +72,7 @@
 				<posy>220</posy>
 				<width>1280</width>
 				<height>500</height>
-				<texture border="20">ContentPanel4.png</texture>
+				<texture border="20">contentpanel4.png</texture>
 				<include>VisibleFadeEffect</include>
 				<visible>Control.IsVisible(503)</visible>
 			</control>
@@ -81,7 +81,7 @@
 				<posy>-5</posy>
 				<width>1280</width>
 				<height>725</height>
-				<texture border="0.5.0.0">ContentPanel4.png</texture>
+				<texture border="0.5.0.0">contentpanel4.png</texture>
 				<include>VisibleFadeEffect</include>
 				<visible>Control.IsVisible(504) | Control.IsVisible(511)</visible>
 			</control>
@@ -168,7 +168,7 @@
 					<posy>900</posy>
 					<width>1350</width>
 					<height>1</height>
-					<texture>Shade/Popout.png</texture>
+					<texture>shade/Popout.png</texture>
 					<animation effect="zoom" start="0,0,1280,1" end="0,0,1280,300" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(98) | ControlGroup(9001).HasFocus">Conditional</animation>
 				</control>-->
 				<control type="image">
@@ -176,7 +176,7 @@
 					<posy>1060</posy>
 					<width>1350</width>
 					<height>80</height>
-					<texture>Shade/view_options_bg.png</texture>
+					<texture>shade/view_options_bg.png</texture>
 					<animation effect="slide" end="0,-110" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(98) | ControlGroup(9001).HasFocus">Conditional</animation>
 				</control>
 			</control>
@@ -238,7 +238,7 @@
 					<control type="image" id="200">
 						<width>2</width>
 						<height>45</height>
-						<texture>Shade/separatorwhite.png</texture>
+						<texture>shade/separatorwhite.png</texture>
 						<align>center</align>
 						<aligny>center</aligny>
 						<visible>Control.IsVisible(201) | Control.IsVisible(202) | Control.IsVisible(203) | Control.IsVisible(204) | Control.IsVisible(205) | Control.IsVisible(206) | Control.IsVisible(207) | Control.IsVisible(208) | Control.IsVisible(209) | Control.IsVisible(210) | Control.IsVisible(211) | Control.IsVisible(212) | Control.IsVisible(213) | Control.IsVisible(214)</visible>
@@ -276,19 +276,19 @@
 						<visible>Control.IsVisible(508)</visible>
 					</control>-->
 					<control type="radiobutton" id="206">
-						<description>Toggle Resolution Flags</description>
+						<description>Toggle Resolution flags</description>
 						<include>ButtonMediaSubCommonValues</include>
 						<label>31422</label>
-						<onclick>Skin.ToggleSetting(NoResolutionFlags)</onclick>
-						<selected>Skin.HasSetting(NoResolutionFlags)</selected>
+						<onclick>Skin.ToggleSetting(NoResolutionflags)</onclick>
+						<selected>Skin.HasSetting(NoResolutionflags)</selected>
 						<visible>Control.IsVisible(533)</visible>
 					</control>
 					<!--<control type="radiobutton" id="207">
-						<description>Toggle Flags</description>
+						<description>Toggle flags</description>
 						<include>ButtonMediaSubCommonValues</include>
 						<label>31423</label>
-						<onclick>Skin.ToggleSetting(NoFlags)</onclick>
-						<selected>Skin.HasSetting(NoFlags)</selected>
+						<onclick>Skin.ToggleSetting(Noflags)</onclick>
+						<selected>Skin.HasSetting(Noflags)</selected>
 						<visible>Control.IsVisible(534) + !Container.Content(TVShows) + !Skin.HasSetting(ScrollMovieLessInfo)</visible>
 					</control>-->
 					<control type="radiobutton" id="208">
@@ -300,15 +300,15 @@
 						<visible>Control.IsVisible(508)</visible>
 					</control>
 					<!--<control type="radiobutton" id="209">
-						<description>Toggle Flags</description>
+						<description>Toggle flags</description>
 						<include>ButtonMediaSubCommonValues</include>
 						<label>31423</label>
-						<onclick>Skin.ToggleSetting(NoFlags1)</onclick>
-						<selected>Skin.HasSetting(NoFlags1)</selected>
+						<onclick>Skin.ToggleSetting(Noflags1)</onclick>
+						<selected>Skin.HasSetting(Noflags1)</selected>
 						<visible>Control.IsVisible(508) + Skin.HasSetting(FanartOption1)</visible>
 					</control>-->
 					<control type="radiobutton" id="210">
-						<description>Toggle Flags</description>
+						<description>Toggle flags</description>
 						<include>ButtonMediaSubCommonValues</include>
 						<label>Use Clearart</label>
 						<onclick>Skin.ToggleSetting(UseClearartForView1)</onclick>
@@ -518,7 +518,7 @@
 				<posy>1030</posy>
 				<width>1400</width>
 				<height>190</height>
-				<texture>Shade/view_options_bg.png</texture>
+				<texture>shade/view_options_bg.png</texture>
 			</control>
 			<control type="image">
 				<description>LOGO</description>
@@ -601,8 +601,8 @@
 					<radioheight>18</radioheight>
 					<radioposx>160</radioposx>
 					<radioposy>30</radioposy>
-					<textureradiofocus>Shade/arrow.png</textureradiofocus>
-					<textureradionofocus>Shade/arrow.png</textureradionofocus>
+					<textureradiofocus>shade/arrow.png</textureradiofocus>
+					<textureradionofocus>shade/arrow.png</textureradionofocus>
 					<label>31026</label>
 					<onleft>16</onleft>
 					<onright>2</onright>
@@ -632,7 +632,7 @@
 				<posy>1096</posy>
 				<width>125</width>
 				<height>70</height>
-				<texture>Shade/Views/$INFO[Container.ViewMode]/previewimage.png</texture>
+				<texture>shade/views/$INFO[Container.ViewMode]/previewimage.png</texture>
 				<visible>Control.IsVisible(8999) | Control.IsVisible(9000) | Control.IsVisible(9010)</visible>
 			</control>
 			<control type="image">
@@ -640,7 +640,7 @@
 				<posy>1180</posy>
 				<width>35</width>
 				<height>35</height>
-				<texture>Shade/Down_Arrow.png</texture>
+				<texture>shade/down_arrow.png</texture>
 				<visible>Control.IsVisible(8999) | Control.IsVisible(9000) | Control.IsVisible(9010)</visible>
 			</control>
 			<control type="label">
@@ -661,7 +661,7 @@
 				<posy>1178</posy>
 				<width>35</width>
 				<height>35</height>
-				<texture>Shade/Left_Arrow.png</texture>
+				<texture>shade/left_arrow.png</texture>
 				<visible>Control.IsVisible(8999) | Control.IsVisible(9000) | Control.IsVisible(9010)</visible>
 			</control>
 			<control type="image">
@@ -669,7 +669,7 @@
 				<posy>1178</posy>
 				<width>35</width>
 				<height>35</height>
-				<texture>Shade/Right_Arrow.png</texture>
+				<texture>shade/right_arrow.png</texture>
 				<visible>Control.IsVisible(8999) | Control.IsVisible(9000) | Control.IsVisible(9010)</visible>
 			</control>
 			<control type="label">

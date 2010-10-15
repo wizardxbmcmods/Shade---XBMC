@@ -10,14 +10,14 @@
 				<posy>0</posy>
 				<width>1290</width>
 				<height>770</height>
-				<texture>Shade/vignette2.png</texture>
+				<texture>shade/vignette2.png</texture>
 			</control>
 			<control type="image">
 				<posx>30</posx>
 				<posy>650</posy>
 				<width>35</width>
 				<height>35</height>
-				<texture>Shade/Left_Arrow.png</texture>
+				<texture>shade/left_arrow.png</texture>
 			</control>
 			<control type="label">
 				<description>View Options</description>
@@ -74,7 +74,7 @@
 						<posy>0</posy>
 						<width>870</width>
 						<height>60</height>
-						<texture border="2,2,2,2" diffuse="Shade/rowdiffuse.png">Shade/row.png</texture>
+						<texture border="2,2,2,2" diffuse="shade/rowdiffuse.png">shade/row.png</texture>
 					</control>
 					<control type="label">
 						<posx>825</posx>
@@ -141,7 +141,7 @@
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<bordertexture border="8">ThumbShadow.png</bordertexture>
+					<bordertexture border="8">thumbshadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
 				<control type="image">
@@ -152,8 +152,8 @@
 					<height>510</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>400</fadetime>
-					<texture background="true">special://skin/media/Shade/genres/$INFO[ListItem.label,,.jpg]</texture>
-					<bordertexture border="8">ThumbShadow.png</bordertexture>
+					<texture background="true">special://skin/media/shade/genres/$INFO[ListItem.label,,.jpg]</texture>
+					<bordertexture border="8">thumbshadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
 				<control type="image">
@@ -164,8 +164,8 @@
 					<height>510</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>400</fadetime>
-					<texture background="true">special://skin/media/Shade/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
-					<bordertexture border="8">ThumbShadow.png</bordertexture>
+					<texture background="true">special://skin/media/shade/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
+					<bordertexture border="8">thumbshadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
 				<control type="image">
@@ -176,7 +176,7 @@
 					<height>220</height>
 					<width>220</width>		
 					<fadetime>400</fadetime>
-					<texture background="true">special://skin/media/Studios/$INFO[ListItem.label,,.png]</texture>
+					<texture background="true">special://skin/media/studios/$INFO[ListItem.label,,.png]</texture>
 				</control>
 				<control type="label">
 					<posx>100</posx>
@@ -204,14 +204,14 @@
 				<posy>0</posy>
 				<width>1290</width>
 				<height>770</height>
-				<texture>Shade/vignette2.png</texture>
+				<texture>shade/vignette2.png</texture>
 			</control>
 			<control type="image">
 				<posx>30</posx>
 				<posy>650</posy>
 				<width>35</width>
 				<height>35</height>
-				<texture>Shade/Up_Arrow.png</texture>
+				<texture>shade/up_arrow.png</texture>
 			</control>
 			<control type="label">
 				<description>View Options</description>
@@ -281,7 +281,7 @@
 						<width>200</width>
 						<height>200</height>
 						<fadetime>100</fadetime>
-						<texture background="true">special://skin/media/Studios/$INFO[ListItem.label,,.png]</texture>
+						<texture background="true">special://skin/media/studios/$INFO[ListItem.label,,.png]</texture>
 					</control>
 					<control type="label">
 						<posx>100</posx>
@@ -306,7 +306,7 @@
 						<posy>8</posy>
 						<width>170</width>
 						<height>170</height>
-						<bordertexture border="3">Shade/folder-Focus.png</bordertexture>
+						<bordertexture border="3">shade/folder-Focus.png</bordertexture>
 						<bordersize>3</bordersize>
 						<fadetime>100</fadetime>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -321,10 +321,10 @@
 						<posy>8</posy>
 						<width>170</width>
 						<height>170</height>
-						<bordertexture border="3">Shade/folder-Focus.png</bordertexture>
+						<bordertexture border="3">shade/folder-Focus.png</bordertexture>
 						<bordersize>3</bordersize>
 						<fadetime>100</fadetime>
-						<texture background="true">special://skin/media/Studios/$INFO[ListItem.label,,.png]</texture>
+						<texture background="true">special://skin/media/studios/$INFO[ListItem.label,,.png]</texture>
 					</control>
 					<control type="label">
 						<posx>100</posx>
@@ -353,14 +353,14 @@
 				<posy>0</posy>
 				<width>1290</width>
 				<height>720</height>
-				<texture>Shade/vignette2.png</texture>
+				<texture>shade/vignette2.png</texture>
 			</control>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture>Shade/solid.png</texture>
+				<texture>shade/solid.png</texture>
 			</control>
 			<include>UpOptions</include>
 			<control type="group">
@@ -419,7 +419,7 @@
 							<bordersize>8</bordersize>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 							<fadetime>200</fadetime>
-							<texture background="true" diffuse="Shade/posterdiffuse.png">$INFO[Listitem.Icon]</texture>
+							<texture background="true" diffuse="shade/posterdiffuse.png">$INFO[Listitem.Icon]</texture>
 						</control>	
 						<control type="image">
 							<posx>0</posx>
@@ -429,7 +429,7 @@
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 							<bordersize>8</bordersize>
 							<fadetime>200</fadetime>
-							<texture diffuse="Shade/posterdiffuse.png">black-back.png</texture>
+							<texture diffuse="shade/posterdiffuse.png">black-back.png</texture>
 							<colordiffuse>AAFFFFFF</colordiffuse>
 						</control>	
 					</control>	
@@ -453,7 +453,7 @@
 								<height>216</height>
 								<fadetime>200</fadetime>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
-								<texture background="true" diffuse="Shade/posterdiffuse.png">glow_white.png</texture>
+								<texture background="true" diffuse="shade/posterdiffuse.png">glow_white.png</texture>
 								<description>focus glow</description>
 							</control>
 							<control type="image">
@@ -463,7 +463,7 @@
 								<height>216</height>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 								<bordersize>8</bordersize>
-								<texture diffuse="Shade/posterdiffuse.png">Shade/posterdiffuse.png</texture>
+								<texture diffuse="shade/posterdiffuse.png">shade/posterdiffuse.png</texture>
 								<colordiffuse>FF000000</colordiffuse>
 							</control>
 							<control type="image">
@@ -474,7 +474,7 @@
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 								<fadetime>200</fadetime>
 								<bordersize>8</bordersize>
-								<texture background="true" diffuse="Shade/posterdiffuse.png">$INFO[Listitem.Icon]</texture>
+								<texture background="true" diffuse="shade/posterdiffuse.png">$INFO[Listitem.Icon]</texture>
 							</control>
 						</control>			
 					</control>
@@ -548,14 +548,14 @@
 				<posy>0</posy>
 				<width>1290</width>
 				<height>770</height>
-				<texture>Shade/vignette2.png</texture>
+				<texture>shade/vignette2.png</texture>
 			</control>
 			<control type="image">
 				<posx>30</posx>
 				<posy>650</posy>
 				<width>35</width>
 				<height>35</height>
-				<texture>Shade/Up_Arrow.png</texture>
+				<texture>shade/up_arrow.png</texture>
 			</control>
 			<control type="label">
 				<description>View Options</description>
@@ -615,7 +615,7 @@
 						<width>200</width>
 						<height>200</height>
 						<fadetime>100</fadetime>
-						<texture background="true" fallback="other.jpg">special://skin/media/Shade/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
+						<texture background="true" fallback="other.jpg">special://skin/media/shade/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
 					</control>
 					<control type="label">
 						<posx>100</posx>
@@ -639,10 +639,10 @@
 						<posy>8</posy>
 						<width>170</width>
 						<height>170</height>
-						<bordertexture border="3">Shade/folder-Focus.png</bordertexture>
+						<bordertexture border="3">shade/folder-Focus.png</bordertexture>
 						<bordersize>3</bordersize>
 						<fadetime>100</fadetime>
-						<texture background="true" fallback="other.jpg">special://skin/media/Shade/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
+						<texture background="true" fallback="other.jpg">special://skin/media/shade/musicgenres/$INFO[ListItem.label,,.jpg]</texture>
 					</control>
 					<control type="label">
 						<posx>100</posx>
@@ -685,7 +685,7 @@
 						<posy>0</posy>
 						<width>1280</width>
 						<height>60</height>
-						<texture border="2,2,2,2">Blue.png</texture>
+						<texture border="2,2,2,2">blue.png</texture>
 					</control>
 					<control type="image">
 						<posx>5</posx>
@@ -812,14 +812,14 @@
 				<posy>0</posy>
 				<width>1290</width>
 				<height>770</height>
-				<texture>Shade/vignette2.png</texture>
+				<texture>shade/vignette2.png</texture>
 			</control>
 			<control type="image">
 				<posx>30</posx>
 				<posy>650</posy>
 				<width>35</width>
 				<height>35</height>
-				<texture>Shade/Up_Arrow.png</texture>
+				<texture>shade/up_arrow.png</texture>
 			</control>
 			<control type="label">
 				<description>View Options</description>
@@ -879,7 +879,7 @@
 						<width>200</width>
 						<height>200</height>
 						<fadetime>100</fadetime>
-						<texture background="true">special://skin/media/Shade/genres/$INFO[ListItem.label,,.jpg]</texture>
+						<texture background="true">special://skin/media/shade/genres/$INFO[ListItem.label,,.jpg]</texture>
 					</control>
 				</itemlayout>
 				<focusedlayout height="240" width="250">
@@ -893,10 +893,10 @@
 						<posy>8</posy>
 						<width>170</width>
 						<height>170</height>
-						<bordertexture border="3">Shade/folder-Focus.png</bordertexture>
+						<bordertexture border="3">shade/folder-Focus.png</bordertexture>
 						<bordersize>3</bordersize>
 						<fadetime>100</fadetime>
-						<texture background="true">special://skin/media/Shade/genres/$INFO[ListItem.label,,.jpg]</texture>
+						<texture background="true">special://skin/media/shade/genres/$INFO[ListItem.label,,.jpg]</texture>
 					</control>
 				</focusedlayout>
 			</control>
@@ -920,7 +920,7 @@
 				<posy>650</posy>
 				<width>35</width>
 				<height>35</height>
-				<texture>Shade/Up_Arrow.png</texture>
+				<texture>shade/up_arrow.png</texture>
 			</control>
 			<control type="label">
 				<description>View Options</description>

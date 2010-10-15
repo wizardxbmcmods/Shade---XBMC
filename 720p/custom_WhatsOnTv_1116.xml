@@ -26,8 +26,8 @@
 			<label>Exit</label>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturenofocus border="5">Shade/button-nofocus.png</texturenofocus>
-			<texturefocus border="5">Shade/button-focus-white.png</texturefocus>
+			<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+			<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 			<font>Shade_20_Bold_title</font>
 			<onclick>ActivateWindow(Home)</onclick>
 		</control>
@@ -44,8 +44,8 @@
 			<label>Refresh</label>
 			<textcolor>grey2</textcolor>
 			<focusedcolor>white</focusedcolor>
-			<texturenofocus border="5">Shade/button-nofocus.png</texturenofocus>
-			<texturefocus border="5">Shade/button-focus-white.png</texturefocus>
+			<texturenofocus border="5">shade/button-nofocus.png</texturenofocus>
+			<texturefocus border="5">shade/button-focus-white.png</texturefocus>
 			<font>Shade_20_Bold_title</font>
 			<onclick>XBMC.RunScript(script.tv.show.next.aired,silent=true)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
@@ -345,7 +345,7 @@
 				<aspectratio>stretch</aspectratio>
 				<align>right</align>
 				<aligny>top</aligny>
-				<texture>special://skin/media/Studios/$INFO[Window(Home).Property(NextAired.1.Network),,.png]</texture>
+				<texture>special://skin/media/studios/$INFO[Window(Home).Property(NextAired.1.Network),,.png]</texture>
 			</control>
 			<control type="image">
 				<posx>750</posx>
@@ -355,7 +355,7 @@
 				<aspectratio>stretch</aspectratio>
 				<align>right</align>
 				<aligny>top</aligny>
-				<texture>special://skin/media/Studios/$INFO[Window(Home).Property(NextAired.2.Network),,.png]</texture>
+				<texture>special://skin/media/studios/$INFO[Window(Home).Property(NextAired.2.Network),,.png]</texture>
 			</control>
 			<control type="image">
 				<posx>750</posx>
@@ -365,7 +365,7 @@
 				<aspectratio>stretch</aspectratio>
 				<align>right</align>
 				<aligny>top</aligny>
-				<texture>special://skin/media/Studios/$INFO[Window(Home).Property(NextAired.3.Network),,.png]</texture>
+				<texture>special://skin/media/studios/$INFO[Window(Home).Property(NextAired.3.Network),,.png]</texture>
 			</control>
 			<control type="image">
 				<posx>750</posx>
@@ -375,7 +375,7 @@
 				<aspectratio>stretch</aspectratio>
 				<align>right</align>
 				<aligny>top</aligny>
-				<texture>special://skin/media/Studios/$INFO[Window(Home).Property(NextAired.4.Network),,.png]</texture>
+				<texture>special://skin/media/studios/$INFO[Window(Home).Property(NextAired.4.Network),,.png]</texture>
 			</control>
 			<control type="image">
 				<posx>750</posx>
@@ -385,7 +385,7 @@
 				<aspectratio>stretch</aspectratio>
 				<align>right</align>
 				<aligny>top</aligny>
-				<texture>special://skin/media/Studios/$INFO[Window(Home).Property(NextAired.5.Network),,.png]</texture>
+				<texture>special://skin/media/studios/$INFO[Window(Home).Property(NextAired.5.Network),,.png]</texture>
 			</control>
 		</control>
 
@@ -399,7 +399,7 @@
 				<width>500</width>
 				<height>80</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.1.Showpath),,folder.jpg]</texture>
+				<texture diffuse="shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.1.Showpath),,folder.jpg]</texture>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -407,7 +407,7 @@
 				<width>500</width>
 				<height>80</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.2.Showpath),,folder.jpg]</texture>
+				<texture diffuse="shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.2.Showpath),,folder.jpg]</texture>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -415,7 +415,7 @@
 				<width>500</width>
 				<height>80</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.3.Showpath),,folder.jpg]</texture>
+				<texture diffuse="shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.3.Showpath),,folder.jpg]</texture>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -423,7 +423,7 @@
 				<width>500</width>
 				<height>80</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.4.Showpath),,folder.jpg]</texture>
+				<texture diffuse="shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.4.Showpath),,folder.jpg]</texture>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -431,7 +431,7 @@
 				<width>500</width>
 				<height>80</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.5.Showpath),,folder.jpg]</texture>
+				<texture diffuse="shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.5.Showpath),,folder.jpg]</texture>
 			</control>
 		</control>
 
@@ -445,7 +445,7 @@
 				<width>500</width>
 				<height>80</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.1.Showpath),,banner.jpg]</texture>
+				<texture diffuse="shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.1.Showpath),,banner.jpg]</texture>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -453,7 +453,7 @@
 				<width>500</width>
 				<height>80</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.2.Showpath),,banner.jpg]</texture>
+				<texture diffuse="shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.2.Showpath),,banner.jpg]</texture>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -461,7 +461,7 @@
 				<width>500</width>
 				<height>80</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.3.Showpath),,banner.jpg]</texture>
+				<texture diffuse="shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.3.Showpath),,banner.jpg]</texture>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -469,7 +469,7 @@
 				<width>500</width>
 				<height>80</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.4.Showpath),,banner.jpg]</texture>
+				<texture diffuse="shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.4.Showpath),,banner.jpg]</texture>
 			</control>
 			<control type="image">
 				<posx>20</posx>
@@ -477,7 +477,7 @@
 				<width>500</width>
 				<height>80</height>
 				<aspectratio>stretch</aspectratio>
-				<texture diffuse="Shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.5.Showpath),,banner.jpg]</texture>
+				<texture diffuse="shade/bannerdiffuse.png">$INFO[Window(Home).Property(NextAired.5.Showpath),,banner.jpg]</texture>
 			</control>
 		</control>
 

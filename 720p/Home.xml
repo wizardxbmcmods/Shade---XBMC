@@ -194,7 +194,7 @@
 				<posy>290</posy>
 				<width>1280</width>
 				<height>10</height>
-				<texture>shade/Home_Liner.png</texture>
+				<texture>shade/home_liner.png</texture>
 				<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 				<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
 				<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
@@ -224,7 +224,7 @@
 				<posy>300</posy>
 				<width>1280</width>
 				<height>420</height>
-				<texture>shade/Home_Bottom.png</texture>
+				<texture>shade/home_bottom.png</texture>
 				<visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
 				<animation effect="slide" start="0,0" end="0,500" delay="0" time="300">WindowClose</animation>
 				<animation effect="slide" start="0,500" end="0,0" delay="0" time="300">WindowOpen</animation>
@@ -280,7 +280,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>Shade/vignette2.png</texture>
+			<texture>shade/vignette2.png</texture>
 			<aspectratio>stretch</aspectratio>
 			<colordiffuse>FFFFFFFF</colordiffuse>
 		</control>			
@@ -312,7 +312,7 @@
 					<posy>-165</posy>
 					<width>1280</width>
 					<height>40</height>
-					<texture>Shade/solid.png</texture>
+					<texture>shade/solid.png</texture>
 				</control>
 
 				<control type="grouplist" id="9010">
@@ -1074,7 +1074,7 @@
 						<aspectratio>stretch</aspectratio>
 				<colordiffuse>80FFFFFF</colordiffuse>
 						<fadetime>200</fadetime>
-						<texture background="true">Shade/arrow.png</texture>
+						<texture background="true">shade/arrow.png</texture>
 					</control>					
 					<control type="image">
 						<description>Main Icon</description>
@@ -1085,7 +1085,7 @@
 						<aspectratio>stretch</aspectratio>
 				<colordiffuse>80FFFFFF</colordiffuse>
 						<fadetime>200</fadetime>
-						<texture background="true" flipy="true">Shade/arrow.png</texture>						
+						<texture background="true" flipy="true">shade/arrow.png</texture>						
 					</control>		-->
 			</focusedlayout>
 			<content>
@@ -1486,7 +1486,7 @@
 				<width>35</width>
 				<height>35</height>
 				<colordiffuse>80FFFFFF</colordiffuse>
-				<texture>Shade/Up_Arrow.png</texture>
+				<texture>shade/up_arrow.png</texture>
 			</control>
 			<control type="label">
 				<description>View Options</description>
@@ -1529,7 +1529,7 @@
 				<posy>5</posy>
 				<width>1280</width>
 				<height>70</height>
-				<texture>Shade/homefade.png</texture>
+				<texture>shade/homefade.png</texture>
 				<animation effect="slide" start="0,0" end="0,300" delay="0" time="300">WindowClose</animation>
 				<animation effect="slide" start="0,300" end="0,0" delay="0" time="300">WindowOpen</animation>
 				<visible>Skin.HasSetting(HomeAlternate) + !system.getbool(lookandfeel.enablerssfeeds)</visible>
@@ -1569,7 +1569,7 @@
 				<posy>5</posy>
 				<width>1280</width>
 				<height>70</height>
-				<texture>Shade/homefade.png</texture>
+				<texture>shade/homefade.png</texture>
 				<animation effect="slide" start="0,0" end="0,300" delay="0" time="300">WindowClose</animation>
 				<animation effect="slide" start="0,300" end="0,0" delay="0" time="300">WindowOpen</animation>
 				<visible>Skin.HasSetting(HomeAlternate) + system.getbool(lookandfeel.enablerssfeeds)</visible>

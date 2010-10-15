@@ -81,8 +81,8 @@
   <string id="31129">Enable Subtitle Download in Video OSD</string>
   <string id="31130">PATH TO SUBTITLE ADD-ON</string>
   <string id="31131">BUTTON IMAGE</string>
-  <string id="31132">Enable Custom Script Button</string>
-  <string id="31133">PATH TO SCRIPT</string>
+  <string id="31132">Enable Custom Addon Button</string>
+  <string id="31133">PATH TO ADDON</string>
   <string id="31134">Enable Custom Menu Item</string>
 
   <!-- Script labels -->

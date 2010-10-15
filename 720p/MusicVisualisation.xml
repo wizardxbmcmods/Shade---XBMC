@@ -145,7 +145,7 @@
 		<posy>160r</posy>
 		<width>1350</width>
 		<height>500</height>
-		<texture flipy="true">Shade/ContentPanel.png</texture>
+		<texture flipy="true">shade/contentpanel.png</texture>
 	</control>
 	<control type="group">
 		<control type="group">
@@ -342,7 +342,7 @@
 				<width>160</width>
 				<height>30</height>
 				<aspectratio align="right">keep</aspectratio>
-				<texture>LeftRating/$INFO[Player.StarRating]</texture>
+				<texture>leftrating/$INFO[Player.StarRating]</texture>
 			</control>
 			<control type="label">
 				<posx>0</posx>
@@ -445,7 +445,7 @@
 				<height>230</height>
 				<texture>$INFO[MusicPlayer.cover]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
-				<bordertexture border="8">ThumbShadow.png</bordertexture>
+				<bordertexture border="8">thumbshadow.png</bordertexture>
 				<bordersize>8</bordersize>
 			</control>
 			<control type="image">
@@ -476,7 +476,7 @@
 		<width>800</width>
 		<height>200</height>
 		<colordiffuse>CCFFFFFF</colordiffuse>
-		<texture border="20" flipy="true">Shade/ContentPanel_Dark_context.png</texture>
+		<texture border="20" flipy="true">shade/contentpanel_dark_context.png</texture>
 	</control>
 	<control type="label">
 		<posx>30</posx>
@@ -617,7 +617,7 @@
 		<posy>395</posy>
 		<width>300</width>
 		<height>285</height>
-		<texture diffuse="thumbs/cdcover_mask.png">$INFO[MusicPlayer.cover]</texture>
+		<texture diffuse="thumbs/cdcover_mask.png">$INFO[MusicPlayer.Cover]</texture>
 		<aspectratio aligny="bottom">stretch</aspectratio>
 		<animation effect="slide" start="-118" end="0" time="300" tween="cubic" easing="out" delay="500">WindowOpen</animation>
 	</control>

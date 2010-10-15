@@ -10,7 +10,7 @@
 				<posy>-120</posy>
 				<width>1280</width>
 				<height>350</height>
-				<texture border="20,20,20,2">Shade/sidebar.png</texture>
+				<texture border="20,20,20,2">shade/sidebar.png</texture>
 				<colordiffuse>EEFFFFFF</colordiffuse>
 			</control>
 			<!-- Stuff to fill in for seekbar not being visible -->
@@ -220,7 +220,7 @@
 					<posy>13</posy>
 					<width>150</width>
 					<height>205</height>
-					<texture diffuse="Shade/posterdiffuse.png">$INFO[VideoPlayer.Cover]</texture>
+					<texture diffuse="shade/posterdiffuse.png">$INFO[VideoPlayer.Cover]</texture>
 					<visible>VideoPlayer.Content(Movies)</visible>
 				</control>
 				<control type="textbox">
@@ -437,14 +437,14 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[VideoPlayer.VideoResolution,Flags/video/,.png]</texture>
+						<texture>$INFO[VideoPlayer.VideoResolution,flags/video/,.png]</texture>
 					</control>
 					<control type="image">
 						<description>Xvid Codec Image</description>
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/xvid.png</texture>
+						<texture>flags/video/xvid.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,xvid)</visible>
 					</control>
 					<control type="image">
@@ -452,7 +452,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/divx.png</texture>
+						<texture>flags/video/divx.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) |substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5)</visible>
 					</control>
 					<control type="image">
@@ -460,7 +460,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/h264.png</texture>
+						<texture>flags/video/h264.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,h264)</visible>
 					</control>
 					<control type="image">
@@ -468,7 +468,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/avc1.png</texture>
+						<texture>flags/video/avc1.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,avc1)</visible>
 					</control>
 					<control type="image">
@@ -476,7 +476,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/wvc1.png</texture>
+						<texture>flags/video/wvc1.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,wvc1)</visible>
 					</control>
 					<control type="image">
@@ -484,7 +484,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/mpeg1video.png</texture>
+						<texture>flags/video/mpeg1video.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,mpeg1video)</visible>
 					</control>
 					<control type="image">
@@ -492,7 +492,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/mp3.png</texture>
+						<texture>flags/audio/mp3.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,mp3)</visible>
 					</control>
 					<control type="image">
@@ -500,7 +500,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/dts.png</texture>
+						<texture>flags/audio/dts.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,dca)</visible>
 					</control>
 					<control type="image">
@@ -508,7 +508,7 @@
 						<width>35</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/ac3.png</texture>
+						<texture>flags/audio/ac3.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,ac3) + !substring(VideoPlayer.AudioChannels,6)</visible>
 					</control>
 					<control type="image">
@@ -516,7 +516,7 @@
 						<width>35</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/aac.png</texture>
+						<texture>flags/audio/aac.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,aac)</visible>
 					</control>
 					<control type="image">
@@ -524,7 +524,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/dolbydigital.png</texture>
+						<texture>flags/audio/dolbydigital.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)</visible>
 					</control>
 					<control type="image">
@@ -532,7 +532,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/wmapro.png</texture>
+						<texture>flags/audio/wmapro.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,wmapro)</visible>
 					</control>
 					<control type="image">
@@ -540,7 +540,7 @@
 						<width>35</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[VideoPlayer.AudioChannels,Flags/audio/,.png]</texture>
+						<texture>$INFO[VideoPlayer.AudioChannels,flags/audio/,.png]</texture>
 					</control>
 				</control>
 			</control>
@@ -677,14 +677,14 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[VideoPlayer.VideoResolution,Flags/video/,.png]</texture>
+						<texture>$INFO[VideoPlayer.VideoResolution,flags/video/,.png]</texture>
 					</control>
 					<control type="image">
 						<description>Xvid Codec Image</description>
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/xvid.png</texture>
+						<texture>flags/video/xvid.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,xvid)</visible>
 					</control>
 					<control type="image">
@@ -692,7 +692,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/divx.png</texture>
+						<texture>flags/video/divx.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) |substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5)</visible>
 					</control>
 					<control type="image">
@@ -700,7 +700,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/h264.png</texture>
+						<texture>flags/video/h264.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,h264)</visible>
 					</control>
 					<control type="image">
@@ -708,7 +708,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/avc1.png</texture>
+						<texture>flags/video/avc1.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,avc1)</visible>
 					</control>
 					<control type="image">
@@ -716,7 +716,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/wvc1.png</texture>
+						<texture>flags/video/wvc1.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,wvc1)</visible>
 					</control>
 					<control type="image">
@@ -724,7 +724,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/mpeg1video.png</texture>
+						<texture>flags/video/mpeg1video.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,mpeg1video)</visible>
 					</control>
 					<control type="image">
@@ -732,7 +732,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/mp3.png</texture>
+						<texture>flags/audio/mp3.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,mp3)</visible>
 					</control>
 					<control type="image">
@@ -740,7 +740,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/dts.png</texture>
+						<texture>flags/audio/dts.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,dca)</visible>
 					</control>
 					<control type="image">
@@ -748,7 +748,7 @@
 						<width>35</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/ac3.png</texture>
+						<texture>flags/audio/ac3.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,ac3) + !substring(VideoPlayer.AudioChannels,6)</visible>
 					</control>
 					<control type="image">
@@ -756,7 +756,7 @@
 						<width>35</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/aac.png</texture>
+						<texture>flags/audio/aac.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,aac)</visible>
 					</control>
 					<control type="image">
@@ -764,7 +764,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/dolbydigital.png</texture>
+						<texture>flags/audio/dolbydigital.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)</visible>
 					</control>
 					<control type="image">
@@ -772,7 +772,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/wmapro.png</texture>
+						<texture>flags/audio/wmapro.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,wmapro)</visible>
 					</control>
 					<control type="image">
@@ -780,7 +780,7 @@
 						<width>35</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[VideoPlayer.AudioChannels,Flags/audio/,.png]</texture>
+						<texture>$INFO[VideoPlayer.AudioChannels,flags/audio/,.png]</texture>
 					</control>
 				</control>
 			</control>
@@ -940,14 +940,14 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[VideoPlayer.VideoResolution,Flags/video/,.png]</texture>
+						<texture>$INFO[VideoPlayer.VideoResolution,flags/video/,.png]</texture>
 					</control>
 					<control type="image">
 						<description>Xvid Codec Image</description>
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/xvid.png</texture>
+						<texture>flags/video/xvid.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,xvid)</visible>
 					</control>
 					<control type="image">
@@ -955,7 +955,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/divx.png</texture>
+						<texture>flags/video/divx.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,divx) | substring(VideoPlayer.VideoCodec,div3) |substring(VideoPlayer.VideoCodec,div4) | substring(VideoPlayer.VideoCodec,div5)</visible>
 					</control>
 					<control type="image">
@@ -963,7 +963,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/h264.png</texture>
+						<texture>flags/video/h264.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,h264)</visible>
 					</control>
 					<control type="image">
@@ -971,7 +971,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/avc1.png</texture>
+						<texture>flags/video/avc1.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,avc1)</visible>
 					</control>
 					<control type="image">
@@ -979,7 +979,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/wvc1.png</texture>
+						<texture>flags/video/wvc1.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,wvc1)</visible>
 					</control>
 					<control type="image">
@@ -987,7 +987,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/video/mpeg1video.png</texture>
+						<texture>flags/video/mpeg1video.png</texture>
 						<visible>substring(VideoPlayer.VideoCodec,mpeg1video)</visible>
 					</control>
 					<control type="image">
@@ -995,7 +995,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/mp3.png</texture>
+						<texture>flags/audio/mp3.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,mp3)</visible>
 					</control>
 					<control type="image">
@@ -1003,7 +1003,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/dts.png</texture>
+						<texture>flags/audio/dts.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,dca)</visible>
 					</control>
 					<control type="image">
@@ -1011,7 +1011,7 @@
 						<width>35</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/ac3.png</texture>
+						<texture>flags/audio/ac3.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,ac3) + !substring(VideoPlayer.AudioChannels,6)</visible>
 					</control>
 					<control type="image">
@@ -1019,7 +1019,7 @@
 						<width>35</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/aac.png</texture>
+						<texture>flags/audio/aac.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,aac)</visible>
 					</control>
 					<control type="image">
@@ -1027,7 +1027,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/dolbydigital.png</texture>
+						<texture>flags/audio/dolbydigital.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,ac3) + substring(VideoPlayer.AudioChannels,6)</visible>
 					</control>
 					<control type="image">
@@ -1035,7 +1035,7 @@
 						<width>80</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>Flags/audio/wmapro.png</texture>
+						<texture>flags/audio/wmapro.png</texture>
 						<visible>substring(VideoPlayer.AudioCodec,wmapro)</visible>
 					</control>
 					<control type="image">
@@ -1043,7 +1043,7 @@
 						<width>35</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[VideoPlayer.AudioChannels,Flags/audio/,.png]</texture>
+						<texture>$INFO[VideoPlayer.AudioChannels,flags/audio/,.png]</texture>
 					</control>
 				</control>
 			</control>

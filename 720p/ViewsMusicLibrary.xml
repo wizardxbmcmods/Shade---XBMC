@@ -12,7 +12,7 @@
 				<height>700</height>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>IconCrossfadeTime</fadetime>
-				<texture>Shade/vignette2.png</texture>
+				<texture>shade/vignette2.png</texture>
 			</control>
 			<control type="group">
 				<posx>0</posx>
@@ -67,7 +67,7 @@
 					<posy>200</posy>
 					<width>1340</width>
 					<height>390</height>
-					<texture flipy="true">Shade/banner_strip_background.png</texture>
+					<texture flipy="true">shade/banner_strip_background.png</texture>
 				</control>	
 				<control type="image">
 					<posx>0</posx>
@@ -76,7 +76,7 @@
 					<height>300</height>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture>Shade/scrollfloor.png</texture>
+					<texture>shade/scrollfloor.png</texture>
 				</control>
 				<control type="label">
 					<posx>361</posx>
@@ -129,7 +129,7 @@
 					<height>170</height>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true" diffuse="Shade/thumbdiffuse.png">$INFO[ListItem.Property(fanart_image)]</texture>
+					<texture background="true" diffuse="shade/thumbdiffuse.png">$INFO[ListItem.Property(fanart_image)]</texture>
 				</control>
 				<control type="label">
 					<description>Title label</description>
@@ -316,7 +316,7 @@
 					<posy>660</posy>
 					<width>35</width>
 					<height>35</height>
-					<texture>Shade/Up_Arrow.png</texture>
+					<texture>shade/up_arrow.png</texture>
 				</control>
 				<control type="label">
 					<description>View Options</description>
@@ -388,7 +388,7 @@
 						<width>168</width>
 						<height>168</height>
 						<aspectratio scalediffuse="true">stretch</aspectratio>
-						<bordertexture border="4">Shade/folder-focus.png</bordertexture>
+						<bordertexture border="4">shade/folder-focus.png</bordertexture>
 						<bordersize>4</bordersize>
 						<fadetime>200</fadetime>
 						<texture background="true" diffuse="album_fanart_diffuse.png">$INFO[ListItem.Icon]</texture>
@@ -443,8 +443,8 @@
 				<posy>225</posy>
 				<width>1080</width>
 				<height>25</height>
-				<texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
-				<texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
+				<texturesliderbackground border="14,0,14,0">scrollbarh.png</texturesliderbackground>
+				<texturesliderbar border="14,0,14,0">scrollbarh_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="14,0,14,0">scrollbarh_bar_focusnoir.png</texturesliderbarfocus>
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
@@ -467,14 +467,14 @@
 				<posy>0</posy>
 				<width>1290</width>
 				<height>770</height>
-				<texture>Shade/vignette2.png</texture>
+				<texture>shade/vignette2.png</texture>
 			</control>
 			<control type="image">
 				<posx>30</posx>
 				<posy>650</posy>
 				<width>35</width>
 				<height>35</height>
-				<texture>Shade/Up_Arrow.png</texture>
+				<texture>shade/up_arrow.png</texture>
 			</control>
 			<control type="label">
 				<description>View Options</description>
@@ -535,7 +535,7 @@
 						<width>236</width>
 						<height>146</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture diffuse="Shade/paneldiffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+						<texture diffuse="shade/paneldiffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 						<visible>stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -544,7 +544,7 @@
 						<width>236</width>
 						<height>146</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture diffuse="Shade/paneldiffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+						<texture diffuse="shade/paneldiffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
 					<control type="image">
@@ -552,7 +552,7 @@
 						<posy>11</posy>
 						<width>236</width>
 						<height>146</height>
-						<texture diffuse="Shade/paneldiffuse.png" background="true">black-back.png</texture>
+						<texture diffuse="shade/paneldiffuse.png" background="true">black-back.png</texture>
 						<aspectratio scalediffuse="false">scale</aspectratio>		
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 					</control>
@@ -584,7 +584,7 @@
 								<width>10</width>
 								<height>10</height>
 								<colordiffuse>FFFFFFFF</colordiffuse>
-								<texture>Shade/arrow2.png</texture>
+								<texture>shade/arrow2.png</texture>
 								<aspectratio>stretch</aspectratio>
 							</control>
 							<control type="image">
@@ -594,7 +594,7 @@
 								<height>10</height>
 								<colordiffuse>FFFFFFFF</colordiffuse>
 								<aspectratio>stretch</aspectratio>
-								<texture flipx="true">Shade/arrow2.png</texture>
+								<texture flipx="true">shade/arrow2.png</texture>
 							</control>
 						</control>
 					</control>-->
@@ -604,7 +604,7 @@
 						<width>236</width>
 						<height>146</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture diffuse="Shade/paneldiffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+						<texture diffuse="shade/paneldiffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="160" center="auto" time="300" tween="back" easing="out" reversible="false" />
 						</animation>
@@ -619,7 +619,7 @@
 						<width>266</width>
 						<height>166</height>
 						<aspectratio scalediffuse="false">keep</aspectratio>
-						<texture>Shade/glow_white.png</texture>
+						<texture>shade/glow_white.png</texture>
 						<description>focus glow</description>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="160" center="auto" time="300" tween="back" easing="out" reversible="false" />
@@ -634,7 +634,7 @@
 						<width>236</width>
 						<height>146</height>
 						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture diffuse="Shade/paneldiffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+						<texture diffuse="shade/paneldiffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 						<animation type="focus">
 							<effect type="zoom" start="100" end="160" center="auto" time="300" tween="back" easing="out" reversible="false" />
 						</animation>
@@ -724,21 +724,21 @@
 				<posy>0</posy>
 				<width>1290</width>
 				<height>770</height>
-				<texture>Shade/vignette2.png</texture>
+				<texture>shade/vignette2.png</texture>
 			</control>
 			<control type="image">
 				<posx>30</posx>
 				<posy>650</posy>
 				<width>35</width>
 				<height>35</height>
-				<texture>Shade/Left_Arrow.png</texture>
+				<texture>shade/left_arrow.png</texture>
 			</control>
 			<control type="image">
 				<posx>20</posx>
 				<posy>170</posy>
 				<width>680</width>
 				<height>350</height>
-				<texture>Shade/banner_strip_background.png</texture>
+				<texture>shade/banner_strip_background.png</texture>
 			</control>
 			<control type="label">
 				<description>View Options</description>
@@ -827,7 +827,7 @@
 						<posy>0</posy>
 						<width>700</width>
 						<height>50</height>
-						<texture border="2,2,2,2" diffuse="Shade/rowdiffuse.png">Shade/row.png</texture>
+						<texture border="2,2,2,2" diffuse="shade/rowdiffuse.png">shade/row.png</texture>
 					</control>
 					<control type="label">
 						<description>Title</description>
@@ -880,7 +880,7 @@
 						<posy>0</posy>
 						<width>510</width>
 						<height>50</height>
-						<texture border="2,2,2,2">Shade/white.png</texture>
+						<texture border="2,2,2,2">shade/white.png</texture>
 					</control>
 					<control type="label">
 						<description>Title</description>
@@ -944,7 +944,7 @@
 				<height>220</height>
 				<align>right</align>
 				<aspectratio scalediffuse="false">scale</aspectratio>
-				<texture diffuse="Shade/paneldiffuse.png" background="true">$INFO[Listitem.Icon]</texture>
+				<texture diffuse="shade/paneldiffuse.png" background="true">$INFO[Listitem.Icon]</texture>
 				<visible>Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="textbox">
@@ -1096,21 +1096,21 @@
 				<posy>0</posy>
 				<width>1290</width>
 				<height>770</height>
-				<texture>Shade/vignette2.png</texture>
+				<texture>shade/vignette2.png</texture>
 			</control>
 			<control type="image">
 				<posx>30</posx>
 				<posy>650</posy>
 				<width>35</width>
 				<height>35</height>
-				<texture>Shade/Left_Arrow.png</texture>
+				<texture>shade/left_arrow.png</texture>
 			</control>
 			<control type="image">
 				<posx>20</posx>
 				<posy>170</posy>
 				<width>680</width>
 				<height>350</height>
-				<texture>Shade/banner_strip_background.png</texture>
+				<texture>shade/banner_strip_background.png</texture>
 			</control>
 			<control type="label">
 				<description>View Options</description>
@@ -1170,7 +1170,7 @@
 						<posy>0</posy>
 						<width>700</width>
 						<height>50</height>
-						<texture border="2,2,2,2" diffuse="Shade/rowdiffuse.png">Shade/row.png</texture>
+						<texture border="2,2,2,2" diffuse="shade/rowdiffuse.png">shade/row.png</texture>
 					</control>
 					<control type="label">
 						<description>Title</description>
@@ -1193,7 +1193,7 @@
 						<posy>0</posy>
 						<width>510</width>
 						<height>50</height>
-						<texture border="2,2,2,2">Shade/white.png</texture>
+						<texture border="2,2,2,2">shade/white.png</texture>
 					</control>
 					<control type="label">
 						<description>Title</description>
