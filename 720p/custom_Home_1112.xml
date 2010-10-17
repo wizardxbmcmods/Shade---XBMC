@@ -8,7 +8,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>CarbonFiberBackground.png</texture>
+			<texture>black.png</texture>
 		</control>
 		<control type="group">
 			<animation effect="slide" start="0,0" end="0,-400" time="200" condition="Control.HasFocus(9003)">Conditional</animation>
@@ -368,7 +368,7 @@
 					<control type="label">
 						<posx>245</posx>
 						<posy>236</posy>
-						<width>190</width>
+						<width>310</width>
 						<height>30</height>
 						<font>Shade_18_Bold</font>
 						<textcolor>grey3</textcolor>
@@ -380,7 +380,7 @@
 					<control type="label">
 						<posx>245</posx>
 						<posy>236</posy>
-						<width>190</width>
+						<width>310</width>
 						<height>30</height>
 						<font>Shade_18_Bold</font>
 						<textcolor>grey2</textcolor>
@@ -396,7 +396,6 @@
 						<height>150</height>
 						<aspectratio>scale</aspectratio>
 						<texture>$INFO[ListItem.Thumb]</texture>
-
 						<bordertexture border="8">thumbshadow.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
@@ -414,10 +413,10 @@
 					</control>
 					<control type="image">
 						<posx>100</posx>
-						<posy>215</posy>
+						<posy>217</posy>
 						<width>290</width>
 						<height>150</height>
-						<aspectratio>stretch</aspectratio>
+						<aspectratio>scale</aspectratio>
 						<texture diffuse="custom_home_episode_diffuse.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 
 						<bordertexture border="8"/>
@@ -440,7 +439,7 @@
 					<control type="label">
 						<posx>245</posx>
 						<posy>236</posy>
-						<width>190</width>
+						<width>310</width>
 						<height>30</height>
 						<font>Shade_18_Bold</font>
 						<textcolor>grey3</textcolor>
@@ -452,7 +451,7 @@
 					<control type="label">
 						<posx>245</posx>
 						<posy>236</posy>
-						<width>190</width>
+						<width>310</width>
 						<height>30</height>
 						<font>Shade_18_Bold</font>
 						<textcolor>white</textcolor>
@@ -463,10 +462,10 @@
 					</control>
 					<control type="image">
 						<posx>100</posx>
-						<posy>215</posy>
+						<posy>217</posy>
 						<width>290</width>
 						<height>150</height>
-						<aspectratio>stretch</aspectratio>
+						<aspectratio>scale</aspectratio>
 						<texture diffuse="custom_home_episode_diffuse.png" flipy="true">$INFO[ListItem.Thumb]</texture>
 						<animation effect="fade" start="100" end="80" time="0" condition="Control.HasFocus(9002) | Control.HasFocus(9000) | Control.HasFocus(9003) | Control.HasFocus(9004)">Conditional</animation>
 
