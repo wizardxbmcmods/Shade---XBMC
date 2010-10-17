@@ -1091,7 +1091,7 @@
 			<content>
 				<item id="1">
 					<description>Movies</description>
-					<label>$LOCALIZE[342]</label>
+					<label>$LOCALIZE[31500]</label>
 					<icon>homeicons/movies-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
 					<onclick>ActivateWindow(VideoLibrary,movietitles)</onclick>
@@ -1099,7 +1099,7 @@
 				</item>
 				<item id="2">
 					<description>TV Shows</description>
-					<label>TV Shows</label>
+					<label>$LOCALIZE[31502]</label>
 					<icon>homeicons/tv-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
 					<onclick>ActivateWindow(VideoLibrary,tvshowtitles)</onclick>
@@ -1107,7 +1107,7 @@
 				</item>
 				<item id="3">
 					<description>Videos</description>
-					<label>Videos</label>
+					<label>$LOCALIZE[31501]</label>
 					<icon>homeicons/videos-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
 					<onclick>ActivateWindow(VideoFiles)</onclick>
@@ -1115,7 +1115,7 @@
 				</item>
 				<item id="4">
 					<description>Music</description>
-					<label>Music</label>
+					<label>$LOCALIZE[31504]</label>
 					<icon>homeicons/music-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
 					<onclick>ActivateWindow(Music)</onclick>
@@ -1123,14 +1123,14 @@
 				</item>
 				<item id="5">
 					<description>Home</description>
-					<label>Home</label>
+					<label>$LOCALIZE[31503]</label>
 					<icon>homeicons/home-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Home_Folder)]</thumb>
 					<onclick>XBMC.ActivateWindow(1115)</onclick>
 				</item>					
 				<item id="6">
 					<description>Pictures</description>
-					<label>$LOCALIZE[1]</label>
+					<label>$LOCALIZE[31509]</label>
 					<icon>homeicons/photos-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
 					<onclick>ActivateWindow(Pictures)</onclick>
@@ -1138,7 +1138,7 @@
 				</item>
 				<item id="7">
 					<description>Weather</description>
-					<label>$LOCALIZE[8]</label>
+					<label>$LOCALIZE[31505]</label>
 					<icon>homeicons/weather-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
 					<onclick>ActivateWindow(2600)</onclick>
@@ -1146,7 +1146,7 @@
 				</item>
 				<item id="8">
 					<description>Programs</description>
-					<label>$LOCALIZE[0]</label>
+					<label>$LOCALIZE[31506]</label>
 					<icon>homeicons/apps-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
 					<onclick>ActivateWindow(Programs,Addons,return)</onclick>
@@ -1154,7 +1154,7 @@
 				</item>
 				<item id="9">
 					<description>Addons</description>
-					<label>Addons</label>
+					<label>$LOCALIZE[31507]</label>
 					<icon>homeicons/scripts-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Addons_Folder)]</thumb>
 					<onclick>ActivateWindow(AddonBrowser)</onclick>
@@ -1186,7 +1186,7 @@
 				</item>
 				<item id="10">
 					<description>Settings</description>
-					<label>$LOCALIZE[5]</label>
+					<label>$LOCALIZE[31508]</label>
 					<icon>homeicons/setting-full.png</icon>
 					<thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
 					<onclick>ActivateWindow(4)</onclick>
@@ -1194,7 +1194,7 @@
 				</item>
 				<item id="11">
 					<description>Shutdown</description>
-					<label>$LOCALIZE[13005]</label>
+					<label>$LOCALIZE[31510]</label>
 					<icon>homeicons/shutdown-full.png</icon>
 					<thumb>special://skin/backgrounds/shutdown.jpg</thumb>
 					<onclick>ActivateWindow(ShutdownMenu)</onclick>

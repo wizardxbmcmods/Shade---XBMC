@@ -148,4 +148,20 @@
   <string id="31425">Show Weather Information</string>
   <string id="31426">Use Alternate Menu</string>
   <string id="31427">Use Alternate Bottom Section</string>
+
+<!-- Extra labels -->
+  <string id="31500">MOVIES</string>
+  <string id="31501">VIDEOS</string>
+  <string id="31502">TV SHOWS</string>
+  <string id="31503">HOME</string>
+  <string id="31504">MUSIC</string>
+  <string id="31505">WEATHER</string>
+  <string id="31506">PROGRAMS</string>
+  <string id="31507">ADDONS</string>
+  <string id="31508">SETTINGS</string>
+  <string id="31509">PICTURES</string>
+  <string id="31510">SHUTDOWN</string>
+
+
+
 </strings>

@@ -490,6 +490,11 @@
 			<size>40</size>
 		</font>
 		<font>
+			<name>Shade_47</name>
+			<filename>Walkway_SemiBold.ttf</filename>
+			<size>47</size>
+		</font>
+		<font>
 			<name>Shade_50</name>
 			<filename>Walkway_SemiBold.ttf</filename>
 			<size>50</size>
