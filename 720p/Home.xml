@@ -1546,7 +1546,7 @@
 				<titlecolor>white</titlecolor>
 				<headlinecolor>grey2</headlinecolor>
 				<animation effect="slide" start="1300,0" end="-2500,0" delay="0" time="60000" loop="true" condition="Skin.HasSetting(UseTVShowRSSFeed)">conditional</animation>
-				<visible>Skin.HasSetting(HomeAlternate) + !system.getbool(lookandfeel.enablerssfeeds)</visible>
+				<visible>Skin.HasSetting(HomeAlternate) + Skin.HasSetting(UseTVShowRSSFeed)</visible>
 			</control>
 		</control>
 
