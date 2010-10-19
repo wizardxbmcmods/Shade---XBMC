@@ -4489,12 +4489,12 @@
 						<texture background="true">$INFO[ListItem.Path,,logo.png]</texture>
 						<visible>container.content(TVShows) + Skin.HasSetting(UseClearartForView1)</visible>
 					</control>			
-                     <control type="button" id="10">
-                            <description>trigger</description>
-							 <onfocus>XBMC.PlayMedia($INFO[ListItem.Path,,theme.mp3])</onfocus>
- 							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
-				  </control>  
+					<control type="button" id="10">
+						<description>trigger</description>
+						<onfocus>XBMC.PlayMedia($INFO[ListItem.Path,,theme.mp3])</onfocus>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+					</control>  
 				</focusedlayout>
 			</control>
 
@@ -9005,12 +9005,12 @@
 						<animation reversible="false" effect="zoom" start="20,0,310,145" end="-15,-40,410,200" time="300">focus</animation>
 						<animation reversible="false" effect="zoom" end="20,0,310,145" start="-15,-40,410,200" time="300">unfocus</animation>
 					</control>
-                     <control type="button" id="10">
-                            <description>trigger</description>
-							 <onfocus>XBMC.PlayMedia($INFO[ListItem.Path,,theme.mp3])</onfocus>
- 							<texturenofocus>-</texturenofocus>
-							<texturefocus>-</texturefocus>
-				  </control>  
+					<control type="button" id="10">
+						<description>trigger</description>
+						<onfocus>XBMC.PlayMedia($INFO[ListItem.Path,,theme.mp3])</onfocus>
+						<texturenofocus>-</texturenofocus>
+						<texturefocus>-</texturefocus>
+					</control>  
 				</focusedlayout>
 			</control>	
 
