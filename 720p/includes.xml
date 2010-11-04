@@ -44,12 +44,12 @@
 		<animation effect="slide" start="-500,0" end="0,0" delay="0" time="300">WindowOpen</animation>
 	</include>
 	<include name="No_TV_Tunes">
-        <onfocus>SetFocus(50)</onfocus>
-    </include>
-    <include name="Use_TV_Tunes">
-         <onfocus>XBMC.RunScript(script.TvTunes,backend=True&amploop=False)</onfocus>
-         <onfocus>SetFocus(50)</onfocus>
-    </include> 
+		<onfocus>SetFocus(50)</onfocus>
+	</include>
+	<include name="Use_TV_Tunes">
+		<onfocus>XBMC.RunScript(script.TvTunes,backend=True&amp;loop=False)</onfocus>
+		<onfocus>SetFocus(50)</onfocus>
+	</include> 
 	<include name="UpOptions">
 		<control type="group">
 			<include>BottomSlide</include>
